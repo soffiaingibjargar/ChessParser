@@ -1,4 +1,5 @@
 def convert(m, board, turn):
+
     m = m.replace('{', '')
     pieces = ['K', 'Q', 'R', 'B', 'N']
     spaces = ['a','b','c','d','e','f','g','h']
@@ -239,6 +240,7 @@ def convert(m, board, turn):
                     break
             for i in range(7):
                 nRow = row + i + 1
+                print("queen move", nRow, col)
                 if nRow > 7:
                     break
                 if board[nRow][col] == value:
@@ -247,6 +249,7 @@ def convert(m, board, turn):
                     break
             for i in range(7):
                 nRow = row - i - 1
+                print("queen move",nRow, col)
                 if nRow < 0:
                     break
                 if board[nRow][col] == value:
@@ -382,7 +385,7 @@ def convert(m, board, turn):
         if "x" in m:
             col = ord(m[3]) - ord('a')
             row = 7 - ord(m[4]) + ord('1')
-        print (row, col)
+        #print (row, col)
 
         if m[0] == "N":
             if turn == 0:
@@ -390,20 +393,17 @@ def convert(m, board, turn):
             else:
                 values = [2, 7]
             if nRow - row == 2 or nRow - row == -2:
-                print("hello", nRow)
                 if col + 1 < 8 and (board[nRow][col + 1] == values[0] or board[nRow][col + 1] == values[1]):
                     return ((nRow, col + 1), (row, col))
                 else:
                     return ((nRow, col - 1), (row, col))
             else:
-                print("hey")
                 if col + 2 < 8 and (board[nRow][col + 2] == values[0] or board[nRow][col + 2] == values[1]):
                     return ((nRow, col + 2), (row, col))
                 else:
                     return ((nRow, col - 2), (row, col))
         if m[0] == "R":
             values = [0,0]
-            print (row, col, nRow)
             if turn == 0:
                 values = [25, 32]
             else:
@@ -440,7 +440,6 @@ def convert(m, board, turn):
                 return ((nRow, nRow - d), (row, col))
 
         if m[0] == "Q":
-            #print (row, col, nRow)
             if turn == 0:
                 value = 28
             else:

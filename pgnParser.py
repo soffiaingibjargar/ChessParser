@@ -2,12 +2,15 @@ import os
 import pgn
 
 def cleanup(file):
-    pgn_text = open(os. () + '\\Games\\' + file).read()
+    print(file)
+    pgn_text_file = open(os.getcwd() + '\\Games\\' + file, encoding="Latin-1")
+    pgn_text = pgn_text_file.read()
+    print(pgn_text[0:100])
     games = pgn.loads(pgn_text)
     return games
 
 
-file = "test.pgn"
+file = "rvkopen15r1.pgn"
 games = cleanup(file)
 for game in games:
     print(game.moves)

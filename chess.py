@@ -4,16 +4,8 @@ import convert
 piece_history = []
 
 for x in range(1,10):
-    games = pgnParser.cleanup('rvkopen15r' + x + '.png')
+    games = pgnParser.cleanup('rvkopen15r' + str(x) + '.pgn')
     for game in games:
-        #if b > 9:
-        #    address = 'C:\\Users\\Stefania\\Documents\\Haskoli\\Data\\games\\chess_' + str(b) + '.txt'
-        #else:
-        #    address = 'C:\\Users\\Stefania\\Documents\\Haskoli\\Data\\games\\chess_0' + str(b) + '.txt'
-        #f = open(address, 'r')
-        #game = f.read()
-        #moves = game.split()
-
         moves = game.moves
         length = (1 + len(moves)) // 2
 
@@ -139,7 +131,7 @@ for x in range(1,10):
                 if "x" in m:
                     captured[r[1][1][0]][r[1][1][1]] = captured[r[1][1][0]][r[1][1][1]] + 1
             else:
-                print("ERROR: NO MOVE !!!")
+                print("ERROR:" + m + " returns " + r + " WHICH IS NOT A VALID MOVE !!!" + str(x))
                 exit()
             #print("")
             #for i in range(8):

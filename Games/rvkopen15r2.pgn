@@ -1634,28 +1634,6 @@ Kxa4 40. Kh4 Nxf4 41. e6 Nxe6 0-1
 [Event "Reykjavik Open 2015"]
 [Site "Reykjavik, "]
 [Date "2015.03.11"]
-[Round "2.87"]
-[White "Hauksdottir, Hrund"]
-[Black "Carlsen, Henrik"]
-[Result "0-1"]
-[ECO "A00"]
-[WhiteElo "1692"]
-[BlackElo "1986"]
-[PlyCount "96"]
-[EventDate "2015.03.10"]
-
-1. e4 e6 2. d4 d5 3. exd5 exd5 4. Bd3 Bd6 5. c3 Ne7 6. Bg5 f6 7. Bh4 Bf5 8. Bg3
-Be4 9. Bxe4 dxe4 10. Qg4 O-O 11. Qxe4 Ng6 12. Qxb7 Qe7+ 13. Ne2 Nd7 14. Nd2
-Rfe8 15. Qf3 Bf4 16. Nc4 c5 17. Ne3 cxd4 18. Nxd4 Nde5 19. Qd5+ Nf7 20. Ndf5
-Qc7 21. O-O Rad8 22. Qb3 Qc5 23. Rad1 Rb8 24. Qa4 Bxg3 25. hxg3 Re5 26. Rd2
-Rxf5 27. Nxf5 Qxf5 28. Qxa7 Rf8 29. Rd7 Nge5 30. Rc7 Qg6 31. a4 Ng4 32. f3 Nge5
-33. a5 Qxg3 34. a6 Nd6 35. Qc5 h5 36. f4 Ng4 37. Qd5+ Kh8 38. Qxh5+ Kg8 39. Re7
-Ne3 40. Qf3 Nxf1 41. Qxf1 Nf5 42. Rb7 Re8 43. a7 Re1 44. a8=Q+ Kh7 45. Qaa6 Ne3
-46. Qad3+ Kh6 47. Rxg7 Kxg7 48. Qd7+ Kh6 0-1
-
-[Event "Reykjavik Open 2015"]
-[Site "Reykjavik, "]
-[Date "2015.03.11"]
 [Round "2.88"]
 [White "Vigdal, Per Kr"]
 [Black "Fjallheim, Elmar"]
