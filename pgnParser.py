@@ -2,7 +2,7 @@ import os
 import pgn
 
 def cleanup(file):
-    pgn_text = open(os.getcwd() + '\\Games\\' + file).read()
+    pgn_text = open(os. () + '\\Games\\' + file).read()
     games = pgn.loads(pgn_text)
     return games
 
