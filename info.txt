@@ -1,0 +1,15 @@
+Black
+1, 8		0	Rook
+2, 7		1	Knight
+3, 6		2	Bishop
+4		3	Queen
+5		4	King
+9 ~ 16		5	Pawn
+
+White		
+17 ~ 24		6	Pawn
+25, 32		7	Rook
+26, 31		8	Knight
+27, 30		9	Bishop
+28		10	Queen
+29		11	King

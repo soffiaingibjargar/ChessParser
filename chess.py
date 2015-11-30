@@ -175,7 +175,7 @@ for x in range(1,11):
             print(history[i])
             print("")
 
-        piece_history.append(history[6])
+        piece_history.append(history[11])
 
 print(piece_history)
 total_length = 0
