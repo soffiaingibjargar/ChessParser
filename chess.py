@@ -28,6 +28,8 @@ def convert(m, board, turn):
                 nRow = 6
             return ("prom", ((nRow, col), (row, col)), m[-1])
         else:
+            col = ord(m[2]) - ord('a')
+            row = 7 - ord(m[3]) + ord('1')
             if turn == 0:
                 if m[0] < m[2]:
                     return ("prom", ((row + 1, col - 1), (row, col)), m[-1])
@@ -282,6 +284,9 @@ def convert(m, board, turn):
         col = ord(m[2]) - ord('a')
         row = 7 - ord(m[3]) + ord('1')
         nCol = ord(m[1]) - ord('a')
+        if "x" in m:
+            col = ord(m[3]) - ord('a')
+            row = 7 - ord(m[4]) + ord('1')
 
 
         if m[0] == "N":
@@ -299,7 +304,7 @@ def convert(m, board, turn):
                 if row + 2 < 8 and (board[row + 2][nCol] == values[0] or board[row + 2][nCol] == values[1]):
                     return ((row + 2, nCol), (row, col))
                 else:
-                    return (((row -2), nCol), (row, col))
+                    return ((row -2, nCol), (row, col))
         if m[0] == "B":
             values = [0,0]
             if turn == 0:
@@ -307,7 +312,7 @@ def convert(m, board, turn):
             else:
                 values = [3, 6]
             d = nCol - col
-            if nCol + d >= 1 and nCol + d < 8 and (board[nCol + d][nCol] == values[0] or board[nCol + d][nCol] == values[1]):
+            if nCol + d >= 0 and nCol + d < 8 and (board[nCol + d][nCol] == values[0] or board[nCol + d][nCol] == values[1]):
                 return ((nCol + d, nCol), (row, col))
             else:
                 return ((nCol - d, nCol), (row, col))
@@ -367,170 +372,311 @@ def convert(m, board, turn):
                     if board[nRow][nCol] > 0:
                         break
 
+    # format N6xd5
+    if m[0] in pieces and m[1] not in spaces and ((m[2] in spaces and len(m) == 4)or (m[2] is "x" and m[3] in spaces and len(m) == 5)):
+        piece = -1
+        col = ord(m[2]) - ord('a')
+        row = 7 - ord(m[3]) + ord('1')
+        nRow = 7 - ord(m[1]) + ord('1')
+        if "x" in m:
+            col = ord(m[3]) - ord('a')
+            row = 7 - ord(m[4]) + ord('1')
+        print (row, col)
 
-        #return "piece move with ambiguity"
+        if m[0] == "N":
+            if turn == 0:
+                values = [26, 31]
+            else:
+                values = [2, 7]
+            if nRow - row == 2 or nRow - row == -2:
+                print("hello", nRow)
+                if col + 1 < 8 and (board[nRow][col + 1] == values[0] or board[nRow][col + 1] == values[1]):
+                    return ((nRow, col + 1), (row, col))
+                else:
+                    return ((nRow, col - 1), (row, col))
+            else:
+                print("hey")
+                if col + 2 < 8 and (board[nRow][col + 2] == values[0] or board[nRow][col + 2] == values[1]):
+                    return ((nRow, col + 2), (row, col))
+                else:
+                    return ((nRow, col - 2), (row, col))
+        if m[0] == "R":
+            values = [0,0]
+            print (row, col, nRow)
+            if turn == 0:
+                values = [25, 32]
+            else:
+                values = [1,8]
+            if nRow != row:
+                return ((nRow, col), (row, col))
+            else:
+                for i in range(7):
+                    nCol = col + i + 1
+                    if nCol > 7:
+                        break
+                    if board[nRow][nCol] == values[0] or board[nRow][nCol] == values[1]:
+                        return ((nRow, nCol), (row, col))
+                    if board[nRow][nCol] > 0:
+                        break
+                for i in range(7):
+                    nCol = col - i - 1
+                    if nCol < 0:
+                        break
+                    if board[nRow][nCol] == values[0] or board[nRow][nCol] == values[1]:
+                        return ((nRow, nCol), (row, col))
+                    if board[nRow][nCol] > 0:
+                        break
+        if m[0] == "B":
+            values = [0,0]
+            if turn == 0:
+                values = [27,30]
+            else:
+                values = [3, 6]
+            d = nRow - row
+            if nRow + d >= 0 and nRow + d < 8 and (board[nRow][nRow + d] == values[0] or board[nRow][nRow + d] == values[1]):
+                return ((nRow, nRow + d), (row, col))
+            elif nRow - d >= 0 and nRow - d < 8 and (board[nRow][nRow - d] == values[0] or board[nRow][nRow - d] == values[1]):
+                return ((nRow, nRow - d), (row, col))
 
-    print("ERROR: MOVE NOT HANDLED !!!")
+        if m[0] == "Q":
+            #print (row, col, nRow)
+            if turn == 0:
+                value = 28
+            else:
+                value = 4
+            if nRow != row:
+                return ((nRow, col), (row, col))
+            else:
+                for i in range(7):
+                    nCol = col + i + 1
+                    if nCol > 7:
+                        break
+                    if board[nRow][nCol] == values[0] or board[nRow][nCol] == values[1]:
+                        return ((nRow, nCol), (row, col))
+                    if board[nRow][nCol] > 0:
+                        break
+                for i in range(7):
+                    nCol = col - i - 1
+                    if nCol < 0:
+                        break
+                    if board[nRow][nCol] == values[0] or board[nRow][nCol] == values[1]:
+                        return ((nRow, nCol), (row, col))
+                    if board[nRow][nCol] > 0:
+                        break
+            # diagonal queen
+            # 2 possible spaces
+            d = nRow - row
+            if nRow + d >= 0 and nRow + d < 8 and board[nRow][nRow + d] == value:
+                if nRow - d >= 0 and nRow - d < 8 and board[nRow][nRow - d] == value:
+                    print("ERROR: unimplemented edge case")
+                return ((nRow, nRow - d), (row, col))
+            else:
+                return ((nRow, nRow + d), (row, col))
+
+
+
+    print("ERROR: MOVE",m,"NOT HANDLED !!!")
     exit()
 
+piece_history = []
 
-
-f = open('C:\\Users\\Stefania\\Documents\\Haskoli\\Data\\chess_01.txt', 'r')
-game = f.read()
-moves = game.split()
-
-length = len(moves) // 3
-
-for i in range(len(moves) // 3):
-    moves.pop(2*i)
-print(moves)
-
-# rows 0 and 1 are black pieces
-# rows 6 and 7 are white pieces
-board = [[0 for x in range(8)] for x in range(8)]
-for i in range(8):
-    board[0][i] = i + 1
-    board[1][i] = 8 + i + 1
-    board[6][i] = 16 + i + 1
-    board[7][i] = 24 +  i + 1
-for i in range(8):
-    print(board[i])
-
-# keeping track of data
-occupy = [[0 for x in range(8)] for x in range(8)]
-visited = [[0 for x in range(8)] for x in range(8)]
-captured =[[0 for x in range(8)] for x in range(8)]
-history = [[[] for x in range(length)] for x in range(12)]
-
-turn = False
-#for m in moves[0:-1]:
-for k in range(len(moves) - 1):
-    m = moves[k]
-
-    for i in range(8):
-        for j in range(8):
-            if board[i][j] > 0:
-                occupy[i][j] = occupy[i][j] + 1
-                if (turn == True):
-                    if board[i][j] == 1 or board[i][j] == 8:
-                        history[0][k//2].append((i,j))
-                    elif board[i][j] == 2 or board[i][j] == 7:
-                        history[1][k//2].append((i,j))
-                    elif board[i][j] == 3 or board[i][j] == 6:
-                        history[2][k//2].append((i,j))
-                    elif board[i][j] == 4:
-                        history[3][k//2].append((i,j))
-                    elif board[i][j] == 5:
-                        history[4][k//2].append((i,j))
-                    elif board[i][j] >= 9 and board[i][j] <= 16:
-                        history[5][k//2].append((i,j))
-                else:
-                    if board[i][j] >= 17 and board[i][j] <= 24:
-                        history[6][k//2].append((i,j))
-                    elif board[i][j] == 25 or board[i][j] == 32:
-                        history[7][k//2].append((i,j))
-                    elif board[i][j] == 26 or board[i][j] == 31:
-                        history[8][k//2].append((i,j))
-                    elif board[i][j] == 27 or board[i][j] == 30:
-                        history[9][k//2].append((i,j))
-                    elif board[i][j] == 28:
-                        history[10][k//2].append((i,j))
-                    elif board[i][j] == 29:
-                        history[11][k//2].append((i,j))
-
-
-
-    r = convert(m, board, turn)
-    space = (-1,-1)
-    print (m, "\t", r)
-    if (len(r) == 2):
-        piece = board[r[0][0]][r[0][1]]
-        board[r[1][0]][r[1][1]] = piece
-        board[r[0][0]][r[0][1]] = 0
-
-        visited[r[1][0]][r[1][1]] = visited[r[1][0]][r[1][1]] + 1
-        if "x" in m:
-            captured[r[1][0]][r[1][1]] = captured[r[1][0]][r[1][1]] + 1
-    elif (len(r) == 3 and r[0] == "C"):
-        r_1 = r[1]
-        r_2 = r[2]
-        piece = board[r_1[0][0]][r_1[0][1]]
-        board[r_1[1][0]][r_1[1][1]] = piece
-        board[r_1[0][0]][r_1[0][1]] = 0
-        piece = board[r_2[0][0]][r_2[0][1]]
-        board[r_2[1][0]][r_2[1][1]] = piece
-        board[r_2[0][0]][r_2[0][1]] = 0
-
-        visited[r_1[1][0]][r_1[1][1]] = visited[r_1[1][0]][r_1[1][1]] + 1
-        visited [r_2[1][0]][r_2[1][1]] = visited[r_2[1][0]][r_2[1][1]] + 1
-
-    elif (len(r) == 3 and r[0] == "prom"):
-        board[r[1][0][0]][r[1][0][1]] = 0
-        piece = 0
-        if turn == 0:
-            if r[2] == "Q":
-                piece = 28
-            elif r[2] == "R":
-                piece = 25
-            elif r[2] == "K":
-                piece = 26
-            else:
-                piece = 27
-        else:
-            if r[2] == "R":
-                piece = 1
-            elif r[2] == "K":
-                piece = 2
-            elif r[2] == "B":
-                piece = 3
-            elif r[2] == "Q":
-                piece = 4
-        board[r[1][1][0]][r[1][1][1]] = piece
-
-        visited[r[1][1][0]][r[1][1][1]] = visited[r[1][1][0]][r[1][1][1]] + 1
-        if "x" in m:
-            captured[r[1][1][0]][r[1][1][1]] = captured[r[1][1][0]][r[1][1][1]] + 1
+for b in range(1,51):
+    if b > 9:
+        address = 'C:\\Users\\Stefania\\Documents\\Haskoli\\Data\\games\\chess_' + str(b) + '.txt'
     else:
-        print("ERROR: NO MOVE !!!")
-        exit()
-    print("")
+        address = 'C:\\Users\\Stefania\\Documents\\Haskoli\\Data\\games\\chess_0' + str(b) + '.txt'
+    f = open(address, 'r')
+    game = f.read()
+    moves = game.split()
+
+    length = len(moves) // 3
+
+    for i in range(len(moves) // 3):
+        moves.pop(2*i)
+    print(moves)
+
+    # rows 0 and 1 are black pieces
+    # rows 6 and 7 are white pieces
+    board = [[0 for x in range(8)] for x in range(8)]
     for i in range(8):
-        for j in range(8):
-            if board[i][j] == 0:
-                print(". " ,"",end="")
-            elif board[i][j] < 10:
-                print(board[i][j],"","",end="")
+        board[0][i] = i + 1
+        board[1][i] = 8 + i + 1
+        board[6][i] = 16 + i + 1
+        board[7][i] = 24 +  i + 1
+    for i in range(8):
+        print(board[i])
+
+    # keeping track of data
+    occupy = [[0 for x in range(8)] for x in range(8)]
+    visited = [[0 for x in range(8)] for x in range(8)]
+    captured =[[0 for x in range(8)] for x in range(8)]
+    history = [[[] for x in range(length)] for x in range(12)]
+
+    turn = False
+    #for m in moves[0:-1]:
+    for k in range(len(moves) - 1):
+        m = moves[k]
+
+        for i in range(8):
+            for j in range(8):
+                if board[i][j] > 0:
+                    occupy[i][j] = occupy[i][j] + 1
+                    if (turn == True):
+                        if board[i][j] == 1 or board[i][j] == 8:
+                            history[0][k//2].append((i,j))
+                        elif board[i][j] == 2 or board[i][j] == 7:
+                            history[1][k//2].append((i,j))
+                        elif board[i][j] == 3 or board[i][j] == 6:
+                            history[2][k//2].append((i,j))
+                        elif board[i][j] == 4:
+                            history[3][k//2].append((i,j))
+                        elif board[i][j] == 5:
+                            history[4][k//2].append((i,j))
+                        elif board[i][j] >= 9 and board[i][j] <= 16:
+                            history[5][k//2].append((i,j))
+                    else:
+                        if board[i][j] >= 17 and board[i][j] <= 24:
+                            history[6][k//2].append((i,j))
+                        elif board[i][j] == 25 or board[i][j] == 32:
+                            history[7][k//2].append((i,j))
+                        elif board[i][j] == 26 or board[i][j] == 31:
+                            history[8][k//2].append((i,j))
+                        elif board[i][j] == 27 or board[i][j] == 30:
+                            history[9][k//2].append((i,j))
+                        elif board[i][j] == 28:
+                            history[10][k//2].append((i,j))
+                        elif board[i][j] == 29:
+                            history[11][k//2].append((i,j))
+
+
+
+        r = convert(m, board, turn)
+        space = (-1,-1)
+        #print (m, "\t", r)
+        if (len(r) == 2):
+            print(m, r)
+            piece = board[r[0][0]][r[0][1]]
+            board[r[1][0]][r[1][1]] = piece
+            board[r[0][0]][r[0][1]] = 0
+
+            visited[r[1][0]][r[1][1]] = visited[r[1][0]][r[1][1]] + 1
+            if "x" in m:
+                captured[r[1][0]][r[1][1]] = captured[r[1][0]][r[1][1]] + 1
+        elif (len(r) == 3 and r[0] == "C"):
+            r_1 = r[1]
+            r_2 = r[2]
+            piece = board[r_1[0][0]][r_1[0][1]]
+            board[r_1[1][0]][r_1[1][1]] = piece
+            board[r_1[0][0]][r_1[0][1]] = 0
+            piece = board[r_2[0][0]][r_2[0][1]]
+            board[r_2[1][0]][r_2[1][1]] = piece
+            board[r_2[0][0]][r_2[0][1]] = 0
+
+            visited[r_1[1][0]][r_1[1][1]] = visited[r_1[1][0]][r_1[1][1]] + 1
+            visited [r_2[1][0]][r_2[1][1]] = visited[r_2[1][0]][r_2[1][1]] + 1
+
+        elif (len(r) == 3 and r[0] == "prom"):
+            print(m,r)
+            board[r[1][0][0]][r[1][0][1]] = 0
+            piece = 0
+            if turn == 0:
+                if r[2] == "Q":
+                    piece = 28
+                elif r[2] == "R":
+                    piece = 25
+                elif r[2] == "K":
+                    piece = 26
+                else:
+                    piece = 27
             else:
-                print(board[i][j],"",end="")
-        print("")
-    print("")
-    turn = not turn
+                if r[2] == "R":
+                    piece = 1
+                elif r[2] == "K":
+                    piece = 2
+                elif r[2] == "B":
+                    piece = 3
+                elif r[2] == "Q":
+                    piece = 4
+            board[r[1][1][0]][r[1][1][1]] = piece
+
+            visited[r[1][1][0]][r[1][1][1]] = visited[r[1][1][0]][r[1][1][1]] + 1
+            if "x" in m:
+                captured[r[1][1][0]][r[1][1][1]] = captured[r[1][1][0]][r[1][1][1]] + 1
+        else:
+            print("ERROR: NO MOVE !!!")
+            exit()
+        #print("")
+        #for i in range(8):
+        #    for j in range(8):
+        #        if board[i][j] == 0:
+        #            print(". " ,"",end="")
+        #        elif board[i][j] < 10:
+        #            print(board[i][j],"","",end="")
+        #        else:
+        #            print(board[i][j],"",end="")
+        #    print("")
+        #print("")
+        turn = not turn
+        sum = 0
+        for i in range(8):
+            for j in range(8):
+                sum += visited[i][j]
+        #print("total visited", sum)
+
+
+    print(moves[-1])
+
+    print("Results")
+    print("Spaces occupied, length", length)
+    for i in range(8):
+        print(occupy[i])
     sum = 0
     for i in range(8):
         for j in range(8):
             sum += visited[i][j]
-    print("total visited", sum)
+    print("Nr. of times visited, total", sum)
+    for i in range(8):
+        print(visited[i])
+    print("Nr. of times captured")
+    for i in range(8):
+        print(captured[i])
 
+    pieces = ["black rooks", "black knights", "black bishops", "black queen", "black king", "black pawns", "white pawns", "white rooks", "white knights", "white bishops", "white queen", "white king"]
+    for i in range(12):
+        print("History for", pieces[i])
+        print(history[i])
+        print("")
+    f.close()
 
-print(moves[-1])
+    piece_history.append(history[6])
 
-print("Results")
-print("Spaces occupied, length", length)
-for i in range(8):
-    print(occupy[i])
+print(piece_history)
+total_length = 0
+for l in piece_history:
+    if len(l) > total_length:
+        total_length = len(l)
+print(total_length)
+
+data = [[[0, 0, 0, 0, 0, 0, 0, 0] for x in range(8)] for x in range(total_length)]
+
+for s in piece_history:
+    for i in range(len(s)):
+        # working with data[i]
+        for t in s[i]:
+            # print(t)
+            data[i][t[0]][t[1]] += 1
 sum = 0
-for i in range(8):
-    for j in range(8):
-        sum += visited[i][j]
-print("Nr. of times visited, total", sum)
-for i in range(8):
-    print(visited[i])
-print("Nr. of times captured")
-for i in range(8):
-    print(captured[i])
+for s in data[0]:
+    for r in s:
+        sum += r
+print(sum)
+for i in range(65):
+    #print("Step", i)
+    for r in data[i]:
+        for s in r:
+            print(s,"",end="")
+        print("")
+    print("");
 
-pieces = ["black rooks", "black knights", "black bishops", "black queen", "black king", "black pawns", "white pawns", "white rooks", "white knights", "white bishops", "white queen", "white king"]
-for i in range(12):
-    print("History for", pieces[i])
-    print(history[i])
-    print("")
+
+
