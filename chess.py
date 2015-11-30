@@ -1,4 +1,7 @@
+import pgnParser
+
 def convert(m, board, turn):
+    m = m.replace('{', '')
     pieces = ['K', 'Q', 'R', 'B', 'N']
     spaces = ['a','b','c','d','e','f','g','h']
     if m[-1] == "+" or m[-1] == "#":
@@ -480,20 +483,23 @@ def convert(m, board, turn):
 
 piece_history = []
 
-for b in range(1,51):
-    if b > 9:
-        address = 'C:\\Users\\Stefania\\Documents\\Haskoli\\Data\\games\\chess_' + str(b) + '.txt'
-    else:
-        address = 'C:\\Users\\Stefania\\Documents\\Haskoli\\Data\\games\\chess_0' + str(b) + '.txt'
-    f = open(address, 'r')
-    game = f.read()
-    moves = game.split()
+games = pgnParser.cleanup("test.pgn")
 
-    length = len(moves) // 3
+for game in games:
+    #if b > 9:
+    #    address = 'C:\\Users\\Stefania\\Documents\\Haskoli\\Data\\games\\chess_' + str(b) + '.txt'
+    #else:
+    #    address = 'C:\\Users\\Stefania\\Documents\\Haskoli\\Data\\games\\chess_0' + str(b) + '.txt'
+    #f = open(address, 'r')
+    #game = f.read()
+    #moves = game.split()
 
-    for i in range(len(moves) // 3):
-        moves.pop(2*i)
-    print(moves)
+    moves = game.moves
+    length = (1 + len(moves)) // 2
+
+    #for i in range(len(moves) // 3):
+    #    moves.pop(2*i)
+    #print(moves)
 
     # rows 0 and 1 are black pieces
     # rows 6 and 7 are white pieces
@@ -513,9 +519,19 @@ for b in range(1,51):
     history = [[[] for x in range(length)] for x in range(12)]
 
     turn = False
+    skip = False
     #for m in moves[0:-1]:
     for k in range(len(moves) - 1):
         m = moves[k]
+
+        if '{' in m:
+            skip = True
+            continue
+        if '}' in m:
+            skip = False
+            continue
+        if skip == True:
+            continue
 
         for i in range(8):
             for j in range(8):
@@ -584,14 +600,14 @@ for b in range(1,51):
                     piece = 28
                 elif r[2] == "R":
                     piece = 25
-                elif r[2] == "K":
+                elif r[2] == "N":
                     piece = 26
                 else:
                     piece = 27
             else:
                 if r[2] == "R":
                     piece = 1
-                elif r[2] == "K":
+                elif r[2] == "N":
                     piece = 2
                 elif r[2] == "B":
                     piece = 3
@@ -646,7 +662,6 @@ for b in range(1,51):
         print("History for", pieces[i])
         print(history[i])
         print("")
-    f.close()
 
     piece_history.append(history[6])
 
@@ -674,9 +689,7 @@ for i in range(65):
     #print("Step", i)
     for r in data[i]:
         for s in r:
-            print(s,"",end="")
+            print(s,'',end='')
         print("")
-    print("");
-
-
+    print("")
 

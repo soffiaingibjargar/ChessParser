@@ -7,7 +7,7 @@ def cleanup(file):
     return games
 
 
-#file = "test.pgn"
-#games = cleanup(file)
-#for game in games:
-#    print(game.moves)
+file = "test.pgn"
+games = cleanup(file)
+for game in games:
+    print(game.moves)
