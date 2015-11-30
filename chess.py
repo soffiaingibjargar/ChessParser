@@ -3,7 +3,7 @@ import convert
 
 piece_history = []
 
-for x in range(1,10):
+for x in range(1,11):
     games = pgnParser.cleanup('rvkopen15r' + str(x) + '.pgn')
     for game in games:
         moves = game.moves
