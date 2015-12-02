@@ -240,7 +240,6 @@ def convert(m, board, turn):
                     break
             for i in range(7):
                 nRow = row + i + 1
-                print("queen move", nRow, col)
                 if nRow > 7:
                     break
                 if board[nRow][col] == value:
@@ -249,7 +248,6 @@ def convert(m, board, turn):
                     break
             for i in range(7):
                 nRow = row - i - 1
-                print("queen move",nRow, col)
                 if nRow < 0:
                     break
                 if board[nRow][col] == value:
@@ -265,7 +263,7 @@ def convert(m, board, turn):
         col = ord(m[2]) - ord('a')
         row = 7 - ord(m[3]) + ord('1')
         if board[row][col] == 0:
-            print("EN PASSANT - SPECIAL CASE")
+            #print(m, "EN PASSANT - SPECIAL CASE")
             # remove pawn in front of space
             if turn == 0:
                 board[row + 1][col] = 0
