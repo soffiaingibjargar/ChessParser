@@ -3,19 +3,26 @@ import convert
 
 piece_history = []
 piece_id = 5
-for y in range(14,16):
-    if y == 15:
-        thisRange = range(1,11)
-    else:
-        thisRange = range(1,11)
+chess_length = [[(0,0) for r in range(10)] for s in range(3)]
+for y in range(13,16):
+    thisRange = range(1,11)
     for x in thisRange:
         games = pgnParser.cleanup('rvkopen' + str(y) + 'r' + str(x) + '.pgn')
         b = 0
         for game in games:
+            if hasattr(game, 'whiteelo'):
+                print(getattr(game,'whiteelo'), " ",end="")
+            if hasattr(game, 'blackelo'):
+                print(getattr(game,'blackelo'),end="")
+            print("")
             #print(b)
             b += 1
             moves = game.moves
             length = (1 + len(moves)) // 2
+
+            t = chess_length[y - 13][x - 1]
+            newAverage = (t[0] * t[1] + length) / (t[1] + 1)
+            chess_length[y - 13][x - 1] = (newAverage, t[1] + 1)
 
             #for i in range(len(moves) // 3):
             #    moves.pop(2*i)
@@ -227,3 +234,6 @@ for i in range(65):
     print("")
     file.close()
 
+print("Chess lengths")
+for c in chess_length:
+    print(c)
