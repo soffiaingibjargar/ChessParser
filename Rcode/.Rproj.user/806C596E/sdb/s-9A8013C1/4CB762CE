@@ -1,0 +1,17 @@
+{
+    "contents" : "library(animation)\nlibrary(gplots)\nsaveGIF({\n  for(i in 0:64)\n  {\n    piece = 1\n    my_palette <- colorRampPalette(c(\"red\", \"yellow\", \"green\"))(n = 299)\n    \n    path = paste(\"..\\\\Results\\\\distribution_p\",piece,\"_r\",i,\".csv\",sep = \"\")\n    board <- read.csv(path, sep=\",\")\n    #row.names(board) <- board$X\n    print(i)\n    print(board)\n    \n    board <- board[,2:9]\n    #print(board)\n    board_matrix <- data.matrix(board)\n    #print(board_matrix)\n    board_heatmap <- heatmap.2(board_matrix, Rowv=NA, Colv=NA, scale=\"column\", margins=c(5,10),col=my_palette,main = paste(\"Round\",i + 1))\n  }\n})",
+    "created" : 1449064880700.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1236229807",
+    "id" : "4CB762CE",
+    "lastKnownWriteTime" : 1449064611,
+    "path" : "C:/Users/Soffía/PycharmProjects/ChessParser/Rcode/heatmap.R",
+    "project_path" : "heatmap.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
