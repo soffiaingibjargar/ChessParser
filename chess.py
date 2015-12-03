@@ -2,18 +2,42 @@ import pgnParser
 import convert
 
 piece_history = []
-piece_id = 5
+piece_id = 11
 chess_length = [[(0,0) for r in range(10)] for s in range(3)]
+elo_difference = [(0,0) for r in range(10)]
+elo_results = []
+elo_file = open("elo_results.csv","w")
+elo_file.write("elo1, elo2, res\n")
+total_games = 0
+games_with_elos = 0
 for y in range(13,16):
     thisRange = range(1,11)
     for x in thisRange:
         games = pgnParser.cleanup('rvkopen' + str(y) + 'r' + str(x) + '.pgn')
         b = 0
         for game in games:
+            total_games += 1
+            thing = False
             if hasattr(game, 'whiteelo'):
-                print(getattr(game,'whiteelo'), " ",end="")
+                w_elo = int(getattr(game,'whiteelo'))
+                print(w_elo, " ",end="")
+                thing = True
             if hasattr(game, 'blackelo'):
-                print(getattr(game,'blackelo'),end="")
+                b_elo = int(getattr(game,'blackelo'))
+                print(b_elo,end="")
+                if thing:
+                    if w_elo < 1 or b_elo < 1:
+                        break
+                    games_with_elos += 1
+                    t = elo_difference[x - 1]
+                    newAverage = (t[0] * t[1] + abs(b_elo - w_elo)) / (t[1] + 1)
+                    elo_difference[x - 1] = (newAverage, t[1] + 1)
+
+                    result = getattr(game,'result')
+                    if result is not "*":
+                        text = str(str(w_elo) + "," + str(b_elo) + "," + result + "\n")
+                        elo_file.write(text)
+
             print("")
             #print(b)
             b += 1
@@ -237,3 +261,10 @@ for i in range(65):
 print("Chess lengths")
 for c in chess_length:
     print(c)
+
+print("games with elos:", games_with_elos,"out of", total_games)
+for e in elo_difference:
+    print(e)
+
+
+elo_file.close()
