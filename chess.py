@@ -2,10 +2,11 @@ import pgnParser
 import convert
 
 id_to_piece = {1:'bR', 2:'bN', 3:'bB', 4:'bQ', 5:'bK', 6:'bB', 7:'bN', 8:'bR', 9:'bP', 10:'bP', 11:'bP', 12:'bP', 13:'bP', 14:'bP', 15:'bP', 16:'bP', 17:'wP', 18:'wP', 19:'wP', 20:'wP', 21:'wP', 22:'wP', 23:'wP', 24:'wP', 25:'wR', 26:'wN', 27:'wB', 28:'wQ', 29:'wK', 30:'wB', 31:'wN', 32:'wR'}
-piece_to_id = {'bR':0, 'bN':1, 'bB':2, 'bQ':3, 'bK':4, 'bP':5, 'wP':6, 'wR':7, 'wN':8, 'wB':9, 'wQ':10, 'wK':11}
+piece_to_id = {'bR':0, 'bN':1, 'bB':2, 'bQ':3, 'bK':4, 'bP':5, 'wR':6, 'wN':7, 'wB':8, 'wQ':9, 'wK':10, 'wP':11}
 all_pieces = ['R', 'N', 'B', 'Q', 'K']
+
 piece_history = []
-piece_id = 11
+piece_id = 0
 chess_length = [[(0,0) for r in range(10)] for s in range(3)]
 elo_difference = [(0,0) for r in range(10)]
 elo_results = []
@@ -21,6 +22,8 @@ total_captured =[[0 for x in range(8)] for x in range(8)]
 total_visited =[[0 for x in range(8)] for x in range(8)]
 
 piece_capture = [[0 for x in range(6)] for x in range(6)]
+piece_lifetime = [(0,0) for x in range(6)]
+relative_lifetime = [(0,0) for x in range(6)]
 
 for y in range(13,16):
     thisRange = range(1,11)
@@ -76,11 +79,12 @@ for y in range(13,16):
             moves = game.moves
             length = (1 + len(moves)) // 2
 
+            # length of chess
             t = chess_length[y - 13][x - 1]
             newAverage = (t[0] * t[1] + length) / (t[1] + 1)
             chess_length[y - 13][x - 1] = (newAverage, t[1] + 1)
 
-
+            # setting up board
             board = [[0 for x in range(8)] for x in range(8)]
             for i in range(8):
                 board[0][i] = i + 1
@@ -97,6 +101,7 @@ for y in range(13,16):
             turn = False
             skip = False
 
+            # chess
             for k in range(len(moves) - 1):
                 m = moves[k]
 
@@ -120,18 +125,30 @@ for y in range(13,16):
                         capturing_piece = "P"
                     row = 8 - int(spot[1])
                     col = ord(spot[0]) - ord('a')
-                    print(capturing_piece,"captures",end=" ")
+                    #print(capturing_piece,"captures",end=" ")
                     if board[row][col] < 1:
-                        print("pawn")
+                        captured_piece = "P"
                     else:
-                        print(id_to_piece[board[row][col]][1])
+                        captured_piece = id_to_piece[board[row][col]][1]
+
+                        round = k // 2 + 1
+                        t = piece_lifetime[piece_to_id["b" + captured_piece]]
+                        newAverage = (t[0] * t[1] + round) / (t[1] + 1)
+                        piece_lifetime[piece_to_id["b" + captured_piece]] = (newAverage, t[1] + 1)
+
+                        t = relative_lifetime[piece_to_id["b" + captured_piece]]
+                        newAverage = (t[0] * t[1] + round / length) / (t[1] + 1)
+                        relative_lifetime[piece_to_id["b" + captured_piece]] = (newAverage, t[1] + 1)
+
+                    piece_capture[piece_to_id["b" + capturing_piece]][piece_to_id["b" + captured_piece]] += 1
 
                 for i in range(8):
                     for j in range(8):
                         if board[i][j] > 0:
                             occupy[i][j] = occupy[i][j] + 1
                             piece = id_to_piece[board[i][j]]
-                            history[piece_to_id[piece]][k//2].append((i,j))
+                            if ((turn is True and piece[0] is 'b') or (turn is False and piece[0] is 'w')):
+                                history[piece_to_id[piece]][k//2].append((i,j))
 
                 r = convert.convert(m, board, turn)
                 space = (-1,-1)
@@ -264,3 +281,14 @@ for r in total_captured:
 print("Most visited spots")
 for r in total_visited:
     print(r)
+
+print("Captures")
+for r in piece_capture:
+    print(r)
+print("Lifetime")
+for r in piece_lifetime:
+    print(r)
+print("Relative lifetime")
+for r in relative_lifetime:
+    print(r)
+print("Total games:", total_games)
