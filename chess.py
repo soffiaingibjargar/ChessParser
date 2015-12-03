@@ -1,6 +1,9 @@
 import pgnParser
 import convert
 
+id_to_piece = {1:'bR', 2:'bN', 3:'bB', 4:'bQ', 5:'bK', 6:'bB', 7:'bN', 8:'bR', 9:'bP', 10:'bP', 11:'bP', 12:'bP', 13:'bP', 14:'bP', 15:'bP', 16:'bP', 17:'wP', 18:'wP', 19:'wP', 20:'wP', 21:'wP', 22:'wP', 23:'wP', 24:'wP', 25:'wR', 26:'wN', 27:'wB', 28:'wQ', 29:'wK', 30:'wB', 31:'wN', 32:'wR'}
+piece_to_id = {'bR':0, 'bN':1, 'bB':2, 'bQ':3, 'bK':4, 'bP':5, 'wP':6, 'wR':7, 'wN':8, 'wB':9, 'wQ':10, 'wK':11}
+all_pieces = ['R', 'N', 'B', 'Q', 'K']
 piece_history = []
 piece_id = 11
 chess_length = [[(0,0) for r in range(10)] for s in range(3)]
@@ -10,21 +13,31 @@ elo_file = open("elo_results.csv","w")
 elo_file.write("elo1, elo2, res\n")
 total_games = 0
 games_with_elos = 0
+
+result_by_difference = [(0,0,0) for r in range(40)]
+checkmate = (0,0)
+
+total_captured =[[0 for x in range(8)] for x in range(8)]
+total_visited =[[0 for x in range(8)] for x in range(8)]
+
+piece_capture = [[0 for x in range(6)] for x in range(6)]
+
 for y in range(13,16):
     thisRange = range(1,11)
     for x in thisRange:
         games = pgnParser.cleanup('rvkopen' + str(y) + 'r' + str(x) + '.pgn')
         b = 0
         for game in games:
+
             total_games += 1
             thing = False
             if hasattr(game, 'whiteelo'):
                 w_elo = int(getattr(game,'whiteelo'))
-                print(w_elo, " ",end="")
+                #print(w_elo, " ",end="")
                 thing = True
             if hasattr(game, 'blackelo'):
                 b_elo = int(getattr(game,'blackelo'))
-                print(b_elo,end="")
+                #print(b_elo,end="")
                 if thing:
                     if w_elo < 1 or b_elo < 1:
                         break
@@ -37,8 +50,27 @@ for y in range(13,16):
                     if result is not "*":
                         text = str(str(w_elo) + "," + str(b_elo) + "," + result + "\n")
                         elo_file.write(text)
+                        if (w_elo >= b_elo):
+                            group = (w_elo - b_elo) // 50
+                            old = result_by_difference[group]
+                            if result == '1-0':
+                                result_by_difference[group] = (old[0] + 1, old[1], old[2])
+                            elif result == '0-1':
+                                result_by_difference[group] = (old[0], old[1], old[2] + 1)
+                            else:
+                                result_by_difference[group] = (old[0], old[1] + 1, old[2])
+                        else:
+                            group = (b_elo - w_elo) // 50
+                            old = result_by_difference[group]
+                            #print(result)
+                            if result == '1-0':
+                                result_by_difference[group] = (old[0], old[1], old[2] + 1)
+                            elif result == '0-1':
+                                result_by_difference[group] = (old[0] + 1, old[1], old[2])
+                            else:
+                                result_by_difference[group] = (old[0], old[1] + 1, old[2])
 
-            print("")
+            #print("")
             #print(b)
             b += 1
             moves = game.moves
@@ -48,12 +80,7 @@ for y in range(13,16):
             newAverage = (t[0] * t[1] + length) / (t[1] + 1)
             chess_length[y - 13][x - 1] = (newAverage, t[1] + 1)
 
-            #for i in range(len(moves) // 3):
-            #    moves.pop(2*i)
-            #print(moves)
 
-            # rows 0 and 1 are black pieces
-            # rows 6 and 7 are white pieces
             board = [[0 for x in range(8)] for x in range(8)]
             for i in range(8):
                 board[0][i] = i + 1
@@ -69,7 +96,7 @@ for y in range(13,16):
 
             turn = False
             skip = False
-            #for m in moves[0:-1]:
+
             for k in range(len(moves) - 1):
                 m = moves[k]
 
@@ -82,45 +109,33 @@ for y in range(13,16):
                 if skip == True:
                     continue
 
+                # capture statistics
+                if 'x' in m:
+                    #print("capture", m)
+                    piece = m[0]
+                    spot = m[(m.find('x')+1):(m.find('x')+3)]
+                    if piece in all_pieces:
+                        capturing_piece = piece
+                    else:
+                        capturing_piece = "P"
+                    row = 8 - int(spot[1])
+                    col = ord(spot[0]) - ord('a')
+                    print(capturing_piece,"captures",end=" ")
+                    if board[row][col] < 1:
+                        print("pawn")
+                    else:
+                        print(id_to_piece[board[row][col]][1])
+
                 for i in range(8):
                     for j in range(8):
                         if board[i][j] > 0:
                             occupy[i][j] = occupy[i][j] + 1
-                            if (turn == True):
-                                if board[i][j] == 1 or board[i][j] == 8:
-                                    history[0][k//2].append((i,j))
-                                elif board[i][j] == 2 or board[i][j] == 7:
-                                    history[1][k//2].append((i,j))
-                                elif board[i][j] == 3 or board[i][j] == 6:
-                                    history[2][k//2].append((i,j))
-                                elif board[i][j] == 4:
-                                    history[3][k//2].append((i,j))
-                                elif board[i][j] == 5:
-                                    history[4][k//2].append((i,j))
-                                elif board[i][j] >= 9 and board[i][j] <= 16:
-                                    history[5][k//2].append((i,j))
-                            else:
-                                if board[i][j] >= 17 and board[i][j] <= 24:
-                                    history[6][k//2].append((i,j))
-                                elif board[i][j] == 25 or board[i][j] == 32:
-                                    history[7][k//2].append((i,j))
-                                elif board[i][j] == 26 or board[i][j] == 31:
-                                    history[8][k//2].append((i,j))
-                                elif board[i][j] == 27 or board[i][j] == 30:
-                                    history[9][k//2].append((i,j))
-                                elif board[i][j] == 28:
-                                    history[10][k//2].append((i,j))
-                                elif board[i][j] == 29:
-                                    history[11][k//2].append((i,j))
-
-
+                            piece = id_to_piece[board[i][j]]
+                            history[piece_to_id[piece]][k//2].append((i,j))
 
                 r = convert.convert(m, board, turn)
                 space = (-1,-1)
-                #print (m, "\t", r)
-                #for s in board:
-                #        print(s)
-                #print("")
+
                 if (len(r) == 2):
                     #print(m, r)
                     piece = board[r[0][0]][r[0][1]]
@@ -173,49 +188,20 @@ for y in range(13,16):
                 else:
                     print("ERROR:" + m + " returns " + r + " WHICH IS NOT A VALID MOVE !!!" + str(x))
                     exit()
-                #print("")
-                #for i in range(8):
-                #    for j in range(8):
-                #        if board[i][j] == 0:
-                #            print(". " ,"",end="")
-                #        elif board[i][j] < 10:
-                #            print(board[i][j],"","",end="")
-                #        else:
-                #            print(board[i][j],"",end="")
-                #    print("")
-                #print("")
+
                 turn = not turn
                 sum = 0
                 for i in range(8):
                     for j in range(8):
                         sum += visited[i][j]
-                #print("total visited", sum)
 
-
-            #print(moves[-1])
-
-            #print("Results")
-            #print("Spaces occupied, length", length)
-            #for i in range(8):
-            #    print(occupy[i])
-            #sum = 0
-            #for i in range(8):
-            #    for j in range(8):
-            #        sum += visited[i][j]
-            #print("Nr. of times visited, total", sum)
-            #for i in range(8):
-            #    print(visited[i])
-            #print("Nr. of times captured")
-            #for i in range(8):
-            #    print(captured[i])
-
-            #pieces = ["black rooks", "black knights", "black bishops", "black queen", "black king", "black pawns", "white pawns", "white rooks", "white knights", "white bishops", "white queen", "white king"]
-            #for i in range(12):
-            #    print("History for", pieces[i])
-            #    print(history[i])
-            #    print("")
 
             piece_history.append(history[piece_id])
+            for n in range(8):
+                for m in range(8):
+                    total_captured[n][m] += captured[n][m]
+                    total_visited[n][m] += visited[n][m]
+
 
 print(piece_history)
 total_length = 0
@@ -268,3 +254,13 @@ for e in elo_difference:
 
 
 elo_file.close()
+print("results by ELO difference")
+for r in result_by_difference:
+    print(r[0], r[1], r[2])
+
+print("Most captured spots")
+for r in total_captured:
+    print(r)
+print("Most visited spots")
+for r in total_visited:
+    print(r)
