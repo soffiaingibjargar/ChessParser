@@ -16,6 +16,7 @@ total_games = 0
 games_with_elos = 0
 
 result_by_difference = [(0,0,0) for r in range(40)]
+length_by_difference = [(0,0) for r in range(40)]
 checkmate = (0,0)
 
 total_captured =[[0 for x in range(8)] for x in range(8)]
@@ -31,6 +32,9 @@ for y in range(13,16):
         games = pgnParser.cleanup('rvkopen' + str(y) + 'r' + str(x) + '.pgn')
         b = 0
         for game in games:
+            b += 1
+            moves = game.moves
+            length = (1 + len(moves)) // 2
 
             total_games += 1
             thing = False
@@ -62,6 +66,10 @@ for y in range(13,16):
                                 result_by_difference[group] = (old[0], old[1], old[2] + 1)
                             else:
                                 result_by_difference[group] = (old[0], old[1] + 1, old[2])
+
+                            t = length_by_difference[group]
+                            newAverage = (t[0] * t[1] + length) / (t[1]+ 1)
+                            length_by_difference[group] = (newAverage, t[1] + 1)
                         else:
                             group = (b_elo - w_elo) // 50
                             old = result_by_difference[group]
@@ -72,12 +80,11 @@ for y in range(13,16):
                                 result_by_difference[group] = (old[0] + 1, old[1], old[2])
                             else:
                                 result_by_difference[group] = (old[0], old[1] + 1, old[2])
+                            t = length_by_difference[group]
+                            newAverage = (t[0] * t[1] + length) / (t[1]+ 1)
+                            length_by_difference[group] = (newAverage, t[1] + 1)
 
-            #print("")
-            #print(b)
-            b += 1
-            moves = game.moves
-            length = (1 + len(moves)) // 2
+
 
             # length of chess
             t = chess_length[y - 13][x - 1]
@@ -290,5 +297,8 @@ for r in piece_lifetime:
     print(r)
 print("Relative lifetime")
 for r in relative_lifetime:
+    print(r)
+print("Length by difference")
+for r in length_by_difference:
     print(r)
 print("Total games:", total_games)
