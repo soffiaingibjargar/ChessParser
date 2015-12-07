@@ -1,0 +1,17 @@
+{
+    "contents" : "library(animation)\nlibrary(gplots)\nsaveGIF({\n  col_breaks = c(seq(0,0.01,length=2), # for red\n                 seq(0.0101, 0.7,length=30), # for yellow\n                 seq(0.701,1,length=30)) # for green\n  for(i in 0:40)\n  {\n    print(i)\n    piece = 2\n    my_palette <- colorRampPalette(c(\"red\", \"yellow\", \"green\"))(n = 61)\n    \n    path = paste(\"..\\\\Results\\\\distribution_p\",piece,\"_r\",i,\".csv\",sep = \"\")\n    board <- read.csv(path, sep=\",\")\n    #row.names(board) <- board$X\n    #print(board)\n    total = sum(board) - 36\n    #print(total)\n    \n    board <- board[,2:9] / total\n    #print(board)\n    board_matrix <- data.matrix(board)\n    print(board_matrix)\n    board_heatmap <- heatmap.2(board_matrix, Rowv=NA, Colv=NA, scale=\"column\", margins=c(5,10),col=my_palette,main = paste(\"Round\",i + 1),breaks=col_breaks)\n  }\n})",
+    "created" : 1449064880700.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1780067678",
+    "id" : "4CB762CE",
+    "lastKnownWriteTime" : 1449484280,
+    "path" : "C:/Users/Soffía/PycharmProjects/ChessParser/Rcode/heatmap.R",
+    "project_path" : "heatmap.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
