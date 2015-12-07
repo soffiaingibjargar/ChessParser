@@ -7,7 +7,7 @@ saveGIF({
   for(i in 0:40)
   {
     print(i)
-    piece = 2
+    piece = 0
     my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 61)
     
     path = paste("..\\Results\\distribution_p",piece,"_r",i,".csv",sep = "")
