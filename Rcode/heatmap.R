@@ -11,8 +11,9 @@ saveGIF({
     my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 61)
     
     path = paste("..\\Results\\distribution_p",piece,"_r",i,".csv",sep = "")
+    
     board <- read.csv(path, sep=",")
-    #row.names(board) <- board$X
+    
     #print(board)
     total = sum(board) - 36
     #print(total)

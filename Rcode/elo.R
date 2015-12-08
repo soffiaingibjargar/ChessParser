@@ -38,18 +38,18 @@ for(i in 1:size)
 elo_range <- c(1000,3000)
 par(new = FALSE)
 symbol = "*"
-plot(wins1, wins2,xlab="white ELO",ylab="black ELO",main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green")
+rPlot <- plot(wins1, wins2,xlab="white ELO",ylab="black ELO",main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green")
 par(new = TRUE)
 
-plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange")
+rPlot <- plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange")
 par(new = TRUE)
-plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red")
+rPlot <- plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red")
 #plot(result$elo1,result$elo2,xlab="higher ELO",ylab="higher ELO",main="Games played by ELO rating",pch=1,xlim=c(1000,3000),ylim=c(1000,3000))
 par(new = TRUE)
 #plot(c(2000), c(2000),pch=10,axes = FALSE,xlab='',ylab='',xlim=c(1000,3000),ylim=c(1000,3000))
 
 line = seq(from = 1000, to = 3000, by = 25)
-plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black")
+rPlot <- plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black")
 
 win_diff <- wins1- wins2
 loss_diff <- losses1 - losses2
