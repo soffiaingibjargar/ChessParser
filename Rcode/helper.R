@@ -1,9 +1,10 @@
+library(heatmap3)
 ind <- function(p, r, m, n){
   return(p*8*8*65 + r*8*8 + (m-1)*8+n)
 }
 
 all <- vector(mode="numeric",length = 12 * 65 * 8 * 8)
-print(all[0])
+#print(all[0])
 
 for(p in 0:11)
 {
@@ -28,4 +29,10 @@ for(p in 0:11)
     }
   }
 }
+
+path2 = "..\\captures.csv"
+captures <- read.csv(path2, sep=",")
+captures <- data.matrix(captures)
+print(captures)
+#heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('R','N','B','Q','K','P'))
 

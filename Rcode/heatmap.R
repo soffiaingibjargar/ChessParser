@@ -6,7 +6,7 @@ saveGIF({
                  seq(0.701,1,length=30)) # for green
   for(i in 0:40)
   {
-    print(i)
+    #print(i)
     piece = 0
     my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 61)
     
@@ -21,7 +21,7 @@ saveGIF({
     board <- board[,2:9] / total
     #print(board)
     board_matrix <- data.matrix(board)
-    print(board_matrix)
+    #print(board_matrix)
     board_heatmap <- heatmap.2(board_matrix, Rowv=NA, Colv=NA, scale="column", margins=c(5,10),col=my_palette,main = paste("Round",i + 1),breaks=col_breaks)
   }
 })
