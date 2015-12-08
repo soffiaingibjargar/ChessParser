@@ -6,7 +6,7 @@ piece_to_id = {'bR':0, 'bN':1, 'bB':2, 'bQ':3, 'bK':4, 'bP':5, 'wR':6, 'wN':7, '
 all_pieces = ['R', 'N', 'B', 'Q', 'K']
 
 piece_history = []
-piece_id = 0
+piece_id = 3
 chess_length = [[(0,0) for r in range(10)] for s in range(7)]
 elo_difference = [(0,0) for r in range(10)]
 elo_results = []
@@ -295,8 +295,16 @@ for r in total_visited:
     print(r)
 
 print("Captures")
+file = open("captures.csv","w")
+file.write("R,N,B,Q,K,P\n")
 for r in piece_capture:
     print(r)
+    for s in range(len(r)):
+        file.write(str(r[s]))
+        if s < 5:
+            file.write(", ")
+    file.write("\n")
+file.close()
 print("Lifetime")
 for r in piece_lifetime:
     print(r)

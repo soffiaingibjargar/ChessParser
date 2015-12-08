@@ -14,8 +14,8 @@ draws1 = c()
 draws2 = c()
 
 size = length(res)
-print("size")
-print(size)
+#print("size")
+#print(size)
 for(i in 1:size)
 {
   #print(res[i])
@@ -54,9 +54,9 @@ rPlot <- plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,
 win_diff <- wins1- wins2
 loss_diff <- losses1 - losses2
 draw_diff <- draws1 - draws2
-print("win") 
-print(summary(win_diff))
-print("loss") 
-print(summary(loss_diff))
-print("draw")
-print(summary(draw_diff))
+#print("win") 
+#print(summary(win_diff))
+#print("loss") 
+#print(summary(loss_diff))
+#print("draw")
+#print(summary(draw_diff))
