@@ -6,8 +6,8 @@ piece_to_id = {'bR':0, 'bN':1, 'bB':2, 'bQ':3, 'bK':4, 'bP':5, 'wR':6, 'wN':7, '
 all_pieces = ['R', 'N', 'B', 'Q', 'K']
 
 piece_history = []
-piece_id = 11
-chess_length = [[(0,0) for r in range(10)] for s in range(3)]
+piece_id = 0
+chess_length = [[(0,0) for r in range(10)] for s in range(7)]
 elo_difference = [(0,0) for r in range(10)]
 elo_results = []
 elo_file = open("elo_results.csv","w")
@@ -26,7 +26,7 @@ piece_capture = [[0 for x in range(6)] for x in range(6)]
 piece_lifetime = [(0,0) for x in range(6)]
 relative_lifetime = [(0,0) for x in range(6)]
 
-for y in range(10,16):
+for y in range(9,16):
     thisRange = range(1,11)
     if y < 13:
         thisRange = range(1,10)
@@ -91,9 +91,9 @@ for y in range(10,16):
 
 
             # length of chess
-            t = chess_length[y - 13][x - 1]
+            t = chess_length[y - 9][x - 1]
             newAverage = (t[0] * t[1] + length) / (t[1] + 1)
-            chess_length[y - 13][x - 1] = (newAverage, t[1] + 1)
+            chess_length[y - 9][x - 1] = (newAverage, t[1] + 1)
 
             # setting up board
             board = [[0 for x in range(8)] for x in range(8)]
