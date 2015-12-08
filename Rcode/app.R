@@ -12,11 +12,11 @@ ui <- navbarPage(title = "Chess Results",
                       radioButtons("player", label = h3("Player"),
                                    choices = list("White" = 1, "Black" = 0),selected = 1),
                        
-                      radioButtons("piece", label = h3("Piece"),
-                                   choices = list("Pawn" = 5, "Knight" = 1,
-                                                  "Bishop" = 2,"Rook" = 0,
-                                                  "Queen" = 3, "King" = 4),
-                                   selected = 5),
+                       radioButtons("piece", label = h3("Piece"),
+                                    choices = list("Pawn" = 5, "Knight" = 1,
+                                                   "Bishop" = 2,"Rook" = 0,
+                                                   "Queen" = 3, "King" = 4),
+                                    selected = 5),
                        
                       sliderInput("round", "Turn:",
                                    min = 1, max = 65, value = 1, step = 1,animate=TRUE)
@@ -35,7 +35,8 @@ server <- function(input, output) {
   
   source("elo.R")
   source("helper.R")
-  #my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 100)
+  
+  my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 599)
   
   getBoard <- function(p,r) {
     board <- vector(mode="numeric",length = 8 * 8)
@@ -58,8 +59,9 @@ server <- function(input, output) {
   output$heatmap <- renderPlot({
     r <- input$round
     p <- as.numeric(input$piece) + 6 * as.numeric(input$player)
-    board = getBoard(p,r)
-    heatmap3(board, Rowv=NA, Colv=NA, col = cm.colors(256), scale="none", margins=c(5,10), balanceColor=T,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'))
+
+    board <- getBoard(p,r)
+    heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = cm.colors(256), scale="none", margins=c(5,10), balanceColor=T,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'))
     
   })
   
