@@ -62,13 +62,12 @@ server <- function(input, output) {
 
     board <- getBoard(p,r)
     heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = cm.colors(256), scale="none", margins=c(5,10), balanceColor=T,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'))
-    
   })
   
   output$winScatter <- renderPlot({
     #hist(rnorm(input$num), col="green")
     par(new = FALSE)
-    symbol = 20
+    symbol = 176
     plot(wins1, wins2,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1)
     mtext(side = 2, "black ELO", line = 3, las=1, adj=0, padj=-16)
     mtext(side = 1, "white ELO", line = 2, adj=1)
