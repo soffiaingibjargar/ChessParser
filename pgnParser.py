@@ -11,7 +11,7 @@ def cleanup(file):
 
 
 #file = "rvkopen15r1.pgn"
-file = "rvkopen14r5.pgn"
-games = cleanup(file)
-for game in games:
-    print(game.moves)
+#file = "rvkopen14r5.pgn"
+#games = cleanup(file)
+#for game in games:
+#    print(game.moves)

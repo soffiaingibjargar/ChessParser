@@ -361,7 +361,7 @@ def convert(m, board, turn):
                     nRow = row + i + 1
                     if nRow > 7:
                         break
-                    if board[nRow][nCol] == values[0] or board[nRow][nCol] == values[1]:
+                    if board[nRow][nCol] == value:
                         return ((nRow, nCol), (row, col))
                     if board[nRow][nCol] > 0:
                         break
@@ -369,7 +369,7 @@ def convert(m, board, turn):
                     nRow = row - i - 1
                     if nRow < 0:
                         break
-                    if board[nRow][nCol] == values[0] or board[nRow][nCol] == values[1]:
+                    if board[nRow][nCol] == value:
                         return ((nRow, nCol), (row, col))
                     if board[nRow][nCol] > 0:
                         break

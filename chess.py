@@ -6,7 +6,7 @@ piece_to_id = {'bR':0, 'bN':1, 'bB':2, 'bQ':3, 'bK':4, 'bP':5, 'wR':6, 'wN':7, '
 all_pieces = ['R', 'N', 'B', 'Q', 'K']
 
 piece_history = []
-piece_id = 0
+piece_id = 11
 chess_length = [[(0,0) for r in range(10)] for s in range(3)]
 elo_difference = [(0,0) for r in range(10)]
 elo_results = []
@@ -26,13 +26,17 @@ piece_capture = [[0 for x in range(6)] for x in range(6)]
 piece_lifetime = [(0,0) for x in range(6)]
 relative_lifetime = [(0,0) for x in range(6)]
 
-for y in range(13,16):
+for y in range(10,16):
     thisRange = range(1,11)
+    if y < 13:
+        thisRange = range(1,10)
     for x in thisRange:
         games = pgnParser.cleanup('rvkopen' + str(y) + 'r' + str(x) + '.pgn')
         b = 0
         for game in games:
             b += 1
+            #print(b)
+            #print(game)
             moves = game.moves
             length = (1 + len(moves)) // 2
 
@@ -111,11 +115,12 @@ for y in range(13,16):
             # chess
             for k in range(len(moves) - 1):
                 m = moves[k]
+                #print("move",k//2,m)
 
-                if '{' in m:
+                if '{' in m or '(' in m:
                     skip = True
                     continue
-                if '}' in m:
+                if '}' in m or ')' in m:
                     skip = False
                     continue
                 if skip == True:

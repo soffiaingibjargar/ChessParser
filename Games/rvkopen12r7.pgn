@@ -1,0 +1,2042 @@
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.1"]
+[White "Cheparinov, Ivan"]
+[Black "Caruana, Fabiano"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2664"]
+[BlackElo "2767"]
+[PlyCount "0"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bb5 c6 8. Ba4
+O-O 9. Ne2 c5 10. O-O Nc6 11. Be3 Na5 12. dxc5 Qc7 13. Bb3 Bg4 14. f3 Bd7 15. Qb1
+e6 16. Rd1 Rfd8 17. Kh1 Be8 18. Qb2 Bf8 19. f4 Bxc5 20. Nd4 Bf8 21. f5 Nxb3 22.
+axb3 e5 23. Nf3 f6 24. c4 Bc6 25. Qc2 Rxd1 26. Rxd1 Rd8 27. Rxd8 Qxd8 28. fxg6
+hxg6 29. Bxa7 b6 30. c5 b5 31. b4 Bh6 32. Kg1 Kg7 33. Kf2 Qa8 34. Qa2 Bxe4 35.
+Qa5 Qb7 36. Bb6 Qd7 37. Qa7 Bb7 38. Bd8 e4 39. Ne1 Qd2 40. Kg3 Qf4 0-1
+
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.2"]
+[White "Hess, Robert L"]
+[Black "Sokolov, Ivan"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2635"]
+[BlackElo "2653"]
+[PlyCount "0"]
+[EventDate "2011.03.06"]
+
+1. e4 {[%clk 1:29:40]} e5 {[%clk 1:30:44]} 2. Nf3 {[%clk 1:30:03]} Nc6
+{[%clk 1:31:11]} 3. Bb5 {[%clk 1:30:26]} a6 {[%clk 1:30:35]} 4. Ba4
+{[%clk 1:30:11]} Nf6 {[%clk 1:30:14]} 5. O-O {[%clk 1:27:24]} Be7
+{[%clk 1:25:38]} 6. Bxc6 {[%clk 1:22:55]} dxc6 {[%clk 1:25:26]} 7. d3
+{[%clk 1:23:18]} Qd6 {[%clk 1:23:22]} 8. Nbd2 {[%clk 1:22:58]} Be6
+{[%clk 1:23:11]} 9. Ng5 {[%clk 1:10:01]} Bg4 {[%clk 1:20:20]} 10. f3
+{[%clk 1:10:26]} Bc8 {[%clk 1:15:43]} 11. Nc4 {[%clk 1:10:50]} Qd8
+{[%clk 1:15:59]} 12. f4 {[%clk 1:05:19]} exf4 {[%clk 1:01:16]} 13. Bxf4
+{[%clk 1:04:59]} Ng4 {[%clk 0:58:58]} 14. Qd2 {[%clk 0:48:03]} Bc5
+{[%clk 0:52:56]} 15. Kh1 {[%clk 0:47:43]} f6 {[%clk 0:51:22]} 16. Nf3
+{[%clk 0:46:10]} g5 {[%clk 0:45:13]} 17. Bg3 {[%clk 0:38:15]} Be6
+{[%clk 0:45:37]} 18. Qc3 {[%clk 0:31:59]} Qe7 {[%clk 0:41:13]} 19. e5
+{[%clk 0:20:16]} O-O {[%clk 0:31:46]} 20. h3 {[%clk 0:17:49]} Bb4
+{[%clk 0:26:45]} 21. Qd4 {[%clk 0:17:34]} Rad8 {[%clk 0:22:52]} 22. exf6
+{[%clk 0:17:27]} Nxf6 {[%clk 0:23:16]} 23. Qe5 {[%clk 0:16:45]} g4
+{[%clk 0:21:13]} 24. Nd4 {[%clk 0:12:18]} Bxc4 {[%clk 0:17:34]} 25. Qg5
+{[%clk 0:09:52]} Qg7 {[%clk 0:11:32]} 26. Qxg7 {[%clk 0:10:16]} Kxg7
+{[%clk 0:11:59]} 27. Nf5 {[%clk 0:10:40]} Kg6 {[%clk 0:11:26]} 28. Nh4
+{[%clk 0:11:02]} Kg7 {[%clk 0:08:00]} 29. Nf5 {[%clk 0:07:28]} Kg6
+{[%clk 0:08:29]} 30. Nh4 {[%clk 0:07:53]} Kg7 {[%clk 0:08:43]} 31. Nf5 1/2-1/2
+
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.3"]
+[White "Jones, Gawain C B"]
+[Black "Avrukh, Boris"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2635"]
+[BlackElo "2591"]
+[PlyCount "0"]
+[EventDate "2011.03.06"]
+
+1. e4 {[%clk 1:29:36]} c5 {[%clk 1:27:06]} 2. Nf3 {[%clk 1:29:57]} e6
+{[%clk 1:27:09]} 3. g3 {[%clk 1:30:14]} Nc6 {[%clk 1:25:33]} 4. Bg2
+{[%clk 1:29:39]} Nf6 {[%clk 1:23:13]} 5. d3 {[%clk 1:29:31]} d6 {[%clk 1:19:45]}
+6. O-O {[%clk 1:26:55]} Be7 {[%clk 1:19:45]} 7. Re1 {[%clk 1:23:39]} O-O
+{[%clk 1:18:53]} 8. c3 {[%clk 1:22:44]} Bd7 {[%clk 1:14:51]} 9. d4
+{[%clk 1:15:58]} cxd4 {[%clk 1:12:04]} 10. cxd4 {[%clk 1:16:22]} d5
+{[%clk 1:12:20]} 11. e5 {[%clk 1:15:29]} Ne4 {[%clk 1:12:33]} 12. Nc3
+{[%clk 1:15:51]} Nxc3 {[%clk 1:10:43]} 13. bxc3 {[%clk 1:16:20]} Na5
+{[%clk 1:07:18]} 14. h4 {[%clk 1:08:55]} Rc8 {[%clk 1:02:06]} 15. Bd2
+{[%clk 1:06:15]} Nc4 {[%clk 1:01:47]} 16. Bg5 {[%clk 0:52:13]} Re8
+{[%clk 0:56:37]} 17. Rb1 {[%clk 0:44:38]} Qa5 {[%clk 0:51:21]} 18. Rxb7
+{[%clk 0:39:33]} Nb6 {[%clk 0:47:12]} 19. Bf1 {[%clk 0:38:27]} h6
+{[%clk 0:42:25]} 20. Bxe7 {[%clk 0:29:08]} Rxe7 {[%clk 0:41:47]} 21. Qd2
+{[%clk 0:29:09]} Ree8 {[%clk 0:36:01]} 22. c4 {[%clk 0:26:43]} Qa4
+{[%clk 0:27:31]} 23. cxd5 {[%clk 0:23:28]} Nxd5 {[%clk 0:25:17]} 24. Qd1
+{[%clk 0:21:43]} Qxd1 {[%clk 0:17:54]} 25. Rxd1 {[%clk 0:21:34]} Ba4
+{[%clk 0:18:20]} 26. Re1 {[%clk 0:20:58]} Re7 {[%clk 0:18:31]} 27. Rb2
+{[%clk 0:15:53]} Rec7 {[%clk 0:16:48]} 28. Nd2 {[%clk 0:13:02]} Nb6
+{[%clk 0:13:55]} 29. Ne4 {[%clk 0:10:56]} Rc1 {[%clk 0:13:07]} 30. Rxc1
+{[%clk 0:11:03]} Rxc1 {[%clk 0:13:35]} 31. f3 {[%clk 0:10:09]} Bc6
+{[%clk 0:08:47]} 32. Nd2 {[%clk 0:09:15]} Bd5 {[%clk 0:07:59]} 33. Kf2
+{[%clk 0:07:29]} Kf8 {[%clk 0:08:13]} 34. Bd3 {[%clk 0:07:18]} Ke7
+{[%clk 0:06:21]} 35. Be4 {[%clk 0:06:36]} Bxe4 {[%clk 0:06:10]} 36. fxe4
+{[%clk 0:06:18]} Rc3 {[%clk 0:05:16]} 37. Nb1 {[%clk 0:05:28]} Rc4
+{[%clk 0:02:28]} 38. Ke3 {[%clk 0:04:38]} Rc1 {[%clk 0:02:42]} 39. Rb3
+{[%clk 0:04:30]} Rg1 {[%clk 0:01:03]} 40. Kf2 {[%clk 0:31:47]} Rd1
+{[%clk 0:31:11]} 41. Rb4 {[%clk 0:31:23]} Kd7 {[%clk 0:30:21]} 42. a4
+{[%clk 0:24:21]} h5 {[%clk 0:22:24]} 43. a5 {[%clk 0:22:23]} Nc4 {[%clk 0:18:28]}
+44. a6 {[%clk 0:19:51]} Rc1 {[%clk 0:14:02]} 45. Rb7 {[%clk 0:16:55]} Kc8
+{[%clk 0:12:27]} 46. g4 {[%clk 0:12:00]} hxg4 {[%clk 0:11:44]} 47. Rb5
+{[%clk 0:09:58]} Nb6 {[%clk 0:09:40]} 48. Rb3 {[%clk 0:08:42]} Rc4
+{[%clk 0:06:54]} 49. Rc3 {[%clk 0:07:50]} Kd7 {[%clk 0:06:17]} 50. Rxc4
+{[%clk 0:06:16]} Nxc4 {[%clk 0:06:45]} 51. Kg3 {[%clk 0:06:39]} Kc6
+{[%clk 0:06:29]} 52. Kxg4 {[%clk 0:06:58]} Kb6 {[%clk 0:06:32]} 53. h5
+{[%clk 0:06:39]} Kxa6 {[%clk 0:06:46]} 54. h6 {[%clk 0:06:56]} gxh6
+{[%clk 0:07:10]} 55. Kh5 {[%clk 0:07:23]} Na5 {[%clk 0:04:15]} 56. Kxh6
+{[%clk 0:06:21]} Nc6 {[%clk 0:04:31]} 57. d5 {[%clk 0:06:44]} Nxe5
+{[%clk 0:04:17]} 58. Kg7 {[%clk 0:07:05]} exd5 {[%clk 0:03:59]} 59. exd5
+{[%clk 0:07:30]} Kb5 {[%clk 0:03:48]} 60. Kf6 {[%clk 0:07:50]} Nd3
+{[%clk 0:04:00]} 61. Kxf7 {[%clk 0:06:54]} Kc5 {[%clk 0:04:19]} 62. Nc3
+{[%clk 0:07:17]} Kc4 {[%clk 0:04:05]} 63. Nb1 {[%clk 0:05:43]} Kxd5
+{[%clk 0:04:25]} 64. Ke7 {[%clk 0:06:02]} a5 {[%clk 0:04:02]} 65. Kd7
+{[%clk 0:05:17]} Kc4 {[%clk 0:03:27]} 66. Kc6 {[%clk 0:04:17]} Kb4
+{[%clk 0:01:13]} 67. Kd5 {[%clk 0:03:30]} a4 {[%clk 0:01:30]} 68. Kd4
+{[%clk 0:03:27]} Nc5 {[%clk 0:01:26]} 69. Ke3 {[%clk 0:02:10]} Kb3
+{[%clk 0:01:43]} 70. Nd2 {[%clk 0:01:39]} Kc2 {[%clk 0:02:00]} 71. Nc4
+{[%clk 0:02:03]} Kc3 {[%clk 0:02:15]} 72. Na3 {[%clk 0:01:15]} Ne6
+{[%clk 0:01:06]} 73. Ke2 {[%clk 0:00:36]} Nd4 {[%clk 0:01:10]} 74. Kd1
+{[%clk 0:00:57]} Kb3 {[%clk 0:01:07]} 75. Nb1 {[%clk 0:01:22]} Kb2
+{[%clk 0:01:03]} 76. Nd2 {[%clk 0:01:50]} Nb5 {[%clk 0:00:53]} 77. Nc4
+{[%clk 0:00:36]} Kc3 {[%clk 0:01:16]} 78. Ne3 {[%clk 0:00:33]} a3
+{[%clk 0:01:19]} 79. Nc2 {[%clk 0:00:34]} a2 {[%clk 0:01:45]} 0-1
+
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.4"]
+[White "Navara, David"]
+[Black "Akshayraj, Kore"]
+[Result "1-0"]
+[ECO "C95"]
+[WhiteElo "2700"]
+[BlackElo "2422"]
+[PlyCount "85"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3
+O-O 9. h3 Nb8 10. d4 Nbd7 11. Nbd2 Bb7 12. Bc2 Re8 13. a4 Bf8 14. Bd3 c6 15. b3
+Qc7 16. Ba3 Rad8 17. Rb1 g6 18. Qc2 Bg7 19. axb5 axb5 20. c4 Ra8 21. dxe5 dxe5
+22. Ra1 Qb6 23. c5 Qc7 24. b4 Nf8 25. Bb2 N6d7 26. Nb3 Ne6 27. Bf1 Ndf8 28. g3
+Red8 29. Rxa8 Bxa8 30. h4 Bb7 31. Bc3 Nd4 32. Bxd4 exd4 33. e5 Ne6 34. Qe4 Rd5
+35. Bh3 d3 36. Bxe6 fxe6 37. Re3 Qd7 38. Nbd4 Bh6 39. Rxd3 Bc1 40. Ng5 Bc8 41.
+Ngxe6 Qe8 42. Nc7 Qxe5 43. Nxd5 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.5"]
+[White "Thorfinnsson, Bragi"]
+[Black "Kryvoruchko, Yuriy"]
+[Result "1/2-1/2"]
+[ECO "E10"]
+[WhiteElo "2421"]
+[BlackElo "2666"]
+[PlyCount "65"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 c5 4. d5 b5 5. Bg5 exd5 6. cxd5 d6 7. e3 a6 8. a4 b4
+9. Nbd2 Be7 10. Nc4 O-O 11. a5 Nbd7 12. Bxf6 Bxf6 13. Bd3 Qe7 14. Qc2 g6 15.
+O-O Ne5 16. Nfxe5 Bxe5 17. f4 Bg7 18. e4 Bd4+ 19. Kh1 f6 20. e5 fxe5 21. fxe5
+Bxe5 22. Nxe5 Rxf1+ 23. Rxf1 Qxe5 24. Bxg6 Ra7 25. Bd3 Rf7 26. Rxf7 Kxf7 27. h3
+h6 28. Bc4 Kg7 29. b3 Qe1+ 30. Kh2 Qe5+ 31. Kh1 Qe1+ 32. Kh2 Qe5+ 33. Kh1
+1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.6"]
+[White "Hou, Yifan"]
+[Black "Stefansson, Hannes"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2639"]
+[BlackElo "2531"]
+[PlyCount "0"]
+[EventDate "2011.03.06"]
+
+1. e4 {[%clk 1:30:57]} e5 {[%clk 1:30:51]} 2. Nc3 {[%clk 1:30:17]} Nf6
+{[%clk 1:31:01]} 3. g3 {[%clk 1:29:54]} d5 {[%clk 1:29:44]} 4. exd5
+{[%clk 1:30:12]} Nxd5 {[%clk 1:30:03]} 5. Bg2 {[%clk 1:30:37]} Nxc3
+{[%clk 1:30:11]} 6. bxc3 {[%clk 1:30:59]} Bd6 {[%clk 1:30:33]} 7. Nf3
+{[%clk 1:30:52]} O-O {[%clk 1:29:17]} 8. O-O {[%clk 1:31:01]} Nd7
+{[%clk 1:28:39]} 9. d4 {[%clk 1:28:08]} c6 {[%clk 1:27:14]} 10. Re1
+{[%clk 1:18:55]} exd4 {[%clk 1:26:38]} 11. cxd4 {[%clk 1:19:15]} Nb6
+{[%clk 1:26:06]} 12. Qd3 {[%clk 1:18:26]} h6 {[%clk 1:24:35]} 13. c4
+{[%clk 1:11:23]} Bb4 {[%clk 1:23:10]} 14. Bd2 {[%clk 0:58:09]} Bxd2
+{[%clk 1:22:57]} 15. Nxd2 {[%clk 0:58:35]} Qf6 {[%clk 1:19:21]} 16. a4
+{[%clk 0:48:18]} Bf5 {[%clk 1:14:48]} 17. Qc3 {[%clk 0:46:39]} Rad8
+{[%clk 1:14:10]} 18. a5 {[%clk 0:46:59]} Nc8 {[%clk 1:13:59]} 19. Nb3
+{[%clk 0:45:23]} b6 {[%clk 1:12:12]} 20. Re5 {[%clk 0:34:34]} c5 {[%clk 1:07:25]}
+21. Rae1 {[%clk 0:28:10]} cxd4 {[%clk 1:06:55]} 22. Nxd4 {[%clk 0:28:36]} Bd7
+{[%clk 1:07:13]} 23. c5 {[%clk 0:27:01]} bxc5 {[%clk 1:07:14]} 24. Qxc5
+{[%clk 0:27:22]} g6 {[%clk 1:01:40]} 25. h4 {[%clk 0:26:46]} h5 {[%clk 1:01:21]}
+26. Ne2 {[%clk 0:18:55]} Rfe8 {[%clk 0:54:12]} 27. Nf4 {[%clk 0:19:18]} Rxe5
+{[%clk 0:54:09]} 28. Rxe5 {[%clk 0:19:43]} Qd6 {[%clk 0:54:04]} 29. Qc3
+{[%clk 0:17:01]} Ne7 {[%clk 0:54:15]} 30. Nd5 {[%clk 0:14:09]} Be6
+{[%clk 0:53:21]} 31. Nf6 {[%clk 0:14:27]} Kf8 {[%clk 0:53:29]} 32. Nh7
+{[%clk 0:09:33]} Kg8 {[%clk 0:53:13]} 33. Nf6 {[%clk 0:09:59]} Kf8
+{[%clk 0:53:24]} 34. Rc5 {[%clk 0:04:58]} Nf5 {[%clk 0:51:36]} 35. Nh7
+{[%clk 0:05:06]} Kg8 {[%clk 0:51:47]} 36. Nf6 {[%clk 0:05:32]} Kf8
+{[%clk 0:52:10]} 37. Nd5 {[%clk 0:05:09]} Kg8 {[%clk 0:51:28]} 38. Rc6
+{[%clk 0:03:53]} Qb8 {[%clk 0:50:20]} 39. Nf6 {[%clk 0:04:16]} Kf8
+{[%clk 0:50:40]} 40. Rxe6 {[%clk 0:33:43]} 1-0
+
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.7"]
+[White "Kveinys, Aloyzas"]
+[Black "Kuzubov, Yuriy"]
+[Result "1/2-1/2"]
+[ECO "A81"]
+[WhiteElo "2512"]
+[BlackElo "2615"]
+[PlyCount "55"]
+[EventDate "2011.03.06"]
+
+1. d4 f5 2. g3 Nf6 3. Bg2 g6 4. Nf3 Bg7 5. O-O O-O 6. b3 d6 7. Bb2 Qe8 8. Nbd2
+h6 9. Re1 Na6 10. e4 fxe4 11. Nxe4 Qf7 12. Qd2 c6 13. c4 Nc7 14. Nxf6+ Qxf6 15.
+Re3 Bf5 16. Rae1 Rae8 17. Bc3 Qf7 18. Nh4 e6 19. Bb4 Qd7 20. h3 g5 21. Nxf5
+exf5 22. Rxe8 Rxe8 23. Rxe8+ Nxe8 24. Qe3 Kf7 25. Bf3 Nf6 26. d5 c5 27. Bc3 b6
+28. Bxf6 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.8"]
+[White "Baklan, Vladimir"]
+[Black "Kristjansson, Stefan"]
+[Result "1-0"]
+[ECO "B40"]
+[WhiteElo "2612"]
+[BlackElo "2500"]
+[PlyCount "63"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 e6 3. g3 Nc6 4. Bg2 Qc7 5. O-O d6 6. c3 Nf6 7. Re1 Ne5 8. d4
+Nxf3+ 9. Bxf3 Be7 10. e5 dxe5 11. dxe5 Nd7 12. Qe2 O-O 13. Bf4 a6 14. a4 Rb8
+15. c4 b6 16. Nc3 Bb7 17. h4 Bxf3 18. Qxf3 Qb7 19. Qg4 Kh8 20. Bg5 Rbe8 21.
+Rad1 Nb8 22. Ne4 Nc6 23. Qh5 Nd4 24. Rd3 Qc6 25. Bf6 gxf6 26. exf6 Rg8 27. fxe7
+Rxe7 28. Nf6 Rg7 29. Re5 Qc7 30. Rg5 Qd8 31. Rxg7 Kxg7 32. Qxh7+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.9"]
+[White "Halkias, Stelios"]
+[Black "Hunt, Adam C"]
+[Result "1-0"]
+[ECO "D90"]
+[WhiteElo "2588"]
+[BlackElo "2454"]
+[PlyCount "105"]
+[EventDate "2011.03.06"]
+
+1. Nf3 Nf6 2. c4 g6 3. Nc3 d5 4. d4 Bg7 5. Qa4+ Bd7 6. Qb3 dxc4 7. Qxc4 O-O 8.
+Bf4 Na6 9. e4 c5 10. e5 Be6 11. exf6 Bxc4 12. fxg7 Kxg7 13. Bxc4 Nb4 14. O-O
+cxd4 15. Rad1 dxc3 16. Rxd8 Rfxd8 17. Be5+ Kg8 18. Bxc3 Nd5 19. Bd2 Rac8 20.
+Bb3 e6 21. Bg5 Rd6 22. Rd1 Kg7 23. h4 f6 24. Bf4 Rdd8 25. Bg3 Nb4 26. Rxd8 Rxd8
+27. Bxe6 Rd1+ 28. Kh2 Nd3 29. Bb3 Rc1 30. Nd4 Nxb2 31. Ne6+ Kh8 32. Bd6 Nc4 33.
+Be7 b5 34. Bxf6+ Kg8 35. Nc7 a6 36. Nxa6 Kf8 37. Nc7 Nd6 38. Be5 Ke7 39. Bxd6+
+Kxd6 40. Nxb5+ Ke7 41. Nd4 Kf6 42. g3 h6 43. Kg2 Ke5 44. Nf3+ Kf5 45. Nh2 Rc3
+46. Nf1 Rc1 47. Ne3+ Kf6 48. Kf3 Kg7 49. Ke4 Kf6 50. Kd4 g5 51. hxg5+ hxg5 52.
+a4 Ke7 53. Ke5 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.10"]
+[White "Danielsen, Henrik"]
+[Black "Maze, Sebastien"]
+[Result "1/2-1/2"]
+[ECO "A48"]
+[WhiteElo "2504"]
+[BlackElo "2577"]
+[PlyCount "66"]
+[EventDate "2011.03.06"]
+
+1. Nf3 Nf6 2. d4 g6 3. c3 Bg7 4. Bg5 d6 5. Nbd2 h6 6. Bxf6 Bxf6 7. e4 O-O 8. e5
+Bg7 9. Bc4 e6 10. Qe2 Nd7 11. O-O b6 12. Rad1 Bb7 13. Rfe1 a6 14. Bd3 Qe7 15.
+Be4 Bxe4 16. Qxe4 d5 17. Qd3 b5 18. b4 Nb6 19. Qe2 Nc4 20. Nxc4 bxc4 21. Rb1
+Qd7 22. a4 a5 23. b5 Rfb8 24. Qc2 Rb6 25. Nd2 Rab8 26. f4 h5 27. g3 Bf8 28. Kf2
+Be7 29. Ke2 c6 30. bxc6 Qxc6 31. Rxb6 Rxb6 32. Rb1 Rxb1 33. Nxb1 Bf8 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.11"]
+[White "Papin, Vasily"]
+[Black "Thorhallsson, Throstur"]
+[Result "1-0"]
+[ECO "D23"]
+[WhiteElo "2575"]
+[BlackElo "2398"]
+[PlyCount "62"]
+[EventDate "2011.03.06"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 dxc4 4. Qa4+ Nbd7 5. Nc3 a6 6. e4 e6 7. Bxc4 Rb8 8.
+Qc2 b5 9. Bd3 Bb7 10. Bf4 Rc8 11. d5 exd5 12. O-O-O Be7 13. Nxd5 Bd6 14. Bg5 h6
+15. Bxf6 Nxf6 16. Nxf6+ Qxf6 17. e5 Qf4+ 18. Kb1 Be7 19. Bxb5+ axb5 20. Rd4
+Qxd4 21. Nxd4 O-O 22. Nc6 Rfe8 23. f4 Bf8 24. Rd1 Ra8 25. Rd7 Ra4 26. Rxc7 Rxf4
+27. Qc1 Rc4 28. Qf1 f6 29. exf6 gxf6 30. Rxb7 Rxc6 31. Rxb5 Rce6 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.12"]
+[White "Gislason, Gudmundur"]
+[Black "L'ami, Erwin"]
+[Result "1/2-1/2"]
+[ECO "E62"]
+[WhiteElo "2346"]
+[BlackElo "2611"]
+[PlyCount "128"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 O-O 5. Nc3 d6 6. Nf3 c6 7. O-O Bf5 8. Nh4
+Be6 9. Qd3 d5 10. b3 Qa5 11. c5 b6 12. cxb6 axb6 13. Rb1 Qa6 14. Qc2 Nbd7 15.
+f4 Ne8 16. Be3 Nd6 17. Bf2 Rac8 18. Rbc1 Nf6 19. Rfd1 Nfe4 20. Nxe4 dxe4 21. e3
+Qa3 22. Qb1 Bf6 23. Rc2 Bd5 24. g4 e6 25. g5 Be7 26. Bf1 h6 27. gxh6 b5 28. Bh3
+Kh7 29. Kh1 Kxh6 30. Rg1 Rh8 31. f5 exf5 32. Nxf5+ Nxf5 33. Bxf5 Rcg8 34. Bg3
+Bg5 35. Qf1 Qe7 36. Be5 f6 37. Rxg5 fxe5 38. Rg4 exd4 39. Rf2 g5 40. Qh3+ Kg7
+41. Qg3 Rh5 42. Kg1 Rf8 43. h4 d3 44. Rxg5+ Rxg5 45. hxg5 d2 46. Bg4 Qxg5 47.
+Rxd2 Rf3 48. Bxf3 Qxg3+ 49. Rg2 Qxg2+ 50. Bxg2 b4 51. Kf2 Kf6 52. Kg3 Kg5 53.
+Bf1 c5 54. Bc4 Bc6 55. Be2 Bd7 56. Ba6 Bg4 57. Bb7 Bf3 58. Kf2 Kf5 59. Ke1 Ke5
+60. Ba6 Bh5 61. Bc4 Kf5 62. Bb5 Bf7 63. Kf2 Ke5 64. Ba6 Kd5 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.13"]
+[White "Johannesson, Ingvar Thor"]
+[Black "Ipatov, Alexander"]
+[Result "0-1"]
+[ECO "A38"]
+[WhiteElo "2331"]
+[BlackElo "2561"]
+[PlyCount "78"]
+[EventDate "2011.03.06"]
+
+1. Nf3 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 O-O 5. Nc3 d5 6. cxd5 Nxd5 7. O-O c5 8.
+Nxd5 Qxd5 9. d3 Nc6 10. Be3 Qd7 11. Rb1 b6 12. d4 Rd8 13. dxc5 Qg4 14. Nd2 Bb7
+15. cxb6 axb6 16. Bf3 Qf5 17. a3 b5 18. Qe1 Rac8 19. Nb3 Ba8 20. Nc5 Ne5 21.
+Bxa8 Rxa8 22. Qb4 Ng4 23. Nd3 Qh5 24. h4 Nxe3 25. fxe3 Qxe2 26. Nf2 Qxe3 27.
+Kg2 Be5 28. Qg4 Rd2 29. Rbe1 Rxf2+ 30. Rxf2 Qxe1 31. Re2 Qxg3+ 32. Qxg3 Bxg3
+33. Kxg3 e6 34. Re3 Rd8 35. Rb3 Rd5 36. Rb4 Kg7 37. b3 Kf6 38. a4 bxa4 39. bxa4
+Rd3+ 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.14"]
+[White "Larsen, Karsten"]
+[Black "Steingrimsson, Hedinn"]
+[Result "0-1"]
+[ECO "B51"]
+[WhiteElo "2321"]
+[BlackElo "2556"]
+[PlyCount "65"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. O-O a6 5. Bd3 Ngf6 6. Re1 b6 7. b3 g6 8. Bb2
+Bg7 9. a4 Bb7 10. c3 O-O 11. Bc2 e5 12. d4 exd4 13. cxd4 cxd4 14. Bxd4 Re8 15.
+Nbd2 Nc5 16. Qb1 Rc8 17. Ra2 a5 18. e5 Nfe4 19. Bd3 Re7 20. Ba1 Qe8 21. h3 Rec7
+22. Bd4 Nc3 23. Bxc3 Nxd3 24. Qxd3 Rxc3 25. Qd4 Qc6 26. Qf4 Rc1 27. Ra1 Rxa1
+28. Rxa1 Qc7 29. Re1 Re8 30. Qd4 h6 31. h4 h5 32. Re3 Qc1+ 33. Re1 {Text
+unreadable} 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.15"]
+[White "Libiszewski, Fabien"]
+[Black "Michalczak, Thomas"]
+[Result "1-0"]
+[ECO "C65"]
+[WhiteElo "2523"]
+[BlackElo "2326"]
+[PlyCount "137"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 Bc5 5. Bxc6 dxc6 6. Nbd2 Bg4 7. Nc4 Nd7 8.
+Be3 Bxe3 9. Nxe3 Bxf3 10. Qxf3 Qf6 11. Qxf6 Nxf6 12. Nc4 Nd7 13. O-O-O c5 14.
+Rdf1 Ke7 15. f4 f6 16. fxe5 fxe5 17. Ne3 Ke6 18. Nd5 Rac8 19. Rf5 c6 20. Ne3
+Rcf8 21. Rhf1 g6 22. Rxf8 Rxf8 23. Rxf8 Nxf8 24. Kd2 Nd7 25. Ke2 Nf6 26. Kf3 b6
+27. Nc4 Ne8 28. Kg4 h6 29. h4 Nf6+ 30. Kf3 Nh5 31. Ne3 Nf6 32. h5 Nxh5 33. Ng4
+Nf6 34. Nxh6 g5 35. Ng4 Nd7 36. Ne3 Kf6 37. Nf5 b5 38. c4 bxc4 39. dxc4 Ke6 40.
+Ne3 Kf6 41. Kg4 Kg6 42. Nf5 Nf6+ 43. Kf3 g4+ 44. Ke3 Kg5 45. Ne7 Kh4 46. Nxc6
+Kg3 47. Nxe5 Nh5 48. b4 cxb4 49. c5 Nf4 50. c6 Ne6 51. Nd3 a5 52. Nf4 Nc7 53.
+Nd5 Ne6 54. c7 Nxc7 55. Nxc7 a4 56. Nd5 b3 57. axb3 a3 58. Nc3 Kxg2 59. e5 g3
+60. e6 Kf1 61. e7 g2 62. Ne2 g1=Q+ 63. Nxg1 a2 64. e8=Q a1=Q 65. Ne2 Qb2 66.
+Qf7+ Ke1 67. Qf2+ Kd1 68. Qf1+ Kc2 69. Nd4+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.16"]
+[White "Williams, Simon K"]
+[Black "Sigfusson, Sigurdur"]
+[Result "1-0"]
+[ECO "A16"]
+[WhiteElo "2506"]
+[BlackElo "2346"]
+[PlyCount "77"]
+[EventDate "2011.03.06"]
+
+1. c4 Nf6 2. Nc3 g6 3. e4 d6 4. g3 Bg7 5. Bg2 O-O 6. Nge2 Nc6 7. O-O a6 8. h3
+Rb8 9. d4 Bd7 10. f4 Na5 11. b3 b5 12. e5 Ne8 13. c5 b4 14. Ne4 f6 15. Bb2 d5
+16. Nf2 Bb5 17. exf6 exf6 18. f5 Bh6 19. Ng4 Bg7 20. Qd2 Nc6 21. Rf2 g5 22. h4
+h6 23. Raf1 a5 24. Qc2 Ne7 25. hxg5 hxg5 26. Re1 Bd7 27. Nc1 c6 28. Bf1 Rf7 29.
+Bd3 Qc7 30. Kg2 Bf8 31. Ne2 Qb7 32. Bc1 a4 33. bxa4 b3 34. axb3 Qxb3 35. Qxb3
+Rxb3 36. Bc2 Rb4 37. Ne3 Nc7 38. Bd2 Rb8 39. Rff1 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.17"]
+[White "Ptacnikova, Lenka"]
+[Black "Arnold, Marc T"]
+[Result "0-1"]
+[ECO "A13"]
+[WhiteElo "2289"]
+[BlackElo "2502"]
+[PlyCount "48"]
+[EventDate "2011.03.06"]
+
+1. c4 Nf6 2. g3 e6 3. Bg2 d5 4. Nf3 d4 5. O-O Be7 6. e3 Nc6 7. b3 e5 8. exd4 e4
+9. Ng5 Bg4 10. Qc2 Nxd4 11. Qb2 Be2 12. Re1 Bd3 13. Nxe4 O-O 14. Nbc3 Nc2 15.
+Nxf6+ Bxf6 16. Re3 c6 17. a3 Nxa1 18. Qxa1 Bg5 19. Re1 Re8 20. Bb2 Rxe1+ 21.
+Qxe1 Qe8 22. Qd1 Rd8 23. h4 Bf6 24. Bf3 Rd7 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.18"]
+[White "Gretarsson, Hjorvar Steinn"]
+[Black "Holm, Kristian Stuvik"]
+[Result "1-0"]
+[ECO "A57"]
+[WhiteElo "2460"]
+[BlackElo "2290"]
+[PlyCount "119"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 c5 3. d5 b5 4. Qc2 d6 5. e4 g6 6. Nf3 Bg7 7. cxb5 a6 8. Nc3 O-O
+9. a4 axb5 10. Bxb5 Ba6 11. O-O Bxb5 12. Nxb5 Na6 13. Bd2 Ne8 14. Rac1 Qb6 15.
+Bc3 Nec7 16. Na3 Nb4 17. Nc4 Qb7 18. Bxb4 Qxb4 19. b3 Rfb8 20. Nfd2 Ra6 21. Qd3
+Bd4 22. Kh1 e6 23. dxe6 fxe6 24. f4 d5 25. Ne5 Bxe5 26. fxe5 Raa8 27. Qe3 Rf8
+28. Nf3 dxe4 29. Ng5 Rxf1+ 30. Rxf1 Rf8 31. Rd1 h6 32. Nxe4 Nd5 33. Qe1 Qxb3
+34. Nf6+ Nxf6 35. exf6 Rxf6 36. a5 Qb5 37. h3 Qc4 38. Rc1 Qb5 39. Rb1 Qc4 40.
+Rb8+ Kf7 41. Rb7+ Kg8 42. Qe5 Rf2 43. Rb6 Rf1+ 44. Kh2 Qf4+ 45. Qxf4 Rxf4 46.
+Rxe6 Kf7 47. Rc6 Rc4 48. Kg3 Rc2 49. Kf4 Rxg2 50. Ke5 Ke7 51. a6 c4 52. Rc7+
+Kd8 53. a7 Re2+ 54. Kd4 Rd2+ 55. Kxc4 Kxc7 56. a8=Q Rh2 57. Kd5 Rxh3 58. Qc6+
+Kb8 59. Qd6+ Ka8 60. Qd8+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.19"]
+[White "Ziska, Helgi Dam"]
+[Black "Lemeaux, David"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2456"]
+[BlackElo "2287"]
+[PlyCount "0"]
+[EventDate "2011.03.06"]
+
+
+1. e4 c5 2. Nf3 e6 3. d3 Nc6 4. g3 d6 5. Bg2 Nf6 6. O-O Be7 7. c3 O-O 8. a4 b6
+9. Re1 Bb7 10. Na3 Qd7 11. Rb1 Rac8 12. Bf4 Rfd8 13. Qe2 Na5 14. b3 Nc6 15. Nc2
+Re8 16. b4 cxb4 17. cxb4 e5 18. Bd2 Nd8 19. Ne3 Qxa4 20. Ra1 Qb5 21. Rxa7 Ba6
+22. Nc4 Nc6 23. Rxe7 Rxe7 24. Nxd6 Qa4 25. Nxc8 Bxc8 26. Qe3 Nd7 27. Rc1 Re8
+28. Bh3 Qb5 29. Bf1 Qa4 30. Bh3 Qb5 31. Bc3 Nf8 32. Bf1 Bd7 33. d4 Qa4 34. Ra1
+Qb3 35. d5 Nd8 36. Qc1 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.20"]
+[White "Friedrichs, Klaus"]
+[Black "Bartholomew, John"]
+[Result "1/2-1/2"]
+[ECO "A43"]
+[WhiteElo "2283"]
+[BlackElo "2440"]
+[PlyCount "106"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. Nf3 c5 3. d5 b5 4. Bg5 Ne4 5. Bf4 Bb7 6. a4 b4 7. e3 e6 8. Bc4 Nf6
+9. e4 Nxe4 10. O-O Bd6 11. Qe2 Bxf4 12. Qxe4 Qf6 13. Nbd2 O-O 14. Nb3 d6 15.
+Na5 Bxd5 16. Bxd5 exd5 17. Qxd5 Nd7 18. Nc4 Nb6 19. Nxb6 axb6 20. b3 Qc3 21.
+Qe4 Bh6 22. Rad1 Rfe8 23. Qd3 Qxd3 24. Rxd3 Re6 25. Rfd1 Rd8 26. Kf1 g6 27. g3
+Kf8 28. Rd5 Ke7 29. h4 Re8 30. R1d3 Kd7 31. a5 Kc6 32. axb6 f6 33. Rd1 Rb8 34.
+Nh2 Rxb6 35. f4 f5 36. Nf3 Ra6 37. Kf2 Ra2 38. R5d2 Kd7 39. h5 Kc6 40. hxg6
+hxg6 41. c4 Ra3 42. Rd3 Kc7 43. Kf1 Ra6 44. Re1 Rxe1+ 45. Kxe1 Bg7 46. Nh4 Bc3+
+47. Ke2 Ra3 48. Nxg6 Kd7 49. Nh4 Ke6 50. Re3+ Kf6 51. Rd3 Ke6 52. Re3+ Kf6 53.
+Rd3 Ke6 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.21"]
+[White "Cherednichenko, Svetlana"]
+[Black "Kristiansen, Jens"]
+[Result "0-1"]
+[ECO "A80"]
+[WhiteElo "2279"]
+[BlackElo "2432"]
+[PlyCount "132"]
+[EventDate "2011.03.06"]
+
+1. d4 f5 2. Nc3 Nf6 3. Bg5 d5 4. Bxf6 exf6 5. e3 Be6 6. Bd3 Nc6 7. Qf3 Qd7 8.
+a3 g6 9. Nge2 Ne7 10. h4 h5 11. Nf4 Bf7 12. Qe2 O-O-O 13. O-O-O Kb8 14. Kb1 Nc8
+15. Ka2 Nb6 16. b4 c5 17. Bb5 Qc7 18. bxc5 Bxc5 19. Na4 Nxa4 20. Bxa4 Bd6 21.
+Rb1 Rc8 22. Rb2 Qc3 23. Qb5 Rc7 24. Qb3 Qa5 25. Rhb1 b6 26. Ne2 Rhc8 27. Qb5
+Qxb5 28. Bxb5 Rxc2 29. Rxc2 Rxc2+ 30. Kb3 Rc7 31. Rc1 Rxc1 32. Nxc1 f4 33. exf4
+Bxf4 34. Ne2 Bd2 35. f4 Kc7 36. Kc2 Be1 37. g3 Be6 38. Kd1 Bf2 39. Kd2 Bf5 40.
+Be8 a6 41. Bf7 Kd6 42. Be8 b5 43. Bf7 a5 44. Nc3 Bxd4 45. Nxb5+ Kc5 46. Nc7 Bf2
+47. Nxd5 Bxg3 48. Ke3 Kd6 49. Kf3 Bxh4 50. Ne3 Bd3 51. Ng2 Ke7 52. Bxg6 Bxg6
+53. Nxh4 Bc2 54. Ke3 Kd6 55. Kd4 Kc6 56. Kc4 Bb1 57. Nf3 Ba2+ 58. Kd4 Kb5 59.
+Kc3 Kc5 60. Kd3 Bc4+ 61. Kc3 Bd5 62. Nh4 Be4 63. Kb3 Kd4 64. Ka4 Ke3 65. f5 Kf4
+66. Kxa5 Kg4 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.22"]
+[White "Lasinskas, Povilas"]
+[Black "Trella, Thomas"]
+[Result "1/2-1/2"]
+[ECO "A40"]
+[WhiteElo "2170"]
+[BlackElo "2410"]
+[PlyCount "24"]
+[EventDate "2011.03.06"]
+
+1. d4 e6 2. c4 Bb4+ 3. Nd2 b6 4. a3 Bxd2+ 5. Bxd2 Bb7 6. Nf3 f5 7. g3 Nf6 8.
+Bg2 O-O 9. O-O d6 10. b4 Qe7 11. Qb3 Ne4 12. Rfd1 Nxd2 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.23"]
+[White "Thomassen, Joachim"]
+[Black "Perez, Flavio"]
+[Result "0-1"]
+[ECO "B48"]
+[WhiteElo "2400"]
+[BlackElo "2269"]
+[PlyCount "52"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be2 a6 7. Be3 Nf6 8. a3
+Be7 9. f4 d6 10. Qd2 O-O 11. O-O-O Nxd4 12. Qxd4 Nd7 13. g4 b5 14. g5 Bb7 15.
+f5 exf5 16. exf5 Bxh1 17. Rxh1 Rac8 18. f6 Nxf6 19. Bd3 Qc6 20. Rg1 Nd7 21. Nd5
+Bd8 22. Nf6+ Bxf6 23. gxf6 g6 24. Qh4 Qf3 25. Bd4 Qxd3 26. c3 Nc5 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.24"]
+[White "Moen, Andreas"]
+[Black "Thompson, Ian D"]
+[Result "1-0"]
+[ECO "C06"]
+[WhiteElo "2360"]
+[BlackElo "2255"]
+[PlyCount "83"]
+[EventDate "2011.03.06"]
+
+1. e4 e6 2. d4 d5 3. Nd2 Nf6 4. e5 Nfd7 5. Bd3 c5 6. c3 Nc6 7. Ne2 cxd4 8. cxd4
+f6 9. exf6 Qxf6 10. Nf3 h6 11. O-O Bd6 12. Be3 O-O 13. Bc2 Rd8 14. Qd2 e5 15.
+dxe5 Ndxe5 16. Qxd5+ Be6 17. Qe4 Nxf3+ 18. gxf3 Re8 19. Rad1 Rad8 20. f4 Bg4
+21. Qh7+ Kf8 22. Ng3 Bxd1 23. Rxd1 Bb4 24. Nh5 Rxd1+ 25. Bxd1 Qf7 26. f5 Rxe3
+27. fxe3 Bc5 28. Kf2 Ne7 29. f6 gxf6 30. Qxh6+ Ke8 31. Nxf6+ Kd8 32. Be2 Qg6
+33. Qf8+ Kc7 34. Nd5+ Kd7 35. Bb5+ Nc6 36. Qxc5 Qf5+ 37. Ke1 Qb1+ 38. Ke2 Qxb2+
+39. Kf3 Qxh2 40. Bxc6+ bxc6 41. Qxa7+ Ke6 42. Nf4+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.25"]
+[White "Aguera, Naredo Javier"]
+[Black "Jensson, Einar Hjalti"]
+[Result "1/2-1/2"]
+[ECO "C17"]
+[WhiteElo "2358"]
+[BlackElo "2245"]
+[PlyCount "52"]
+[EventDate "2011.03.06"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. Bd2 Ne7 6. Nb5 Bxd2+ 7. Qxd2 O-O 8.
+dxc5 Nd7 9. Qc3 b6 10. cxb6 Qxb6 11. Nf3 Rb8 12. b3 Ba6 13. a4 Rfc8 14. Qb2 Nc6
+15. b4 d4 16. O-O-O Rd8 17. a5 Nxa5 18. bxa5 Qxa5 19. Nfxd4 Bxb5 20. Bxb5 Nxe5
+21. Nxe6 Re8 22. Rd5 Rxe6 23. Rxe5 Rxb5 24. Qxb5 Qa1+ 25. Kd2 Qd4+ 26. Kc1 Qa1+
+1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.26"]
+[White "Kjartansson, Gudmundur"]
+[Black "Dunn, Andrew"]
+[Result "1-0"]
+[ECO "E09"]
+[WhiteElo "2357"]
+[BlackElo "2205"]
+[PlyCount "73"]
+[EventDate "2011.03.06"]
+
+1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. g3 Be7 5. Bg2 O-O 6. Qc2 c6 7. O-O Nbd7 8. Nbd2
+b6 9. e4 Bb7 10. e5 Ne8 11. cxd5 cxd5 12. Re1 Rc8 13. Qa4 a6 14. Bf1 Nc7 15.
+Bd3 Re8 16. Nf1 f5 17. exf6 Bxf6 18. Bf4 b5 19. Qa5 Na8 20. Qd2 Nab6 21. b3 Nf8
+22. h4 Nbd7 23. N1h2 Qb6 24. a4 Be7 25. a5 Qa7 26. Re3 Nf6 27. Ng5 Rc6 28. Rae1
+Bc8 29. Nhf3 Ng4 30. Ne5 Nxe5 31. Bxe5 Bxg5 32. hxg5 Qe7 33. Rf3 Bd7 34. Kg2
+Rec8 35. Rh1 Be8 36. Rxf8+ Kxf8 37. Rxh7 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.27"]
+[White "Kiewra, Keaton"]
+[Black "Bjornsson, Sverrir Orn"]
+[Result "1-0"]
+[ECO "B52"]
+[WhiteElo "2355"]
+[BlackElo "2153"]
+[PlyCount "53"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 d6 3. Bb5+ Bd7 4. Bxd7+ Qxd7 5. O-O Nf6 6. Re1 Nc6 7. c3 e6 8.
+d4 cxd4 9. cxd4 d5 10. e5 Ne4 11. Nbd2 Nxd2 12. Bxd2 Be7 13. Rc1 O-O 14. Rc3
+Rac8 15. a3 Qd8 16. Rd3 a5 17. h4 Qb6 18. Bc3 Qa7 19. Ng5 b5 20. Qh5 h6 21. Rf3
+hxg5 22. hxg5 Bxg5 23. Qxg5 b4 24. Rg3 f6 25. exf6 bxc3 26. fxg7 Rf7 27. Qh6
+1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.28"]
+[White "Shulman, Yuri"]
+[Black "Haarr, Jon Kristian"]
+[Result "1-0"]
+[ECO "D66"]
+[WhiteElo "2594"]
+[BlackElo "2226"]
+[PlyCount "119"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. Nf3 d5 3. c4 c6 4. Nc3 e6 5. Bg5 h6 6. Bh4 Nbd7 7. e3 Be7 8. Bd3
+O-O 9. O-O dxc4 10. Bxc4 b5 11. Bd3 Bb7 12. Rc1 a6 13. Bxf6 Nxf6 14. Ne4 Nd7
+15. Bb1 f5 16. Nc5 Nxc5 17. dxc5 Qxd1 18. Rfxd1 Rad8 19. Bc2 Bf6 20. Nd4 Kf7
+21. Bb3 Bxd4 22. exd4 a5 23. a3 Kf6 24. f3 Bc8 25. Kf2 Bd7 26. Re1 Rfe8 27. Re5
+Bc8 28. Ke3 Re7 29. Re1 Rde8 30. g4 g6 31. h4 h5 32. gxh5 gxh5 33. Rg1 Rg7 34.
+Rxg7 Kxg7 35. d5 Kf6 36. Kd4 Rd8 37. d6 Rg8 38. Re2 Bd7 39. Ke3 Rg3 40. Kf4 Rg1
+41. Bc2 b4 42. axb4 axb4 43. Bb3 Rh1 44. Rg2 Rxh4+ 45. Ke3 Kf7 46. Rg5 f4+ 47.
+Kd3 Rh2 48. Rf5+ Kg6 49. Rxf4 Rxb2 50. Rxb4 h4 51. Kc3 Rf2 52. Rxh4 Rxf3+ 53.
+Kb4 Rf7 54. Re4 Kf5 55. Re1 Rg7 56. Ka5 Bc8 57. Bc2+ Kf6 58. Kb6 Rg2 59. Be4
+Rb2+ 60. Kc7 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.29"]
+[White "Ashley, Maurice"]
+[Black "Hobber, Anders"]
+[Result "1-0"]
+[ECO "D11"]
+[WhiteElo "2452"]
+[BlackElo "2224"]
+[PlyCount "73"]
+[EventDate "2011.03.06"]
+
+1. Nf3 d5 2. d4 Nf6 3. c4 c6 4. e3 Bg4 5. Qb3 Qb6 6. Ne5 Bf5 7. Bd3 Bxd3 8.
+Qxd3 e6 9. O-O Be7 10. Nc3 O-O 11. Bd2 Nbd7 12. c5 Qc7 13. f4 Ne8 14. b4 Nxe5
+15. fxe5 f6 16. exf6 Nxf6 17. Be1 Nh5 18. Rxf8+ Rxf8 19. Qe2 g6 20. g4 Nf6 21.
+Bg3 Qd8 22. Rf1 b5 23. a4 a6 24. axb5 axb5 25. Ra1 Qd7 26. Be5 Qb7 27. h3 Nd7
+28. Bg3 Bf6 29. Ra3 e5 30. Qa2 exd4 31. Ra7 Qc8 32. Nxd5 cxd5 33. Qxd5+ Kh8 34.
+Rxd7 dxe3 35. g5 Bg7 36. Rxg7 Qxh3 37. Rg8+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.30"]
+[White "Zumsande, Martin"]
+[Black "Dougherty, Michael"]
+[Result "1-0"]
+[ECO "B06"]
+[WhiteElo "2439"]
+[BlackElo "2195"]
+[PlyCount "91"]
+[EventDate "2011.03.06"]
+
+1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. dxc5 Bxc3+ 5. bxc3 Qa5 6. Qd4 Nf6 7. Qb4 Qc7 8.
+Nf3 Nc6 9. Qc4 b5 10. cxb6 axb6 11. Bd3 Ba6 12. Qb3 O-O 13. O-O d5 14. Bxa6
+Rxa6 15. exd5 Na5 16. Qb5 Rfa8 17. Qd3 Nc4 18. Bg5 Nb2 19. Qb5 Nc4 20. Bxf6
+exf6 21. Nd4 Nd2 22. Rfd1 Ne4 23. Ne2 Qc5 24. Qxc5 bxc5 25. f3 Nd6 26. Rdb1 Kg7
+27. g4 f5 28. gxf5 Nxf5 29. Rb5 c4 30. Nd4 Nd6 31. Rc5 Kf6 32. Re1 Rxa2 33. Rc6
+R8a6 34. Kf2 R2a5 35. Re3 Rxc6 36. dxc6 Rc5 37. Re1 Nf5 38. Ra1 Nxd4 39. cxd4
+Rxc6 40. Ra5 h5 41. h4 Rc7 42. c3 Ke6 43. Ke3 f6 44. d5+ Kd6 45. Kd4 Rf7 46.
+Ra6+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.31"]
+[White "Thorfinnsson, Bjorn"]
+[Black "Edvardsson, Kristjan"]
+[Result "0-1"]
+[ECO "B07"]
+[WhiteElo "2416"]
+[BlackElo "2217"]
+[PlyCount "42"]
+[EventDate "2011.03.06"]
+
+1. d4 d6 2. e4 Nf6 3. Nc3 g6 4. f3 c6 5. Be3 b5 6. Qd2 Nbd7 7. g4 Nb6 8. h4 h5
+9. g5 Nfd7 10. d5 Ne5 11. Bxb6 Qxb6 12. dxc6 Be6 13. Bxb5 Nxc6 14. Nd5 Bxd5 15.
+Qxd5 Rc8 16. e5 e6 17. Qd3 Bg7 18. exd6 O-O 19. Bxc6 Rxc6 20. Rd1 Be5 21. d7
+Bg3+ 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.32"]
+[White "L'ami, Alina"]
+[Black "Marzano, Carlo"]
+[Result "1/2-1/2"]
+[ECO "D15"]
+[WhiteElo "2372"]
+[BlackElo "2164"]
+[PlyCount "71"]
+[EventDate "2011.03.06"]
+
+1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 a6 5. e3 b5 6. b3 Bg4 7. Bd2 Nbd7 8. h3
+Bxf3 9. Qxf3 e6 10. Bd3 b4 11. Na4 e5 12. cxd5 cxd5 13. Qe2 Qa5 14. dxe5 Nxe5
+15. O-O Be7 16. Bc1 O-O 17. Bb2 Nxd3 18. Qxd3 Rfd8 19. Rac1 Qb5 20. Rfd1 Ne4
+21. Rc7 Bh4 22. g3 Bf6 23. Bxf6 Nxf6 24. Rc5 Qb7 25. Qd4 Rac8 26. Rdc1 h5 27.
+R5c2 Rxc2 28. Rxc2 Rc8 29. Rd2 Rc1+ 30. Kg2 Qb5 31. Rd1 Rc2 32. Rd2 Rc1 33. Rd1
+Rc2 34. Rd2 Rc1 35. Rd1 Rc2 36. Rd2 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.33"]
+[White "Olafsson, Thorvardur"]
+[Black "Arngrimsson, Dagur"]
+[Result "0-1"]
+[ECO "B13"]
+[WhiteElo "2147"]
+[BlackElo "2361"]
+[PlyCount "102"]
+[EventDate "2011.03.06"]
+
+1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 Nc6 6. Be3 g6 7. Nf3 Bg7 8. h3
+O-O 9. Be2 dxc4 10. Bxc4 Na5 11. Be2 Be6 12. O-O Nc4 13. Bxc4 Bxc4 14. Re1 Nd5
+15. Nxd5 Bxd5 16. Ne5 Re8 17. Qa4 a6 18. Rac1 e6 19. Qd7 Qxd7 20. Nxd7 Bxa2 21.
+Nb6 Rad8 22. Rc7 e5 23. dxe5 Bxe5 24. Rxb7 Bxb2 25. Ra7 Bc3 26. Rc1 Rxe3 27.
+fxe3 Bd2 28. Rc6 Bxe3+ 29. Kf1 Rd2 30. Re7 Be6 31. Nc4 Rf2+ 32. Ke1 Bd4 33.
+Re8+ Kg7 34. Rd8 Rf4 35. Nd6 Bf2+ 36. Ke2 Bh4 37. Rb8 Rf2+ 38. Ke3 Rxg2 39.
+Ne8+ Kh6 40. Rxa6 Rg3+ 41. Kd2 Rxh3 42. Nd6 Bg3 43. Rbb6 Bf4+ 44. Kc2 Re3 45.
+Rb4 Re2+ 46. Kb1 Rf2 47. Rb7 Kg7 48. Ne8+ Kf8 49. Nd6 Kg8 50. Rb8+ Kg7 51. Rb7
+h5 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.34"]
+[White "Arjun, Bharat"]
+[Black "Coleman, Teddy"]
+[Result "0-1"]
+[ECO "D13"]
+[WhiteElo "2210"]
+[BlackElo "2356"]
+[PlyCount "76"]
+[EventDate "2011.03.06"]
+
+1. Nf3 d5 2. c4 c6 3. cxd5 cxd5 4. d4 Nf6 5. Nc3 Nc6 6. Bf4 a6 7. Rc1 Bf5 8. e3
+Qb6 9. b3 e6 10. Bd3 Ba3 11. Bxf5 Bxc1 12. Qxc1 exf5 13. O-O Rc8 14. Na4 Qd8
+15. Qa3 Ne4 16. Nc5 Qe7 17. b4 O-O 18. Qb3 Rfd8 19. Rd1 Nb8 20. Bxb8 Rxb8 21.
+Ne5 a5 22. a3 axb4 23. axb4 f6 24. Ned3 b6 25. Na4 Qb7 26. b5 Ra8 27. Ra1 Rdc8
+28. f3 Nd2 29. Qb4 Nc4 30. Re1 Qa7 31. Nc3 Qa3 32. Nxd5 Qxd3 33. Ne7+ Kh8 34.
+Nxc8 Rxc8 35. Qe7 h6 36. h4 Qd2 37. Kf1 Nb2 38. Qe6 Rc2 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.35"]
+[White "Cummings, David H"]
+[Black "Bjarnason, Saevar"]
+[Result "1-0"]
+[ECO "A36"]
+[WhiteElo "2341"]
+[BlackElo "2092"]
+[PlyCount "83"]
+[EventDate "2011.03.06"]
+
+1. c4 Nf6 2. Nc3 g6 3. g3 Bg7 4. Bg2 O-O 5. e4 d6 6. Nge2 c5 7. O-O Nc6 8. d3
+a6 9. a4 Bd7 10. h3 Rb8 11. Rb1 Ne8 12. Be3 Nc7 13. d4 cxd4 14. Nxd4 Nxd4 15.
+Bxd4 Bxd4 16. Qxd4 b5 17. axb5 axb5 18. cxb5 Bxb5 19. Rfd1 Ne6 20. Qe3 Qb6 21.
+Qh6 Bc4 22. h4 Ng7 23. b4 Nh5 24. Bf3 Nf6 25. h5 Rfc8 26. hxg6 fxg6 27. Qd2 Be6
+28. b5 Qc5 29. Rdc1 Qe5 30. b6 Rc4 31. Nd5 Rxc1+ 32. Qxc1 Bxd5 33. exd5 Qf5 34.
+Rb3 Nd7 35. Qd1 Nxb6 36. Bg4 Qf6 37. Be6+ Kh8 38. Qc2 Qd4 39. Qc7 Ra8 40. Qxb6
+Ra1+ 41. Kg2 Qe4+ 42. Rf3 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.36"]
+[White "Lee, Kai Jie Edward"]
+[Black "Lagerman, Robert"]
+[Result "0-1"]
+[ECO "C80"]
+[WhiteElo "2093"]
+[BlackElo "2315"]
+[PlyCount "68"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. Re1 Nc5 7. Bxc6 dxc6 8.
+Nxe5 Be7 9. d4 Ne6 10. c3 O-O 11. Nd2 c5 12. Ndf3 cxd4 13. cxd4 Qd5 14. Be3 b6
+15. Rc1 Bb7 16. Qc2 Qxa2 17. Nc4 b5 18. Nfd2 Qa4 19. b3 Qb4 20. Ne5 Qd6 21. Ne4
+Qd5 22. Nc6 Bxc6 23. Qxc6 Rfd8 24. Red1 Bb4 25. Qc2 a5 26. Ra1 h6 27. Ng3 Rd7
+28. Ne4 Rad8 29. Nc3 Qc6 30. Rac1 Nxd4 31. Bxd4 Rxd4 32. Rxd4 Rxd4 33. h3 Bxc3
+34. Qxc3 Rd1+ 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.37"]
+[White "Henriksson, Johan"]
+[Black "Myrstad, Odd Magnus"]
+[Result "1/2-1/2"]
+[ECO "D27"]
+[WhiteElo "2279"]
+[BlackElo "2091"]
+[PlyCount "62"]
+[EventDate "2011.03.06"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 dxc4 4. e3 a6 5. a4 e6 6. Bxc4 c5 7. O-O Nc6 8. Nc3
+cxd4 9. exd4 Be7 10. Be3 O-O 11. d5 exd5 12. Nxd5 Nxd5 13. Bxd5 Bf6 14. Qb3 Qe7
+15. Bd2 Be6 16. Rfe1 Bxd5 17. Qxd5 Qd8 18. Qb3 Qc7 19. Rac1 Rfe8 20. Be3 Rac8
+21. h3 h6 22. Red1 Re4 23. Nd4 Qb8 24. Nxc6 bxc6 25. Bb6 Rce8 26. a5 Re2 27. g3
+Qc8 28. Kg2 Bxb2 29. Rc2 Bf6 30. Rdc1 Rxc2 31. Qxc2 Re6 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.38"]
+[White "Doggers, Peter"]
+[Black "Ziska, Andrias"]
+[Result "1-0"]
+[ECO "B92"]
+[WhiteElo "2265"]
+[BlackElo "1900"]
+[PlyCount "85"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O
+Qc7 9. Re1 Nbd7 10. Bf1 b5 11. a4 b4 12. Na2 Rb8 13. c3 bxc3 14. Nxc3 Bb7 15.
+f3 O-O 16. Be3 Nc5 17. Nxc5 dxc5 18. Bc4 Rfd8 19. Qe2 Qa5 20. Red1 Rd4 21. Bxd4
+cxd4 22. Nd5 Bxd5 23. exd5 Bd6 24. Kh1 Nh5 25. Bxa6 Nf4 26. Qc4 Nxd5 27. Qc6
+Rb6 28. Qe8+ Bf8 29. Bc4 Re6 30. Qb5 Qxb5 31. Bxb5 Ne3 32. Rdc1 g6 33. a5 Re7
+34. a6 Ra7 35. Rc8 f5 36. Rac1 e4 37. R1c7 Rxc7 38. Rxc7 d3 39. a7 Nd5 40. Bc4
+e3 41. Bxd5+ Kh8 42. a8=R e2 43. Rxf8# 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.39"]
+[White "Karlsson, Bjorn-Ivar"]
+[Black "Ragnarsson, Dagur"]
+[Result "1-0"]
+[ECO "D37"]
+[WhiteElo "2250"]
+[BlackElo "1858"]
+[PlyCount "203"]
+[EventDate "2011.03.06"]
+
+1. Nf3 Nf6 2. c4 e6 3. Nc3 d5 4. e3 Be7 5. a3 O-O 6. d4 a6 7. b4 dxc4 8. Bxc4
+b5 9. Bd3 Bb7 10. Bb2 Nbd7 11. e4 Re8 12. O-O Nf8 13. Re1 Ng6 14. g3 Nd7 15.
+Rc1 e5 16. d5 Bd6 17. h4 Nf6 18. Nd2 c6 19. dxc6 Bxc6 20. Nf1 Qb6 21. Qe2 Rad8
+22. Ne3 Bb8 23. Red1 Nf8 24. Ncd5 Bxd5 25. exd5 Ng6 26. Rc6 Qb7 27. Rxf6 gxf6
+28. Be4 Kh8 29. Qf3 Qb6 30. Qf5 Rg8 31. Rc1 Rd6 32. h5 Nf8 33. Rc8 Ng6 34. hxg6
+fxg6 35. Rxg8+ Kxg8 36. Qc8+ Qd8 37. Qxd8+ Rxd8 38. g4 Bd6 39. Kf1 Kg7 40. Ke2
+Ra8 41. Nc2 Re8 42. Na1 Rc8 43. Nb3 Rc4 44. f3 Rc8 45. Na5 Rc7 46. Nc6 h5 47.
+gxh5 gxh5 48. Bc1 h4 49. Bf5 Kh8 50. Be3 Rg7 51. Bc5 Bc7 52. d6 Bxd6 53. Bxd6
+Rg2+ 54. Ke3 Ra2 55. Ke4 Rxa3 56. Ne7 Kg7 57. Bg4 Ra4 58. Kf5 Ra3 59. Ke4 Ra4
+60. Kd5 a5 61. bxa5 Rxa5 62. Nf5+ Kg6 63. Nxh4+ Kg5 64. Ng2 b4+ 65. Kc4 b3 66.
+Kxb3 Rd5 67. Be7 Rd2 68. Ne1 Re2 69. Bb4 f5 70. Bh3 e4 71. Bf1 Rf2 72. Bc4 Kg6
+73. Bc5 Rh2 74. f4 Rh3+ 75. Kc2 Rh1 76. Kd2 Rh7 77. Bd4 Rh2+ 78. Be2 Kf7 79.
+Nc2 Ke6 80. Ne3 Kd6 81. Nxf5+ Kd5 82. Be5 Ke6 83. Ne3 Rf2 84. Ng4 Rg2 85. Ke3
+Kf5 86. Nf6 Rg3+ 87. Kf2 Ra3 88. Bg4+ Kg6 89. Nxe4 Ra2+ 90. Be2 Kf5 91. Ng3+
+Ke6 92. Ke3 Ra3+ 93. Bd3 Rb3 94. Kd4 Kd7 95. Ne4 Ra3 96. f5 Ke8 97. Bc4 Rf3 98.
+f6 Kf8 99. Bd6+ Ke8 100. Ke5 Kd7 101. f7 Rg3 102. Nxg3 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.40"]
+[White "Gunnarsson, Jon Viktor"]
+[Black "Goodger, Martyn"]
+[Result "1-0"]
+[ECO "C47"]
+[WhiteElo "2424"]
+[BlackElo "2098"]
+[PlyCount "49"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nf6 3. Nc3 Nc6 4. a3 d5 5. Bb5 Nxe4 6. Nxe5 Qf6 7. Nf3 Be6 8.
+Qe2 Nxc3 9. dxc3 Bc5 10. Bg5 Qg6 11. Bd3 Qh5 12. h3 Be7 13. Bf4 O-O-O 14. O-O-O
+Bd6 15. Be3 f6 16. Bxa7 Qf7 17. Be3 Rhe8 18. Bb5 Bd7 19. Qd3 d4 20. cxd4 Na5
+21. Bxd7+ Rxd7 22. d5 b6 23. b4 Nb7 24. Qa6 c5 25. dxc6 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.41"]
+[White "Vuilleumier, Alexandre"]
+[Black "Mikalsen, Erlend"]
+[Result "1-0"]
+[ECO "B50"]
+[WhiteElo "2350"]
+[BlackElo "2045"]
+[PlyCount "57"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 e6 5. Bd3 Nc6 6. O-O Be7 7. Bc2 Qc7 8. Re1
+h6 9. d4 e5 10. Na3 g5 11. dxe5 dxe5 12. Nh2 Be6 13. Bb3 O-O 14. h4 Rad8 15.
+Qe2 Ne8 16. Bxe6 fxe6 17. hxg5 Bxg5 18. Bxg5 hxg5 19. Qg4 Qe7 20. Nf3 Rf4 21.
+Qxg5+ Qxg5 22. Nxg5 Rd2 23. Nc4 Rc2 24. f3 b5 25. Ne3 Rxb2 26. Nxe6 Rf6 27.
+Nxc5 b4 28. Nd3 Rd2 29. Nxb4 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.42"]
+[White "Sigurjonsson, Stefan Th"]
+[Black "Mertens, Heiko"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2117"]
+[BlackElo "2336"]
+[PlyCount "140"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. d4 cxd4 3. c3 d3 4. Bxd3 Nc6 5. f4 d5 6. e5 Nh6 7. Nf3 Bg4 8. Be3
+e6 9. O-O Bf5 10. Kh1 Bxd3 11. Qxd3 Nf5 12. Nbd2 h5 13. Nb3 g6 14. Rad1 a6 15.
+Rfe1 Qc7 16. Nbd4 Na5 17. Ng5 Qd7 18. Nxf5 gxf5 19. b3 Qc7 20. h4 Be7 21. Qd4
+b5 22. Nf3 Rc8 23. Rc1 Rg8 24. Kh2 Kf8 25. Kh3 Kg7 26. Qd1 Kh6 27. g3 Nb7 28.
+Qe2 Nc5 29. Bd4 Qb7 30. Ng5 Rgf8 31. c4 dxc4 32. bxc4 b4 33. Rb1 a5 34. a3 Kg6
+35. axb4 axb4 36. Qd2 Rb8 37. Bxc5 Bxc5 38. Rb3 Rbd8 39. Qe2 Rd4 40. Nf3 Re4
+41. Qf1 Rxe1 42. Qxe1 Rd8 43. Qe2 Qd7 44. Ne1 Qd2 45. Rb2 Qxe2 46. Rxe2 Rd4 47.
+Rc2 Rd1 48. Nf3 Rd3 49. Kg2 Kg7 50. Rb2 Rc3 51. Nd2 Kf8 52. Nb3 Be7 53. c5 Ke8
+54. Na1 Bxc5 55. Nc2 Rc4 56. Kf3 Kd7 57. Ke2 Kc6 58. Kd2 Kd5 59. Rb3 Ke4 60.
+Ne1 Bd4 61. Nf3 Bc3+ 62. Ke2 Kd5 63. Kd3 Rc7 64. Rb1 Kc5 65. Kc2 Ra7 66. Rd1
+Kc4 67. Nd2+ Bxd2 68. Kxd2 Rd7+ 69. Kc2 Rxd1 70. Kxd1 Kb3 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.43"]
+[White "Vaarala, Eric"]
+[Black "Thorell, Viktor"]
+[Result "1-0"]
+[ECO "A03"]
+[WhiteElo "2241"]
+[BlackElo "2034"]
+[PlyCount "67"]
+[EventDate "2011.03.06"]
+
+1. b3 d5 2. Bb2 Nf6 3. f4 c5 4. Nf3 Nc6 5. e3 Bg4 6. Be2 e6 7. d3 Bd6 8. Nbd2
+Qc7 9. O-O Bxf3 10. Bxf3 d4 11. Bxc6+ bxc6 12. Nc4 dxe3 13. Be5 Rd8 14. Nxd6+
+Rxd6 15. Qf3 Nd5 16. c4 Nb4 17. Qxe3 Rxd3 18. Qxd3 Qxe5 19. Qf3 Qd4+ 20. Kh1
+O-O 21. a3 Nd3 22. Rad1 Rd8 23. Rd2 Rd6 24. h3 h6 25. Qd1 Qe4 26. Qf3 Qd4 27.
+Rfd1 Nf2+ 28. Kh2 Qxd2 29. Rxd2 Rxd2 30. Qxc6 Rd1 31. Qf3 Rd2 32. b4 Nd3 33.
+Qe3 Rd1 34. Qe2 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.44"]
+[White "Eriksen, Magnus"]
+[Black "Einarsson, Halldor Gretar"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2108"]
+[BlackElo "2239"]
+[PlyCount "107"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8.
+Na3 b5 9. Nd5 Be7 10. Bxf6 Bxf6 11. c4 b4 12. Nc2 O-O 13. g3 a5 14. Bg2 Be6 15.
+O-O Rc8 16. Qd3 Bxd5 17. cxd5 Nb8 18. Ne3 Nd7 19. Nc4 Nc5 20. Qe2 a4 21. Rac1
+g6 22. Bh3 Rb8 23. Qe3 Rb5 24. Bg2 Bg5 25. f4 Bh6 26. Qe2 Rb7 27. Rce1 exf4 28.
+gxf4 Qh4 29. Qf3 Re7 30. Nxd6 Rd8 31. Rc1 Nd3 32. Rc8 Rxc8 33. Nxc8 Rc7 34.
+Qxd3 Bxf4 35. Qh3 Qg5 36. d6 Rc1 37. Ne7+ Kg7 38. Rxc1 Bxc1 39. Nd5 Bxb2 40.
+Qe3 Qxe3+ 41. Nxe3 Bd4 42. Kf2 b3 43. axb3 a3 44. d7 a2 45. d8=Q a1=Q 46. Qg5
+Qb2+ 47. Kf3 Qxb3 48. e5 Qc3 49. Ke2 Qb2+ 50. Kf1 Qc1+ 51. Kf2 Qd2+ 52. Kf3 Qc3
+53. h4 Bxe5 54. Qg4 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.45"]
+[White "Gikas, Andreas Basilius"]
+[Black "Murray, Mike"]
+[Result "0-1"]
+[ECO "C10"]
+[WhiteElo "2219"]
+[BlackElo "2007"]
+[PlyCount "80"]
+[EventDate "2011.03.06"]
+
+1. e4 Nc6 2. Nc3 e6 3. d4 d5 4. Nf3 Nf6 5. e5 Ne4 6. Ne2 Be7 7. Ng3 O-O 8. Bd3
+f5 9. c3 Bd7 10. Ne2 g5 11. Nfg1 g4 12. Nf4 Ng5 13. Nge2 Nf7 14. h3 Nfxe5 15.
+dxe5 Nxe5 16. Bc2 c6 17. Nd3 Ng6 18. Nef4 g3 19. fxg3 Bd6 20. O-O e5 21. Nxg6
+hxg6 22. Kh1 Kg7 23. Qe2 Qc7 24. b3 c5 25. Bb2 Rae8 26. Rad1 Bc6 27. b4 b6 28.
+bxc5 bxc5 29. Nf2 Rh8 30. Qd2 Be7 31. Bb3 c4 32. Bc2 Qb7 33. Bb1 d4 34. cxd4
+Bxg2+ 35. Kh2 Bxh3 36. Nxh3 Rxh3+ 37. Kg1 Rh1+ 38. Kf2 Rh2+ 39. Ke1 Rxd2 40.
+Rxd2 Bb4 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.46"]
+[White "Haga, Halvor"]
+[Black "Langer, Michael"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2032"]
+[BlackElo "2217"]
+[PlyCount "70"]
+[EventDate "2011.03.06"]
+
+1. f4 d5 2. Nf3 g6 3. e3 Bg7 4. Be2 Nc6 5. d4 Nf6 6. c4 e6 7. O-O O-O 8. Nc3 b6
+9. Ne5 Bb7 10. b3 Re8 11. Ba3 Ne7 12. Qe1 Nd7 13. Nxd7 Qxd7 14. Bf3 c5 15. dxc5
+d4 16. Rd1 Red8 17. Rd3 Nf5 18. Nd1 Bxf3 19. Rxf3 Qe7 20. e4 Ne3 21. Nxe3 dxe3
+22. Qxe3 Rxd3 23. Qxd3 Rd8 24. Qe2 Bd4+ 25. Kf1 bxc5 26. Bc1 Qb7 27. f5 exf5
+28. exf5 Qd7 29. fxg6 hxg6 30. Rd3 Re8 31. Qf3 Re6 32. Qa8+ Kg7 33. Bg5 Re8 34.
+Qf3 Qe6 35. Bh4 Qe4 (35... Qe5 36. Bg3 Qg5 37. Bf4 Qe7 38. Bg3 f5 39. Bf2 Qe5
+40. Rd1 Qxh2 41. Qh3 Qxh3 42. gxh3 Re7 43. Bxd4+ cxd4 44. Rd3 Kf6 45. b4 Ke5
+46. Kf2 {unreadable}) 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.47"]
+[White "Bjornsson, Eirikur K"]
+[Black "Dave, Dhyani"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2000"]
+[BlackElo "2205"]
+[PlyCount "52"]
+[EventDate "2011.03.06"]
+
+1. d4 f5 2. c4 Nf6 3. Nc3 g6 4. h4 Bg7 5. h5 d6 6. hxg6 hxg6 7. Rxh8+ Bxh8 8.
+Bg5 Nbd7 9. Nf3 Nf8 10. Qc2 c6 11. O-O-O Qc7 12. e4 fxe4 13. Nxe4 Bf5 14. Bd3
+O-O-O 15. Nxf6 Bxd3 16. Qxd3 exf6 17. Bf4 Qf7 18. d5 c5 19. Re1 g5 20. Bg3 Qd7
+21. Re3 Bg7 22. Qa3 a6 23. b4 b5 24. Rd3 cxb4 25. Qxb4 f5 26. c5 Qc7 {
+Unreadable .. Nc4??} 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.48"]
+[White "Palsson, Halldor"]
+[Black "Loftsson, Hrafn"]
+[Result "1/2-1/2"]
+[ECO "D02"]
+[WhiteElo "2000"]
+[BlackElo "2202"]
+[PlyCount "117"]
+[EventDate "2011.03.06"]
+
+1. d4 d5 2. Nf3 Nf6 3. Bf4 g6 4. e3 Bg7 5. h3 O-O 6. c4 c5 7. Be5 Nc6 8. Nc3
+cxd4 9. exd4 e6 10. cxd5 Nxe5 11. dxe5 Nxd5 12. Nxd5 exd5 13. Qd2 Re8 14. Bb5
+Re7 15. O-O Bxe5 16. Nxe5 Rxe5 17. Rfd1 Be6 18. Bf1 Qb6 19. Rac1 Rd8 20. Qd4
+Qxd4 21. Rxd4 Re4 22. Rd2 Rb4 23. a3 Rb3 24. Kh2 Kg7 25. Bc4 Rb6 26. Bd3 Kf6
+27. Kg1 Rc8 28. Re1 Rbc6 29. Kf1 Rc1 30. Red1 h6 31. Ke2 g5 32. Bb1 Rxd1 33.
+Rxd1 Ke5 34. Kd2 Rc4 35. Re1+ Kd6 36. Bd3 Rf4 37. f3 Bd7 38. Bf1 Bc6 39. b4 Bd7
+40. Bd3 Bc6 41. Be2 Rf6 42. Bd3 Re6 43. Rc1 Rf6 44. Be2 h5 45. Ke3 h4 46. Rd1
+Rf5 47. Rc1 a5 48. Rb1 axb4 49. axb4 Ke5 50. Bd3 Rf6 51. Rc1 Kd6 52. Kd4 Rf4+
+53. Kc3 Rf6 54. Kd4 Bd7 55. Rc2 Rh6 56. Rc5 Be6 57. Rb5 Kc6 58. Rc5+ Kd6 59.
+Rb5 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.49"]
+[White "Bjornsson, Bjorn Freyr"]
+[Black "Johannsson, Orn Leo"]
+[Result "1-0"]
+[ECO "A05"]
+[WhiteElo "2183"]
+[BlackElo "1939"]
+[PlyCount "59"]
+[EventDate "2011.03.06"]
+
+1. e4 e6 2. d3 d5 3. Nd2 Nf6 4. Ngf3 Be7 5. g3 dxe4 6. dxe4 b6 7. Bg2 Bb7 8.
+O-O O-O 9. e5 Nfd7 10. Re1 c5 11. Ne4 Nc6 12. Bf4 Re8 13. Qe2 Qc7 14. Rad1 Rad8
+15. h4 Nf8 16. h5 Rxd1 17. Rxd1 Rd8 18. c3 Rxd1+ 19. Qxd1 Qd7 20. Qe2 Na5 21.
+Nfd2 Qa4 22. a3 Qd7 23. Qg4 Kh8 24. h6 g6 25. Bg5 Bxe4 26. Bxe4 Qd8 27. Bxe7
+Qxe7 28. b4 f5 29. exf6 Qxf6 30. Qf3 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.50"]
+[White "Johansen, Stian"]
+[Black "Halldorsson, Bragi"]
+[Result "1-0"]
+[ECO "D16"]
+[WhiteElo "1961"]
+[BlackElo "2178"]
+[PlyCount "87"]
+[EventDate "2011.03.06"]
+
+1. d4 c6 2. c4 d5 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3 Na6 7. Bxc4 Nb4 8. O-O
+e6 9. Qe2 Nbd5 10. Nh4 Bg6 11. Nxg6 hxg6 12. e4 Qc7 13. f4 Nb4 14. Be3 O-O-O
+15. a5 Kb8 16. a6 b6 17. Rfd1 Ka8 18. Qf3 Rh5 19. g4 Ra5 20. g5 Nh5 21. d5 Bc5
+22. dxc6 Nxc6 23. Rxd8+ Nxd8 24. e5+ Qc6 25. Rd1 Ra1 26. Qxc6+ Nxc6 27. Rxa1
+Bxe3+ 28. Kg2 Bxf4 29. Rd1 Kb8 30. Rd7 Nxe5 31. Rb7+ Kc8 32. Be2 Bxg5 33. Bxh5
+gxh5 34. Rxa7 Nc6 35. Ra8+ Kd7 36. a7 Bc1 37. Rd8+ Nxd8 38. Nd1 Bf4 39. a8=Q g5
+40. Nc3 Be5 41. Qa7+ Kc6 42. Qa4+ Kd6 43. Ne4+ Kd5 44. Nxg5 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.51"]
+[White "Sigurjonsson, Siguringi"]
+[Black "Ornolfsson, Magnus P"]
+[Result "0-1"]
+[ECO "A07"]
+[WhiteElo "1944"]
+[BlackElo "2175"]
+[PlyCount "80"]
+[EventDate "2011.03.06"]
+
+1. g3 Nf6 2. Bg2 d5 3. Nf3 e6 4. d3 c6 5. O-O Bd6 6. Nc3 O-O 7. e4 dxe4 8. dxe4
+e5 9. h3 b6 10. Nh4 Qc7 11. Bg5 Be7 12. Nf5 Bxf5 13. exf5 Nbd7 14. Qf3 Rac8 15.
+Rad1 Rfe8 16. h4 h6 17. Be3 Bc5 18. Rfe1 Bxe3 19. Rxe3 b5 20. a3 a5 21. g4 h5
+22. gxh5 Nb6 23. Ne4 Nbd5 24. Nxf6+ gxf6 25. Re4 Nf4 26. c4 Kh7 27. Kh2 Rg8 28.
+Bf1 Rcd8 29. cxb5 Rxd1 30. Qxd1 cxb5 31. Qb3 Qc5 32. Re3 Nd5 33. Rf3 e4 34. Rg3
+Qxf2+ 35. Bg2 Qf4 36. Kh3 Qxf5+ 37. Kh2 Qe5 38. Bxe4+ Qxe4 39. Rxg8 Kxg8 40.
+Qg3+ Kh7 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.52"]
+[White "Van, Heirzeele Daniel"]
+[Black "Karlsson, Mikael Johann"]
+[Result "1-0"]
+[ECO "E16"]
+[WhiteElo "2161"]
+[BlackElo "1884"]
+[PlyCount "55"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 e6 3. g3 d5 4. Nf3 b6 5. Bg2 Bb7 6. Ne5 Nbd7 7. Nc3 Bb4 8. Qa4
+Bxc3+ 9. bxc3 c5 10. O-O O-O 11. Rd1 Qc8 12. cxd5 Nxe5 13. dxe5 Nxd5 14. Qg4
+Qc7 15. Bxd5 Bxd5 16. c4 Bb7 17. Bf4 Rad8 18. Rd6 Kh8 19. Rad1 Qc6 20. f3 Rxd6
+21. Rxd6 Qa4 22. Qh4 Qe8 23. Bg5 Qc8 24. Qf4 Qc7 25. Rxe6 b5 26. Re7 Qc8 27. e6
+f6 28. Bh6 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.53"]
+[White "Jonsson, Hrannar"]
+[Black "Ingvason, Johann"]
+[Result "0-1"]
+[ECO "C17"]
+[BlackElo "2132"]
+[PlyCount "100"]
+[EventDate "2011.03.06"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. Bd2 Ne7 6. f4 cxd4 7. Nb5 Bxd2+ 8.
+Qxd2 Nf5 9. Nf3 a6 10. Nbxd4 Nxd4 11. Nxd4 Nc6 12. O-O-O g6 13. Kb1 Bd7 14. Be2
+Qb6 15. g4 O-O-O 16. h4 Kb8 17. Rh3 Na5 18. h5 Rc8 19. hxg6 hxg6 20. Rdh1 Rxh3
+21. Rxh3 Nc6 22. c3 Nxd4 23. Qxd4 Qxd4 24. cxd4 Bb5 25. Bxb5 axb5 26. b3 b4 27.
+Kb2 Kc7 28. Rh7 Rf8 29. a3 bxa3+ 30. Kxa3 Kd7 31. Kb4 Ke7 32. f5 gxf5 33. gxf5
+exf5 34. Kc5 Ke6 35. Kb6 f6 36. Rh6 Rf7 37. b4 f4 38. b5 f3 39. exf6 Kf5 40.
+Kc5 Rxf6 41. Rh1 Ke4 42. Re1+ Kd3 43. Kxd5 Rf5+ 44. Ke6 Rxb5 45. d5 f2 46. Rh1
+Ke2 47. d6 Rb3 48. d7 Rd3 49. Rh3 Rxh3 50. d8=Q Re3+ 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.54"]
+[White "Thorsteinsson, Erlingur"]
+[Black "Hansen, Erle Andrea Marki"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2129"]
+[BlackElo "1793"]
+[PlyCount "81"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. Nc3 d5 3. Bg5 Nbd7 4. e3 g6 5. h4 h6 6. Bf4 c6 7. f3 Bg7 8. g4 h5
+9. Bg2 hxg4 10. fxg4 Nb6 11. Bf3 Be6 12. h5 gxh5 13. gxh5 Bh6 14. Nge2 Nc4 15.
+b3 Nxe3 16. Qd2 Nf5 17. O-O-O Rc8 18. Kb2 b5 19. Bxh6 Nxh6 20. Nf4 Bf5 21. Qe2
+Qd6 22. Nd3 Nd7 23. Rde1 e6 24. Rhf1 a5 25. Nc5 Nxc5 26. dxc5 Qxc5 27. Qe5 Ke7
+28. Ne4 Bxe4 29. Bxe4 a4 30. Rd1 axb3 31. cxb3 Ra8 32. Bb1 Qa3+ 33. Kc2 Raf8
+34. Kd2 Qb4+ 35. Kc1 Qa3+ 36. Kd2 c5 37. Rf6 c4 38. Qf4 Qb2+ 39. Ke1 Rhg8 40.
+Bg6 Qc3+ 41. Kf1 {unreadable} 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.55"]
+[White "Birgisson, Ingvar Orn"]
+[Black "Scholzen, Wolfgang"]
+[Result "1-0"]
+[ECO "A00"]
+[BlackElo "2127"]
+[PlyCount "129"]
+[EventDate "2011.03.06"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. Nf3 Ne7 6. a3 Bxc3+ 7. bxc3 Nbc6 8.
+Bb5 Bd7 9. Bxc6 Bxc6 10. Be3 Nf5 11. Qd2 Nxe3 12. Qxe3 Bb5 13. Nd2 cxd4 14.
+cxd4 O-O 15. h4 Rc8 16. c3 f6 17. Rh3 fxe5 18. Qxe5 Qe7 19. g4 Kh8 20. a4 Ba6
+21. f4 Qf7 22. Rf3 Qg6 23. Kf2 Qc2 24. Qe3 Rc4 25. h5 Rxa4 26. Rxa4 Qxa4 27. h6
+Qd7 28. hxg7+ Kxg7 29. Qe5+ Kg8 30. Rh3 Qf7 31. Kg3 Qf6 32. Qc7 Rf7 33. Qb8+
+Kg7 34. Rh5 Bd3 35. g5 Qf5 36. Nf3 Be2 37. Rh2 Qe4 38. Qe5+ Qxe5 39. Nxe5 Rc7
+40. Rxe2 Rxc3+ 41. Kg4 b6 42. Rh2 Rc7 43. Rh6 a5 44. Rxe6 Rb7 45. Nd3 a4 46.
+Nb4 a3 47. Kf5 Ra7 48. Na2 Rb7 49. Re3 Rf7+ 50. Kg4 Ra7 51. Rb3 Ra4 52. Rb4 Ra7
+53. Rxb6 Re7 54. Ra6 Re3 55. Ra7+ Kg8 56. Kf5 Re4 57. Rxa3 Rxd4 58. Ke5 Re4+
+59. Kf5 Re8 60. Rd3 Rd8 61. Nb4 Kg7 62. Rxd5 Rf8+ 63. Kg4 h5+ 64. gxh6+ Kxh6
+65. Nc6 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.56"]
+[White "Huizer, Mark"]
+[Black "Kjartansson, Dagur"]
+[Result "1-0"]
+[ECO "D05"]
+[WhiteElo "2122"]
+[BlackElo "1528"]
+[PlyCount "54"]
+[EventDate "2011.03.06"]
+
+1. d4 e6 2. Nf3 Nf6 3. e3 b6 4. Bd3 Bb7 5. Nbd2 d5 6. O-O Be7 7. Qe2 O-O 8. Ne5
+Nbd7 9. f4 c5 10. c3 c4 11. Bc2 b5 12. Rf3 Ne4 13. Nxe4 dxe4 14. Rh3 f5 15. b3
+Nxe5 16. fxe5 Bd5 17. Qh5 h6 18. Qg6 Bg5 19. Ba3 Rf7 20. Bd6 Rc8 21. b4 Rc6 22.
+Bd1 Rxd6 23. exd6 Qxd6 24. a4 f4 25. Bh5 Rf6 26. Qe8+ Rf8 27. Qg6 fxe3 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.57"]
+[White "Hardarson, Jon Trausti"]
+[Black "Skoien, Havard"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1688"]
+[BlackElo "2121"]
+[PlyCount "62"]
+[EventDate "2011.03.06"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 Qd7 5. a3 Bf8 6. f4 Ne7 7. Nf3 b6 8. Bd3 Ba6
+9. Bxa6 Nxa6 10. Qd3 Nb8 11. Be3 Nf5 12. Bf2 h5 13. O-O-O c5 14. Nh4 c4 15. Qe2
+Ne7 16. h3 g6 17. g4 b5 18. f5 a5 19. fxg6 fxg6 20. Be3 b4 21. Nb1 Nbc6 22.
+Rdf1 O-O-O 23. Rf7 Qe8 24. Qf2 hxg4 25. Qf6 Nf5 26. Nxg6 Bh6 27. Nxh8 Bxe3+ 28.
+Kd1 g3 29. Ng6 g2 30. Re1 g1=Q 31. Rxg1 Bxg1 {UNREADABLE} 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.58"]
+[White "Sverrisson, Nokkvi"]
+[Black "Bergsson, Stefan"]
+[Result "0-1"]
+[ECO "C06"]
+[WhiteElo "1928"]
+[BlackElo "2171"]
+[PlyCount "70"]
+[EventDate "2011.03.06"]
+
+1. e4 e6 2. d4 d5 3. Nd2 Nf6 4. e5 Nfd7 5. Bd3 c5 6. c3 Nc6 7. Ngf3 cxd4 8.
+cxd4 f6 9. Ng5 Ndxe5 10. dxe5 fxg5 11. Qh5+ Kd7 12. Nf3 Bb4+ 13. Kf1 h6 14. Qg6
+Qe7 15. Be3 b6 16. Rc1 Bb7 17. Bb5 Bc5 18. Bd2 a5 19. Bxc6+ Bxc6 20. a3 a4 21.
+Bb4 Bxb4 22. axb4 Bb5+ 23. Kg1 Rac8 24. Rxc8 Rxc8 25. h3 Rc4 26. Kh2 Kc7 27.
+Rd1 Be8 28. Qd3 Qxb4 29. Nd4 Bd7 30. Nc2 Qxb2 31. Ne3 Qxe5+ 32. g3 Rc3 33. Qa6
+Qd6 34. Qa8 Qc6 35. Qf8 Rxe3 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.59"]
+[White "Vrban, Damir"]
+[Black "Guisset, Philippe"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2152"]
+[BlackElo "1926"]
+[PlyCount "45"]
+[EventDate "2011.03.06"]
+
+1. f4 g6 2. Nf3 c5 3. g3 Bg7 4. Bg2 Nc6 5. O-O d6 6. d3 e6 7. c3 Nge7 8. a4 O-O
+9. Na3 Rb8 10. Qc2 a6 11. Kh1 b5 12. axb5 axb5 13. Be3 b4 14. Nc4 Nd5 15. Bd2
+Nb6 16. Ne3 Bb7 17. Ng4 h5 18. Nf2 bxc3 19. bxc3 Qf6 20. Rab1 Ba8 21. Ne4 Nd7
+22. Neg5 Rfd8 23. Qa2 {UNREADABLE} 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.60"]
+[White "Andersson, Christin"]
+[Black "Knudsen, Jes West"]
+[Result "1/2-1/2"]
+[ECO "B02"]
+[WhiteElo "2102"]
+[BlackElo "1913"]
+[PlyCount "56"]
+[EventDate "2011.03.06"]
+
+1. e4 Nf6 2. e5 Nd5 3. Nc3 e6 4. Nxd5 exd5 5. d4 d6 6. Bf4 dxe5 7. dxe5 Nc6 8.
+Nf3 Bg4 9. Bb5 Bc5 10. Qd3 O-O 11. Bxc6 bxc6 12. Bd2 Rb8 13. O-O-O Qe7 14. Bc3
+Bb4 15. h3 Bxc3 16. Qxc3 Bxf3 17. Qxf3 Qb4 18. b3 Rb6 19. a4 d4 20. Qd3 c5 21.
+Rhe1 Rfb8 22. f4 Qa3+ 23. Kd2 Rxb3 24. cxb3 Rxb3 25. Qxb3 Qxb3 26. e6 Qa2+ 27.
+Kd3 Qb3+ 28. Kd2 Qa2+ 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.61"]
+[White "Ragnarsson, Johann"]
+[Black "Fivelstad, Jon Olav"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2082"]
+[BlackElo "1879"]
+[PlyCount "95"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 c5 3. d5 e6 4. Nc3 exd5 5. cxd5 d6 6. e4 g6 7. f3 Bg7 8. Bg5
+O-O 9. Qd2 Re8 10. Nge2 Nbd7 11. Ng3 h5 12. Be2 a6 13. a4 b6 14. O-O Nf8 15. h3
+N8h7 16. Bh4 Nxe4 17. Ngxe4 Qxh4 18. Nxd6 Bd4+ 19. Kh1 Bxh3 20. Qe1 Qxe1 21.
+Rfxe1 Red8 22. Nc4 Bf5 23. Nxb6 Ra7 24. a5 Nf6 25. Bc4 Nd7 26. Nxd7 Rdxd7 27.
+Re8+ Kh7 28. Rb8 Rdb7 29. Rxb7 Rxb7 30. Na4 Ra7 31. Re1 Kg7 32. d6 Kf8 33. Re2
+Be6 34. Bxe6 fxe6 35. Rxe6 Kf7 36. Re4 Rd7 37. b4 Rxd6 38. bxc5 Rd8 39. c6 Bf2
+40. g4 Bg3 41. gxh5 gxh5 42. Nb6 Bc7 43. Kg2 Rd2+ 44. Kf1 Rd6 45. Rc4 Rd8 46.
+Rc5 Kg6 47. Nd5 Bd6 48. c7 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.62"]
+[White "Doell, Detlef"]
+[Black "Ingason, Sigurdur"]
+[Result "1/2-1/2"]
+[ECO "C21"]
+[WhiteElo "2067"]
+[BlackElo "1878"]
+[PlyCount "64"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. d4 exd4 3. c3 Qe7 4. cxd4 Qxe4+ 5. Be3 d5 6. Nf3 Bf5 7. Nc3 Bb4 8.
+Qa4+ Nc6 9. Bb5 Bxc3+ 10. bxc3 Bd7 11. O-O Nge7 12. Rfe1 Qg6 13. Bxc6 Bxc6 14.
+Qb4 Qd6 15. Bf4 Qxb4 16. cxb4 Rc8 17. Re3 Kd8 18. Ng5 Be8 19. Be5 Nf5 20. Rf3
+Nh4 21. Rxf7 Bxf7 22. Nxf7+ Ke7 23. Nxh8 Rxh8 24. Bxc7 Rc8 25. Rc1 Nf5 26. Rc5
+Nxd4 27. Bd6+ Kd7 28. Rxc8 Kxc8 29. Be5 Ne6 30. f4 g6 31. g4 Kd7 32. Kf2 Nd8
+1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.63"]
+[White "Johansen, Arnt-Ole"]
+[Black "Jonsson, Pall Leo"]
+[Result "1/2-1/2"]
+[ECO "D36"]
+[BlackElo "2057"]
+[PlyCount "57"]
+[EventDate "2011.03.06"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 Be7 6. e3 c6 7. Bd3 Nbd7 8.
+Qc2 O-O 9. Nge2 Re8 10. O-O Nf8 11. Ng3 h6 12. Bxf6 Bxf6 13. Rae1 b6 14. f3 Bb7
+15. Qf2 c5 16. Nf5 cxd4 17. Nxd4 Bxd4 18. exd4 Qf6 19. Rxe8 Rxe8 20. Re1 Rd8
+21. a3 Ne6 22. Bb5 a6 23. Ba4 b5 24. Bb3 Nf4 25. Kh1 Qd6 26. g3 Ne6 27. Kg2 b4
+28. axb4 Qxb4 29. Ba2 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.64"]
+[White "de Winter, Eric"]
+[Black "Edvardsen, Ragnar"]
+[Result "0-1"]
+[ECO "A29"]
+[WhiteElo "1852"]
+[BlackElo "2045"]
+[PlyCount "68"]
+[EventDate "2011.03.06"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 d5 4. cxd5 Nxd5 5. Bg2 Nb6 6. d3 Be7 7. Nf3 Nc6 8.
+O-O O-O 9. a3 Be6 10. Rb1 f5 11. b4 Bf6 12. Qc2 Qe7 13. e3 Rad8 14. Rd1 Qf7 15.
+Ne1 Nd5 16. Na4 Nce7 17. Nc5 Bc8 18. Bb2 c6 19. Nf3 Ng6 20. Ba1 b6 21. Na4 Ba6
+22. Rbc1 e4 23. dxe4 fxe4 24. Ne1 Bxa1 25. Rxa1 Ne5 26. h3 Nd3 27. Nxd3 Bxd3
+28. Qa2 Bb5 29. Bxe4 Bxa4 30. Bxd5 Rxd5 31. Rd2 Rxd2 32. Qxd2 Qd5 33. Qc3 c5
+34. Rb1 Bc6 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.65"]
+[White "Ghaderi, Arman K"]
+[Black "Miettinen, Teemu"]
+[Result "1/2-1/2"]
+[ECO "C47"]
+[WhiteElo "1772"]
+[BlackElo "2012"]
+[PlyCount "45"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nc3 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8.
+exd5 cxd5 9. O-O O-O 10. Bg5 c6 11. Qf3 Bd6 12. Rfe1 Rb8 13. Rab1 h6 14. Bh4
+Rb4 15. Bxf6 Qxf6 16. Qxf6 gxf6 17. Ne2 Be6 18. c3 Ra4 19. Nd4 Bd7 20. a3 Be5
+21. Nf5 Bxf5 22. Bxf5 Rd8 23. Rbd1 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.66"]
+[White "Rodriguez Fonseca, Jorge"]
+[Black "Ontiveros, John"]
+[Result "1-0"]
+[ECO "B18"]
+[WhiteElo "2003"]
+[BlackElo "1763"]
+[PlyCount "41"]
+[EventDate "2011.03.06"]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. Bc4 e6 7. N1e2 h6 8.
+O-O Nf6 9. f4 Ne4 10. f5 Nxg3 11. fxg6 Nxf1 12. gxf7+ Kxf7 13. Nf4 Qf6 14. Nxe6
+Ke8 15. Bf4 Na6 16. Qe2 Kd7 17. Qg4 Ke8 18. Rxf1 h5 19. Qe2 Be7 20. Bg5 Qg6 21.
+Nc7+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.67"]
+[White "Roberts, Lynda"]
+[Black "Sigurdarson, Emil"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1960"]
+[BlackElo "1769"]
+[PlyCount "126"]
+[EventDate "2011.03.06"]
+
+1. e4 c6 2. g3 d5 3. Nc3 e5 4. Bg2 Nf6 5. d3 Bb4 6. Bd2 O-O 7. Nge2 Be6 8. a3
+Bd6 9. O-O Na6 10. Bg5 Nc7 11. Kh1 h6 12. Bxf6 Qxf6 13. f4 exf4 14. Nxf4 Bxf4
+15. Rxf4 Qg5 16. Qe2 d4 17. Nd1 Qe5 18. Nf2 f5 19. Nh3 Nd5 20. Rf2 Ne3 21. Nf4
+Kh7 22. Nxe6 Qxe6 23. exf5 Qf6 24. Be4 Kh8 25. Rc1 Rae8 26. Qf3 Qg5 27. Qf4 Qh5
+28. h3 Rf6 29. Kh2 g5 30. g4 Qh4 31. Qg3 Nxg4+ 32. Kg2 Qxg3+ 33. Kxg3 Nxf2 34.
+Kxf2 Kg7 35. Rg1 Kf7 36. c3 dxc3 37. bxc3 Rg8 38. Rb1 b6 39. Rb4 Ke7 40. a4 c5
+41. Rb1 Kd6 42. a5 Ke5 43. a6 Kf4 44. Re1 h5 45. Bd5 Rd8 46. c4 Rd7 47. Be4 g4
+48. h4 Rg7 49. Kg2 Re7 50. Rf1+ Ke3 51. Kg3 Rxe4 52. dxe4 Kxe4 53. Rd1 Rxf5 54.
+Rd7 Rf3+ 55. Kg2 Ra3 56. Rxa7 Kd4 57. Ra8 Kxc4 58. a7 b5 59. Rh8 Rxa7 60. Rxh5
+Rg7 61. Rg5 Rxg5 62. hxg5 Kd5 63. Kg3 Ke6 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.68"]
+[White "Calder, Dennis"]
+[Black "Sigurdsson, Birkir Karl"]
+[Result "1-0"]
+[ECO "D03"]
+[WhiteElo "1948"]
+[BlackElo "1716"]
+[PlyCount "41"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. Nf3 e6 3. Bg5 d5 4. e3 c5 5. c3 cxd4 6. exd4 Qb6 7. Bxf6 Qxb2 8.
+Bg5 Qxa1 9. Bb5+ Bd7 10. Bxd7+ Nxd7 11. Qb3 Rc8 12. O-O Bd6 13. Bc1 Rc6 14. Bb2
+Rb6 15. Bxa1 Rxb3 16. axb3 Ke7 17. c4 dxc4 18. bxc4 b6 19. Nbd2 f5 20. Re1 Kf6
+21. d5+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.69"]
+[White "Bjorgvinsson, Andri Freyr"]
+[Black "Saemundsson, Bjarni"]
+[Result "1/2-1/2"]
+[ECO "A20"]
+[WhiteElo "1544"]
+[BlackElo "1947"]
+[PlyCount "47"]
+[EventDate "2011.03.06"]
+
+1. c4 Nf6 2. g3 e5 3. Bg2 c6 4. d4 Bb4+ 5. Bd2 Qe7 6. dxe5 Bxd2+ 7. Qxd2 Qxe5
+8. Nc3 O-O 9. Nf3 Qe7 10. O-O d6 11. Rad1 Rd8 12. Ng5 Be6 13. Nxe6 Qxe6 14. Qf4
+Na6 15. Rd2 Rd7 16. Rfd1 Rad8 17. Ne4 Nxe4 18. Qxe4 Qxe4 19. Bxe4 g6 20. Bg2
+Re7 21. e3 Re6 22. Kf1 Nc7 23. Ke2 f5 24. Kf1 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.70"]
+[White "Zachariassen, John"]
+[Black "Johannesson, Oliver"]
+[Result "0-1"]
+[ECO "A12"]
+[WhiteElo "1939"]
+[BlackElo "1677"]
+[PlyCount "74"]
+[EventDate "2011.03.06"]
+
+1. c4 Nf6 2. Nf3 c6 3. g3 d5 4. b3 Bg4 5. Bg2 Nbd7 6. h3 Bxf3 7. Bxf3 Ne5 8.
+Bg2 dxc4 9. O-O cxb3 10. Qxb3 Qb6 11. Qc2 e6 12. Bb2 Ned7 13. Nc3 Be7 14. Rab1
+Qc7 15. d4 Nb6 16. e4 Rd8 17. Rfc1 Qb8 18. d5 cxd5 19. exd5 e5 20. Qb3 O-O 21.
+Rd1 Rc8 22. Nb5 Bc5 23. Bc1 Nc4 24. Bg5 Nd7 25. a4 h6 26. Bc1 Na5 27. Qd3 a6
+28. Qf5 Rcd8 29. Nc3 Nc4 30. Bxh6 gxh6 31. Be4 Nf6 32. Qxf6 Qd6 33. Qf5 Qg6 34.
+g4 Nd6 35. Qxe5 f5 36. Bd3 Rde8 37. Qg3 Qg7 {Text unreadable} 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.71"]
+[White "Kristinardottir, Elsa Maria"]
+[Black "Hynna, Kevin"]
+[Result "0-1"]
+[ECO "B13"]
+[WhiteElo "1734"]
+[BlackElo "1936"]
+[PlyCount "86"]
+[EventDate "2011.03.06"]
+
+1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. Nf3 Bg4 7. O-O e6 8. Bg5
+Be7 9. Nbd2 Nd7 10. Bxe7 Qxe7 11. Qc2 Rc8 12. a3 Bh5 13. Rae1 Bg6 14. Re3 Qf6
+15. Bxg6 hxg6 16. Qb3 Nb6 17. Ne5 Nxe5 18. Rxe5 Kd7 19. c4 Qf4 20. Qb5+ Ke7 21.
+Qb4+ Kf6 22. Nf3 Nxc4 23. Rfe1 b6 24. b3 a5 25. Qc3 Nxe5 26. dxe5+ Ke7 27. Qe3
+Rc1 28. Qe2 Rxe1+ 29. Qxe1 Rc8 30. Qe2 Qc1+ 31. Ne1 Qxa3 32. Qe3 Qc5 33. Qg5+
+Kf8 34. Qh4 Kg8 35. h3 Qb4 36. f4 Qxb3 37. Nf3 Qe3+ 38. Kh2 Qc1 39. Ng5 Kf8 40.
+Qh8+ Ke7 41. Qh4 Rc4 42. Nh7+ Kd7 43. Nf8+ Kc6 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.72"]
+[White "Thorsteinsdottir, Gudlaug"]
+[Black "Antonsson, Atli"]
+[Result "1-0"]
+[ECO "A90"]
+[WhiteElo "2085"]
+[BlackElo "1849"]
+[PlyCount "52"]
+[EventDate "2011.03.06"]
+
+1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 c6 5. Nf3 d5 6. Nbd2 Bd6 7. O-O O-O 8. b3 b6
+9. Bb2 Bb7 10. Rc1 Qe7 11. Ne5 Nbd7 12. Ndf3 Rac8 13. Qd3 Ne4 14. Nxd7 Qxd7 15.
+Ne5 Qe7 16. Rc2 c5 17. e3 Bxe5 18. dxe5 dxc4 19. bxc4 Rcd8 20. Qe2 Ng5 21. f3
+Bc6 22. e4 fxe4 23. f4 Nf3+ 24. Bxf3 exf3 25. Qe3 Rd7 26. Qd2 Rxd2 {Text
+unreadable} 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.73"]
+[White "Forsa, Elise"]
+[Black "Stam, Bart"]
+[Result "1/2-1/2"]
+[ECO "B92"]
+[WhiteElo "1789"]
+[BlackElo "2048"]
+[PlyCount "39"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O
+Be6 9. f4 exf4 10. Rxf4 Nc6 11. Nd5 O-O 12. Be3 Bxd5 13. exd5 {Text unreadable}
+Ne5 14. Qd2 Rc8 15. Raf1 Ng6 16. Rb4 Qc7 17. c3 Ne8 18. Bb6 Qd7 19. Bd3 Bd8 20.
+Bd4 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.74"]
+[White "Shepherd, Michael"]
+[Black "Traustason, Ingi Tandri"]
+[Result "1/2-1/2"]
+[ECO "A57"]
+[WhiteElo "2011"]
+[BlackElo "1824"]
+[PlyCount "82"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. b6 Qxb6 6. Nc3 d6 7. a4 a5 8. e4 Ba6
+9. Bb5+ Bxb5 10. axb5 g6 11. Nf3 Bg7 12. O-O O-O 13. Nd2 Nbd7 14. Nc4 Qc7 15.
+Bf4 Rfb8 16. Re1 Ne8 17. Qd2 Nb6 18. Na3 Qd8 19. Bh6 Nc7 20. Bxg7 Kxg7 21. Re3
+Kg8 22. Rh3 Qf8 23. Rd1 Qg7 24. Kh1 Nd7 25. f4 Ne8 26. Nc2 Nc7 27. Na3 Ne8 28.
+Qe2 Nc7 29. Qg4 Nf6 30. Qh4 h5 31. Qe1 Ng4 32. Rf3 Rb7 33. h3 Nh6 34. Qe3 Rab8
+35. f5 Kh7 36. Rdf1 f6 37. fxg6+ Qxg6 38. Rg3 Qf7 39. Qf3 Qf8 40. Qd3 Kh8 41.
+Qe3 {Text unreadable} Qf7 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.75"]
+[White "Finnbogadottir, Tinna Kristin"]
+[Black "Thorsteinsdottir, Hallgerdur"]
+[Result "1/2-1/2"]
+[ECO "B06"]
+[WhiteElo "1810"]
+[BlackElo "1959"]
+[PlyCount "54"]
+[EventDate "2011.03.06"]
+
+1. e4 d6 2. d4 g6 3. Nc3 Bg7 4. Be3 a6 5. Nf3 b5 6. a3 Bb7 7. Be2 Nf6 8. Nd2
+Nbd7 9. O-O c5 10. dxc5 dxc5 11. f3 O-O 12. Rb1 Qc7 13. Re1 Rfd8 14. Qc1 Rac8
+15. Nd1 Ne5 16. Nf1 Qc6 17. Nf2 Ba8 18. Rd1 h5 19. Rxd8+ Rxd8 20. h3 Ne8 21.
+Nd3 Nxd3 22. Bxd3 Nc7 23. Bd2 Ne6 24. c3 c4 25. Qe1 Be5 26. Rd1 Rd6 27. Qf2 Nf4
+{Text Ureadable} 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.76"]
+[White "Maggason, Oskar"]
+[Black "Bharat, Vijay"]
+[Result "0-1"]
+[ECO "B22"]
+[BlackElo "1941"]
+[PlyCount "64"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 Nf6 5. Nf3 Bg4 6. Be2 e6 7. O-O Be7 8. Be3
+cxd4 9. cxd4 Nc6 10. Nc3 Qd6 11. Nb5 Qb8 12. h3 Bh5 13. Rc1 O-O 14. Ne5 Bxe2
+15. Qxe2 Nxe5 16. Bf4 Nd5 17. Bxe5 Qd8 18. Nc3 Rc8 19. Ne4 Rxc1 20. Rxc1 g6 21.
+Qb5 Qb6 22. Qd7 Qxb2 23. Rc8 Qb1+ 24. Kh2 Qxe4 25. Qxb7 f6 26. f3 Qd3 27. Bg3
+Rxc8 28. Qxc8+ Kf7 29. Qh8 g5 30. a4 Qc2 31. Qa8 Ne3 32. f4 Nf1+ 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.77"]
+[White "Arnljotsson, Jon"]
+[Black "Thjomoe, Hans Richard"]
+[Result "1-0"]
+[ECO "E67"]
+[BlackElo "1926"]
+[PlyCount "53"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. g3 d6 5. Bg2 O-O 6. Nf3 Nbd7 7. O-O c6 8. Qc2
+d5 9. cxd5 Nxd5 10. e4 Nxc3 11. bxc3 e5 12. Bb2 Re8 13. Rad1 Qa5 14. Ba1 exd4
+15. cxd4 Nf6 16. Ne5 Be6 17. Rd2 Rad8 18. Rb1 Re7 19. Bc3 Qc7 20. f4 Ng4 21.
+Nxg4 Bxg4 22. Qb2 Bc8 23. e5 Be6 24. Rc1 Bd5 25. Bb4 Ree8 26. Bd6 Qc8 27. Bxd5
+1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.78"]
+[White "Leosson, Atli Johann"]
+[Black "Mehringer, Joerg"]
+[Result "1-0"]
+[ECO "C50"]
+[WhiteElo "1682"]
+[BlackElo "1903"]
+[PlyCount "79"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Nc3 Bc5 5. d3 d6 6. Bg5 h6 7. Bxf6 Qxf6 8.
+Nd5 Qd8 9. a3 a5 10. c3 O-O 11. h3 Ne7 12. Ne3 Bxe3 13. fxe3 d5 14. exd5 Nxd5
+15. Qe2 Qd6 16. O-O Be6 17. Rf2 f5 18. Bxd5 Bxd5 19. e4 fxe4 20. dxe4 Bc6 21.
+Qc4+ Kh7 22. Rd2 Qe7 23. b4 Rf4 24. Re1 axb4 25. axb4 Raf8 26. b5 Be8 27. Qd5
+Qf6 28. Nxe5 c6 29. bxc6 bxc6 30. Qd6 Rf1+ 31. Rxf1 Qxf1+ 32. Kh2 Rf6 33. Qd4
+Qf4+ 34. g3 Qf1 35. Ng4 Rf3 36. Rf2 Rxf2+ 37. Qxf2 Qd3 38. Qf5+ Bg6 39. Qxg6+
+Kxg6 40. Ne5+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.79"]
+[White "Helin, Mikael"]
+[Black "Brynjarsson, Eirikur Orn"]
+[Result "1-0"]
+[ECO "C25"]
+[WhiteElo "1884"]
+[BlackElo "1638"]
+[PlyCount "65"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nc3 Nc6 3. Bc4 Bc5 4. d3 d6 5. a3 Nge7 6. f4 exf4 7. Nf3 Ng6 8. d4
+Bb6 9. Nd5 Bg4 10. c3 Bxf3 11. Qxf3 Qh4+ 12. g3 Qh3 13. Bxf4 Nh4 14. Qf2 Ng2+
+15. Kd1 Nxf4 16. Nxf4 Qd7 17. Nd5 O-O 18. h3 Na5 19. Ba2 Rae8 20. Qc2 Kh8 21.
+g4 Nc6 22. Qd3 Ne7 23. Ne3 Ng6 24. Rf1 f6 25. Rc1 Qe7 26. Bb1 c6 27. h4 Rg8 28.
+h5 Nf8 29. Nf5 Qe6 30. Rg1 h6 31. Nh4 d5 32. exd5 cxd5 33. Qh7+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.80"]
+[White "Mozelius, Peter"]
+[Black "Fridthjofsdottir, Sigurl  Regin"]
+[Result "0-1"]
+[ECO "C00"]
+[WhiteElo "1882"]
+[BlackElo "1731"]
+[PlyCount "26"]
+[EventDate "2011.03.06"]
+
+1. Nf3 e6 2. g3 d5 3. Bg2 Nf6 4. O-O c5 5. d3 Nc6 6. Nbd2 Be7 7. Re1 O-O 8. e4
+dxe4 9. dxe4 e5 10. c3 Qc7 11. Qc2 h6 12. Nc4 Be6 {Text unreadable} 13. Na3
+Rad8 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.81"]
+[White "Krush, Irina"]
+[Black "Dukaczewski, Piotr"]
+[Result "1-0"]
+[ECO "D28"]
+[WhiteElo "2461"]
+[BlackElo "2310"]
+[PlyCount "43"]
+[EventDate "2011.03.06"]
+
+1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. Qe2 a6 7. dxc5 Bxc5 8.
+O-O O-O 9. e4 Nc6 10. e5 Nd7 11. Bd3 g6 12. Bh6 Re8 13. Nbd2 Qe7 14. Rac1 Ncxe5
+15. b4 Qd6 16. Nxe5 Bxb4 17. Nxd7 Bxd7 18. Ne4 Qe5 19. Bg5 Be7 20. f4 Qd4+ 21.
+Kh1 f6 22. Rc4 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.82"]
+[White "Heimisson, Hilmir Freyr"]
+[Black "Andersen, Daniel"]
+[Result "0-1"]
+[ECO "B78"]
+[WhiteElo "1602"]
+[BlackElo "1879"]
+[PlyCount "108"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Bc4 Bg7 7. Be3 O-O 8.
+Qd2 Nc6 9. O-O-O Bd7 10. f3 Rc8 11. Bb3 Ne5 12. h3 Nc4 13. Bxc4 Rxc4 14. g4 a6
+15. h4 h5 16. g5 Ne8 17. Rdf1 Nc7 18. f4 Nb5 19. Ncxb5 axb5 20. f5 b4 21. Ne2
+Qa5 22. f6 Qxa2 23. Kd1 exf6 24. gxf6 Bh8 25. Bh6 Re8 26. Rhg1 Qa1+ 27. Nc1
+Bg4+ 28. Rxg4 hxg4 29. Rf4 Qxb2 30. Nb3 Rexe4 31. Rxe4 Rxe4 32. Qd5 Qe5 33. Qd3
+Bxf6 34. h5 gxh5 35. Qd2 Rd4 36. Nxd4 Qxd4 37. Qxd4 Bxd4 38. Ke2 Kh7 39. Bf4
+Bc5 40. Bg3 Kg6 41. Bh4 d5 42. Kf1 Kf5 43. Kg2 Ke4 44. Kf1 f5 45. Ke2 f4 46.
+Kf1 Kf3 47. c4 dxc4 48. Bf2 Be7 49. Be1 g3 50. Kg1 Bc5+ 51. Kh1 g2+ 52. Kh2
+g1=Q+ 53. Kh3 Qg4+ 54. Kh2 Qg2# 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.83"]
+[White "Jonsson, Olafur Gisli"]
+[Black "Petersson, Baldur Teodor"]
+[Result "1-0"]
+[ECO "C55"]
+[WhiteElo "1877"]
+[BlackElo "1524"]
+[PlyCount "89"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. c3 O-O 6. Bb3 h6 7. Nbd2 Bc5 8. Nc4
+d6 9. O-O Kh8 10. Ne3 Bxe3 11. Bxe3 Bg4 12. Qe2 Nh7 13. h3 Bh5 14. g4 Bg6 15.
+Kh2 Na5 16. Bc2 f6 17. Nh4 Qe8 18. f4 Nc6 19. Rf2 Ne7 20. Raf1 Qb5 21. Nxg6+
+Nxg6 22. f5 Ne7 23. Bb3 Rfd8 24. h4 a5 25. g5 hxg5 26. hxg5 Qe8 27. Kg3 d5 28.
+Rh2 Kg8 29. Rfh1 fxg5 30. Rxh7 Kf8 31. Bc5 Kf7 32. Bxe7 Kxe7 33. Rxg7+ Kd6 34.
+Rh6+ Kc5 35. d4+ exd4 36. Rxc7+ Qc6 37. cxd4+ Kxd4 38. Rcxc6 bxc6 39. Rxc6 g4
+40. Bxd5 Rh8 41. Qc4+ Ke3 42. Qb3+ Kd2 43. Rc2+ Ke1 44. Qe3+ Kf1 45. Rc1# 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.84"]
+[White "Gunnlaugsson, Gisli"]
+[Black "Hauksdottir, Hrund"]
+[Result "0-1"]
+[ECO "C70"]
+[WhiteElo "1875"]
+[BlackElo "1627"]
+[PlyCount "90"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Bc5 6. c3 d6 7. d4 exd4 8. Nxd4
+Ne5 9. O-O Nf6 10. Bg5 h6 11. Bh4 O-O 12. Nd2 Bb7 13. Bc2 Re8 14. f3 Ng6 15.
+Bf2 Nh5 16. N2b3 Bb6 17. Qd2 Nhf4 18. Nf5 Bxf2+ 19. Rxf2 Qg5 20. Kh1 Rad8 21.
+Re1 Re5 22. g3 Nh3 23. Rff1 Qf6 24. Kg2 Ng5 25. h4 Nh7 26. f4 Ree8 27. Kh2 Ne7
+28. Nbd4 Nxf5 29. Nxf5 Qe6 30. Nd4 Qd7 31. Rf2 Nf6 32. Rfe2 d5 33. e5 Ne4 34.
+Qe3 Qg4 35. Qf3 Qxf3 36. Nxf3 Kf8 37. Bxe4 dxe4 38. Nd2 f5 39. g4 g6 40. h5
+fxg4 41. hxg6 Kg7 42. Nxe4 Kxg6 43. Ng3 Bf3 44. f5+ Kg5 45. Rf2 h5 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2012.03.11"]
+[Round "7.85"]
+[White "Birgisdottir, Ingibjorg"]
+[Black "Johannsdottir, Johanna Bjorg"]
+[Result "0-1"]
+[ECO "B34"]
+[BlackElo "1864"]
+[PlyCount "46"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 g6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Bg7 6. Be3 Nf6 7. Qd2 O-O 8.
+f3 d5 9. Nxc6 bxc6 10. exd5 Nxd5 11. Nxd5 cxd5 12. c3 e5 13. Rd1 Bb7 14. Be2
+Qh4+ 15. Bf2 Qa4 16. a3 Rfd8 17. O-O Rac8 18. Rfe1 d4 19. Rc1 dxc3 20. Qc2 cxb2
+21. Qxb2 Bc6 22. Rc4 Qa5 23. Be3 Qxe1+ 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.86"]
+[White "Stefansson, Vignir Vatnar"]
+[Black "Sjol, Henrik"]
+[Result "0-1"]
+[ECO "D37"]
+[WhiteElo "1474"]
+[BlackElo "1892"]
+[PlyCount "88"]
+[EventDate "2011.03.06"]
+
+1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. Bf4 e6 5. e3 Nbd7 6. Bd3 Be7 7. Nf3 O-O 8. c5
+Nh5 9. Bg3 g6 10. b4 Re8 11. O-O Nxg3 12. hxg3 Bf6 13. b5 e5 14. bxc6 bxc6 15.
+Be2 e4 16. Nh2 Nxc5 17. Qc2 Ne6 18. Na4 Bd7 19. Ba6 Qa5 20. Bb7 Rab8 21. Rab1
+Be7 22. Rfc1 Ba3 23. Rd1 Bb4 24. a3 Rxb7 25. axb4 Rxb4 26. Rxb4 Qxb4 27. Ng4
+Kg7 28. Ne5 Qd6 29. Rc1 Rc8 30. Nc5 Nxc5 31. Qxc5 Qxc5 32. Rxc5 Be8 33. Ra5 Rc7
+34. f4 Rb7 35. Ra6 Rc7 36. Ra5 h5 37. g4 f6 38. gxh5 fxe5 39. fxe5 gxh5 40. Kh2
+Kf7 41. Kg3 Ke6 42. Rc5 Rg7+ 43. Kf2 Rb7 44. Kg3 Rb5 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.87"]
+[White "Leite, Steinar"]
+[Black "Johannesson, Kristofer Joel"]
+[Result "1-0"]
+[ECO "C52"]
+[WhiteElo "1707"]
+[BlackElo "1449"]
+[PlyCount "49"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. O-O Bg4 8. Qb3
+Qd7 9. Ng5 Nd8 10. f4 Bb6 11. fxe5 Be6 12. Nxe6 fxe6 13. Kh1 dxe5 14. Ba3 Ne7
+15. Nd2 exd4 16. cxd4 Bxd4 17. Rad1 Nec6 18. Qf3 Bf6 19. Nb3 Ne5 20. Qh5+ g6
+21. Qe2 Qg7 22. Nc5 Nxc4 23. Qxc4 g5 24. Nxe6 Qf7 25. Nxc7+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.88"]
+[White "Davidsdottir, Nansy"]
+[Black "Lensebakken, Jonar"]
+[Result "1/2-1/2"]
+[ECO "B13"]
+[WhiteElo "1379"]
+[BlackElo "1643"]
+[PlyCount "48"]
+[EventDate "2011.03.06"]
+
+1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 Bg4 6. f3 Bh5 7. Be3 e6 8. Be2
+Be7 9. Nh3 Nbd7 10. Nf4 Nb6 11. cxd5 exd5 12. Bb5+ Kf8 13. O-O Bg6 14. a4 a6
+15. Be2 Rc8 16. Qb3 Nc4 17. Bxc4 dxc4 18. Qxb7 a5 19. Qb5 Bb4 20. Ncd5 Nxd5 21.
+Nxd5 Bd3 22. Rfd1 Rb8 23. Qc6 Rc8 24. Qb5 Rb8 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.89"]
+[White "Palsdottir, Soley Lind"]
+[Black "Vignisson, Ingvar Egill"]
+[Result "1/2-1/2"]
+[ECO "B90"]
+[WhiteElo "1323"]
+[BlackElo "1558"]
+[PlyCount "111"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bd3 Nbd7 7. O-O e5 8.
+Nf3 Be7 9. Be3 O-O 10. a3 b6 11. Bc4 Bb7 12. Bd5 Nxd5 13. Nxd5 Bxd5 14. Qxd5
+Rc8 15. Rac1 Nc5 16. b4 Na4 17. c4 Qd7 18. c5 Qe6 19. Qxe6 fxe6 20. cxb6 Rb8
+21. Rc7 Bd8 22. Rd7 Nxb6 23. Rxd6 Bc7 24. Rxe6 Rfe8 25. Rxe8+ Rxe8 26. Rc1 Na8
+27. g3 Rd8 28. Rc6 Bd6 29. Rc1 Rd7 30. a4 h6 31. Rb1 Kf7 32. b5 axb5 33. axb5
+Ke6 34. b6 Bb8 35. Ra1 Nxb6 36. Bxb6 g5 37. Ra6 Rd6 38. h3 Rc6 39. Kg2 Bc7 40.
+Bxc7 Rxa6 41. Bxe5 Kf7 42. Bd4 Ke6 43. e5 Ra8 44. Bc5 Ra4 45. g4 Rf4 46. Kg3
+Rf7 47. Bd6 Kd5 48. h4 Ke4 49. Nd2+ Kd3 50. e6 gxh4+ 51. Kxh4 Rxf2 52. Kh5 Rxd2
+53. e7 Re2 54. Kg6 Re6+ 55. Kf7 Re4 56. e8=Q 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.90"]
+[White "Rikhardsdottir, Svandis Ros"]
+[Black "Kazmierczak, Ewa"]
+[Result "1/2-1/2"]
+[ECO "C01"]
+[BlackElo "1462"]
+[PlyCount "78"]
+[EventDate "2011.03.06"]
+
+1. e4 e6 2. d4 d5 3. exd5 exd5 4. Be3 Bd6 5. Nf3 Bg4 6. Bd3 Nf6 7. O-O O-O 8.
+Re1 c6 9. h3 Bxf3 10. Qxf3 Re8 11. Nd2 Nbd7 12. c3 Qc7 13. b4 Re7 14. a4 Rae8
+15. a5 Nf8 16. Kf1 Ne6 17. Bc2 Bf4 18. Kg1 Bxe3 19. Rxe3 Qf4 20. Qxf4 Nxf4 21.
+Rae1 Rxe3 22. fxe3 Ne6 23. Kf2 Ng5 24. Ke2 Nge4 25. Bxe4 Nxe4 26. Nxe4 Rxe4 27.
+Rf1 f6 28. Kd3 Kf7 29. c4 Re7 30. cxd5 cxd5 31. Rc1 Ke6 32. Rc5 f5 33. b5 Kd6
+34. g3 Rc7 35. Rxc7 Kxc7 36. Kc3 b6 37. a6 Kd6 38. Kd2 Ke6 39. Ke2 Kf6 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.91"]
+[White "Steinthorsson, Felix"]
+[Black "Gundersen, Ingvar"]
+[Result "0-1"]
+[ECO "A80"]
+[WhiteElo "1298"]
+[BlackElo "1814"]
+[PlyCount "54"]
+[EventDate "2011.03.06"]
+
+1. d4 f5 2. Nf3 Nf6 3. Bf4 e6 4. e3 b6 5. Nbd2 Bb7 6. c3 Be7 7. Be2 O-O 8. Rg1
+c5 9. h3 Nc6 10. Nh2 d5 11. g4 cxd4 12. exd4 Bd6 13. Bg3 Ne4 14. Nxe4 fxe4 15.
+Qd2 e5 16. dxe5 Nxe5 17. O-O-O b5 18. a3 Qa5 19. Qc2 Rac8 20. Kb1 Qb6 21. Rde1
+a5 22. f3 b4 23. axb4 axb4 24. Qb3 Nc4 25. Kc1 Qe3+ 26. Kc2 Qd2+ 27. Kb1 Bxg3
+0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.92"]
+[White "Magnusdottir, Veronika Steinunn"]
+[Black "Mass, Elvira"]
+[Result "0-1"]
+[ECO "B07"]
+[WhiteElo "1580"]
+[BlackElo "2040"]
+[PlyCount "56"]
+[EventDate "2011.03.06"]
+
+1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. f4 Bg7 5. Be3 Ng4 6. Bc1 O-O 7. h3 Nf6 8. Be3
+b6 9. Qd2 Bb7 10. Bd3 c5 11. Nf3 c4 12. Bxc4 Nxe4 13. Nxe4 Bxe4 14. Rf1 Qc7 15.
+Bb3 a5 16. Ng5 Qb7 17. Nxe4 Qxe4 18. O-O-O a4 19. Bc4 Rc8 20. Bd3 Qd5 21. a3
+Nc6 22. Rfe1 Nxd4 23. Kb1 Nf5 24. Bxf5 Qxf5 25. Bxb6 Rab8 26. g4 Qb5 27. Bd4
+Bxd4 28. Qxd4 Rc4 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.93"]
+[White "Edakina, Maria"]
+[Black "Kristbergsson, Bjorgvin"]
+[Result "1-0"]
+[ECO "B34"]
+[WhiteElo "1657"]
+[PlyCount "35"]
+[EventDate "2011.03.06"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nxc6 bxc6 6. Qd4 f6 7. Bc4 e5 8.
+Qd3 Ne7 9. Nc3 Bg7 10. Be3 d6 11. O-O-O d5 12. exd5 Bf5 13. Qd2 Qd6 14. dxc6
+Qxd2+ 15. Rxd2 a6 16. c7 Bd7 17. Rhd1 Bf5 18. Rd8+ 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.94"]
+[White "Einarsson, Oskar Long"]
+[Black "Magnusson, Thorsteinn"]
+[Result "1-0"]
+[ECO "C45"]
+[WhiteElo "1618"]
+[PlyCount "25"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bd6 7. Bxg7 Be5
+8. Bxe5 f6 9. Qh5+ Kf8 10. Bc3 d6 11. Bc4 Kg7 12. Qf7+ Kh6 13. Bd2# 1-0
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.95"]
+[White "Thorsteinsson, Leifur"]
+[Black "Smith, Chris P"]
+[Result "1/2-1/2"]
+[ECO "A57"]
+[PlyCount "102"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 c5 3. d5 b5 4. e3 bxc4 5. Bxc4 d6 6. h3 g6 7. Nf3 Bg7 8. Nc3
+O-O 9. O-O Nbd7 10. e4 Nb6 11. Bd3 Rb8 12. Bf4 Bb7 13. Qd2 Qd7 14. Bb5 Qc8 15.
+Qe2 a6 16. Bd3 Qd7 17. Bxa6 Ra8 18. Bb5 Qc8 19. Rab1 Ba6 20. a3 Bxb5 21. Qxb5
+Qa6 22. Qxa6 Rxa6 23. Rfe1 Rb8 24. b4 Rxa3 25. bxc5 Rxc3 26. cxb6 Rb7 27. Rb4
+Nd7 28. Be3 Rc8 29. Reb1 Ra8 30. Rc4 h5 31. Kh2 Kh7 32. Ng5+ Kg8 33. Nf3 Kh7
+34. Rb5 Rab8 35. Rcb4 Bh6 36. Bd4 Bg7 37. Ng5+ Kg8 38. Nf3 Bxd4 39. Nxd4 Rxb6
+40. Rxb6 Rxb6 41. Rxb6 Nxb6 42. Nc6 e6 43. dxe6 fxe6 44. Nd8 e5 45. Kg3 d5 46.
+Kf3 d4 47. Nc6 Nd7 48. Ke2 Kf8 49. g3 Kf7 50. f4 Ke6 51. Kd3 {Text unreadable}
+exf4 1/2-1/2
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.96"]
+[White "Ragnarsson, Heimir Pall"]
+[Black "Wasenius, Thomas"]
+[Result "0-1"]
+[ECO "C55"]
+[BlackElo "1612"]
+[PlyCount "70"]
+[EventDate "2011.03.06"]
+
+1. e4 e5 2. Nf3 Nf6 3. Nc3 Nc6 4. Bc4 Nxe4 5. Nxe4 d5 6. Bd3 dxe4 7. Bxe4 Bd6
+8. O-O O-O 9. Bxc6 bxc6 10. d4 Bg4 11. Qd3 Bxf3 12. Qxf3 exd4 13. Qxc6 Qf6 14.
+Qd5 Rad8 15. Qa5 a6 16. Bg5 Bxh2+ 17. Kxh2 Qd6+ 18. g3 Rd7 19. Rad1 c5 20. Rfe1
+h6 21. Bf4 Qc6 22. c3 Rd5 23. Re5 Rxe5 24. Bxe5 Qf3 25. Rd2 Qh5+ 26. Kg2 Qxe5
+27. cxd4 Qd5+ 28. f3 Rd8 29. Qxa6 cxd4 30. Qa4 g5 31. Kf2 d3 32. Qa6 Qd4+ 33.
+Kg2 Kg7 34. a4 Qe3 35. Rf2 d2 0-1
+
+[Event "Reykjavik Open 2012"]
+[Site "Reykjavik"]
+[Date "2011.03.11"]
+[Round "7.95"]
+[White "Text Ureadable, Leifur"]
+[Black "Smith, Chris P"]
+[Result "1/2-1/2"]
+[ECO "A57"]
+[PlyCount "107"]
+[EventDate "2011.03.06"]
+
+1. d4 Nf6 2. c4 c5 3. d5 b5 4. e3 bxc4 5. Bxc4 d6 6. h3 g6 7. Nf3 Bg7 8. Nc3
+O-O 9. O-O Nbd7 10. e4 Nb6 11. Bd3 Rb8 12. Bf4 Bb7 13. Qd2 Qd7 14. Bb5 Qc8 15.
+Qe2 a6 16. Bd3 Qd7 17. Bxa6 Ra8 18. Bb5 Qc8 19. Rab1 Ba6 20. a3 Bxb5 21. Qxb5
+Qa6 22. Qxa6 Rxa6 23. Rfe1 Rb8 24. b4 Rxa3 25. bxc5 Rxc3 26. cxb6 Rb7 27. Rb4
+Nd7 28. Be3 Rc8 29. Reb1 Ra8 30. Rc4 h5 31. Kh2 Kh7 32. Ng5+ Kg8 33. Nf3 Kh7
+34. Rb5 Rab8 35. Rcb4 Bh6 36. Bd4 Bg7 37. Ng5+ Kg8 38. Nf3 Bxd4 39. Nxd4 Rxb6
+40. Rxb6 Rxb6 41. Rxb6 Nxb6 42. Nc6 e6 43. dxe6 fxe6 44. Nd8 e5 45. Kg3 d5 46.
+Kf3 d4 47. Nc6 Nd7 48. Ke2 Kf8 49. g3 Kf7 50. f4 Ke6 51. Kd3 Nc5+ 52. Kc2 Nxe4
+53. fxe5 Nxg3 54. Nxd4+ 1/2-1/2

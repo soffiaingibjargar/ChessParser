@@ -14,6 +14,8 @@ draws1 = c()
 draws2 = c()
 
 size = length(res)
+print("size")
+print(size)
 for(i in 1:size)
 {
   #print(res[i])
