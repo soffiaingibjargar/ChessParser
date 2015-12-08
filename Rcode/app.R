@@ -35,7 +35,7 @@ server <- function(input, output) {
   
   source("elo.R")
   source("helper.R")
-  my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 100)
+  #my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 100)
   
   getBoard <- function(p,r) {
     board <- vector(mode="numeric",length = 8 * 8)
@@ -50,6 +50,7 @@ server <- function(input, output) {
     return(M)
   }
   
+  #helpfunction
   output$status <- renderText({
     paste("Player", input$player, "Piece", input$piece, "Round", input$round)
   })
@@ -65,16 +66,17 @@ server <- function(input, output) {
   output$winScatter <- renderPlot({
     #hist(rnorm(input$num), col="green")
     par(new = FALSE)
-    symbol = "*"
-    plot(wins1, wins2,xlab="white ELO",ylab="black ELO",main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green")
+    symbol = 20
+    plot(wins1, wins2,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1)
+    mtext(side = 2, "black ELO", line = 3, las=1, adj=0, padj=-16)
+    mtext(side = 1, "white ELO", line = 2, adj=1)
     par(new = TRUE)
-    
-    plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange")
+    plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange",las=1)
     par(new = TRUE)
-    plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red")
+    plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red",las=1)
     par(new = TRUE)
     line = seq(from = 1000, to = 3000, by = 25)
-    plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black")
+    plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black",las=1)
   })
 }
 
