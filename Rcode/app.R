@@ -3,40 +3,29 @@ library(gplots)
 library(shiny)
 library(heatmap3)
 
-ui <- fluidPage(
-  titlePanel("Chess Results"),
-  
-  sidebarLayout(
-    sidebarPanel(
-      
-      conditionalPanel(condition="input.tabs==2",
-                       radioButtons("player", label = h3("Player"),
-                                    choices = list("White" = 1, "Black" = 0),selected = 1),
+ui <- navbarPage(title = "Chess Results",
+                tabPanel(title = "Results",
+                  plotOutput("winScatter")),
+                tabPanel(title = "Moves",
+                  sidebarLayout(
+                    sidebarPanel(
+                      radioButtons("player", label = h3("Player"),
+                                   choices = list("White" = 1, "Black" = 0),selected = 1),
                        
-                       radioButtons("piece", label = h3("Piece"),
-                                    choices = list("Pawn" = 5, "Knight" = 1,
-                                                   "Bishop" = 2,"Rook" = 0,
-                                                   "Queen" = 3, "King" = 4),
-                                    selected = 1),
+                      radioButtons("piece", label = h3("Piece"),
+                                   choices = list("Pawn" = 5, "Knight" = 1,
+                                                  "Bishop" = 2,"Rook" = 0,
+                                                  "Queen" = 3, "King" = 4),
+                                   selected = 5),
                        
-                       sliderInput("round", "Turn:",
-                                   min = 1, max = 65, value = 1, step = 1,animate=TRUE))
-      
-    ),
-    #fluidRow(NULL),
-    
-    mainPanel(
-      
-      tabsetPanel(
-        tabPanel("Results", value=1, plotOutput("winScatter")),
-        tabPanel("Moves", value=2, plotOutput("heatmap")),
-        id = "tabs"
-        )
-      #textOutput("status"),
-      #plotOutput("winScatter"),
-      #plotOutput("heatmap")
-    )
-  )
+                      sliderInput("round", "Turn:",
+                                   min = 1, max = 65, value = 1, step = 1,animate=TRUE)
+                    ),
+                    mainPanel(
+                      plotOutput("heatmap")
+                    )
+                  )
+                )
 )
 
 
@@ -69,7 +58,7 @@ server <- function(input, output) {
     r <- input$round
     p <- as.numeric(input$piece) + 6 * as.numeric(input$player)
     board = getBoard(p,r)
-    heatmap3(board, Rowv=NA, Colv=NA, col = cm.colors(256), scale="column", margins=c(5,10), balanceColor=T,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'))
+    heatmap3(board, Rowv=NA, Colv=NA, col = cm.colors(256), scale="none", margins=c(5,10), balanceColor=T,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'))
     
   })
   
