@@ -69,6 +69,7 @@ server <- function(input, output) {
   output$captures <- renderPlot({
     #heatmap(captures)
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
+    par(las=1)
     heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece")
   })
   
@@ -82,10 +83,10 @@ server <- function(input, output) {
     par(new = TRUE)
     plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange",las=1)
     par(new = TRUE)
-    plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red",las=1)
-    par(new = TRUE)
-    line = seq(from = 1000, to = 3000, by = 25)
-    plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black",las=1)
+    plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="purple",las=1)
+    #par(new = TRUE)
+    #line = seq(from = 1000, to = 3000, by = 25)
+    #plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black",las=1)
   })
 }
 
