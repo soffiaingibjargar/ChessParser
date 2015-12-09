@@ -9,7 +9,7 @@ library(scales)
 ui <- navbarPage(title = "Chess Results",
                 #tabPanel(title = "Results",
                 #  plotOutput("winScatter")),
-                tabPanel(title = "Results2",
+                tabPanel(title = "Results",
                   sidebarLayout(
                     sidebarPanel(
                       checkboxGroupInput("results", 
@@ -82,13 +82,13 @@ server <- function(input, output) {
 
     board <- getBoard(p,r)
     heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = cm.colors(256), scale="none", margins=c(5,10), balanceColor=T,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'))
-    
   })
   
   output$captures <- renderPlot({
     #heatmap(captures)
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
-    p <- heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece")
+    par(las=1)
+    heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece")
   })
   output$cap_spaces <- renderPlot({
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
