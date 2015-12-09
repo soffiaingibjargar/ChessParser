@@ -1,11 +1,28 @@
 library(animation)
 library(gplots)
+library(ggplot2)
 library(shiny)
 library(heatmap3)
+library(reshape2)
+library(scales)
 
 ui <- navbarPage(title = "Chess Results",
-                tabPanel(title = "Results",
-                  plotOutput("winScatter")),
+                #tabPanel(title = "Results",
+                #  plotOutput("winScatter")),
+                tabPanel(title = "Results2",
+                  sidebarLayout(
+                    sidebarPanel(
+                      checkboxGroupInput("results", 
+                                         label = h3("Game result"), 
+                                         choices = list("White wins" = 1, 
+                                                        "Draw" = 2, 
+                                                        "Black wins" = 3),
+                                         selected = c(1,2,3))
+                      ),
+                  mainPanel(
+                    plotOutput("winScatter"))
+                  )
+                ),
                 tabPanel(title = "Moves",
                   sidebarLayout(
                     sidebarPanel(
@@ -71,25 +88,41 @@ server <- function(input, output) {
   output$captures <- renderPlot({
     #heatmap(captures)
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
-    heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece")
+    p <- heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece")
   })
   output$cap_spaces <- renderPlot({
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
-    heatmap3(apply(cap_spots,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by space")
+    heatmap3(apply(cap_spots_m,2,rev), Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
+    #cap_spots$X <- with(cap_spots, reorder(X, X))
+    #ggplot(melt(cap_spots), aes(variable, Name))
   })
   
   
   output$winScatter <- renderPlot({
     #hist(rnorm(input$num), col="green")
+    print(input$results)
     par(new = FALSE)
     symbol = 176
-    plot(wins1, wins2,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=0.7)
+    size = 0.7
+    e = c()
+    plot(e, e,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size)
     mtext(side = 2, "black ELO", line = 3, las=1, adj=0, padj=-16)
     mtext(side = 1, "white ELO", line = 2, adj=1)
     par(new = TRUE)
-    plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange",las=1,cex=0.7)
+    if(is.element("1", input$results))
+    {
+      plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size)
+    }
     par(new = TRUE)
-    plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red",las=1,cex=0.7)
+    if(is.element("2", input$results))
+    {
+      plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange",las=1,cex=size)
+    }
+    par(new = TRUE)
+    if(is.element("3", input$results))
+    {  
+      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red",las=1,cex=0.7)
+    }
     par(new = TRUE)
     line = seq(from = 1000, to = 3000, by = 25)
     #plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black",las=1)

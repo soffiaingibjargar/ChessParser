@@ -8,7 +8,7 @@ all_pieces = ['R', 'N', 'B', 'Q', 'K']
 piece_history = []
 piece_id = 5
 chess_length = [[(0,0) for r in range(10)] for s in range(7)]
-elo_difference = [(0,0) for r in range(10)]
+elo_difference = [captured(0,0) for r in range(10)]
 elo_results = []
 elo_file = open("elo_results.csv","w")
 elo_file.write("elo1, elo2, res\n")
@@ -292,8 +292,8 @@ file = open("captured_spots.csv","w")
 file.write("a,b,c,d,e,f,g,h\n")
 for r in total_captured:
     print(r)
-    file.write(str(r).strip('[]'))
-    file.write("\n")
+    #file.write(str(r).strip('[]'))
+    #file.write("\n")
 file.close()
 print("Most visited spots")
 for r in total_visited:
