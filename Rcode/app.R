@@ -27,7 +27,8 @@ ui <- navbarPage(title = "Chess Results",
                   )
                 ),
                 tabPanel(title = "Captures",
-                         plotOutput("captures"))
+                         plotOutput("captures"),
+                         plotOutput("cap_spaces"))
 )
 
 
@@ -72,21 +73,26 @@ server <- function(input, output) {
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
     heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece")
   })
+  output$cap_spaces <- renderPlot({
+    my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
+    heatmap3(apply(cap_spots,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by space")
+  })
+  
   
   output$winScatter <- renderPlot({
     #hist(rnorm(input$num), col="green")
     par(new = FALSE)
-    symbol = 20
-    plot(wins1, wins2,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1)
+    symbol = 176
+    plot(wins1, wins2,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=0.7)
     mtext(side = 2, "black ELO", line = 3, las=1, adj=0, padj=-16)
     mtext(side = 1, "white ELO", line = 2, adj=1)
     par(new = TRUE)
-    plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange",las=1)
+    plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange",las=1,cex=0.7)
     par(new = TRUE)
-    plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red",las=1)
+    plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red",las=1,cex=0.7)
     par(new = TRUE)
     line = seq(from = 1000, to = 3000, by = 25)
-    plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black",las=1)
+    #plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black",las=1)
   })
 }
 

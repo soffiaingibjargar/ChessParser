@@ -35,4 +35,7 @@ captures <- read.csv(path2, sep=",")
 captures <- data.matrix(captures)
 print(captures)
 #heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('R','N','B','Q','K','P'))
-
+path3 = "..\\captured_spots.csv"
+cap_spots <- read.csv(path3, sep=",")
+cap_spots <- data.matrix(cap_spots)
+print(cap_spots)
