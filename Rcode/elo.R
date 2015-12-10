@@ -37,13 +37,14 @@ for(i in 1:size)
 }
 elo_range <- c(1000,3000)
 par(new = FALSE)
-symbol = "*"
-rPlot <- plot(wins1, wins2,xlab="white ELO",ylab="black ELO",main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green")
+symbol = 176
+size = 0.9
+rPlot <- plot(wins1, wins2,xlab="white ELO",ylab="black ELO",main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green", cex=size)
 par(new = TRUE)
 
-rPlot <- plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange")
+rPlot <- plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange", cex=size)
 par(new = TRUE)
-rPlot <- plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red")
+rPlot <- plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red", cex=size)
 #plot(result$elo1,result$elo2,xlab="higher ELO",ylab="higher ELO",main="Games played by ELO rating",pch=1,xlim=c(1000,3000),ylim=c(1000,3000))
 par(new = TRUE)
 #plot(c(2000), c(2000),pch=10,axes = FALSE,xlab='',ylab='',xlim=c(1000,3000),ylim=c(1000,3000))
