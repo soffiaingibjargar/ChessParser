@@ -91,7 +91,10 @@ server <- function(input, output) {
     #heatmap(captures)
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
     par(las=1)
-    heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece", axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
+    heatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),
+             scale="none",col=my_palette,main="Frequency of captures by piece",
+             xlab = "Captured Piece", ylab = "Capturing Piece", 
+             axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
   })
   output$cap_spaces <- renderPlot({
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
@@ -132,7 +135,7 @@ server <- function(input, output) {
     
     legend("topleft",
            legend=c("White wins", "Draw", "Black wins"),
-           lty=c(0,0,0), pch=c(16, 16, 16), col=c("green", "orange", "purple"))
+           lty=c(0,0,0), pch=c(16, 16, 16), col=c("green", "orange", "purple"), bty="n", cex = 1.4)
 
   })
 }
