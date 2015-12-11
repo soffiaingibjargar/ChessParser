@@ -5,6 +5,7 @@ library(shiny)
 library(heatmap3)
 library(reshape2)
 library(scales)
+library(RColorBrewer)
 
 ui <- navbarPage(title = "Chess Results",
                 #tabPanel(title = "Results",
@@ -85,11 +86,16 @@ server <- function(input, output) {
   })
   
   output$heatmap <- renderPlot({
+    
+    my_palette <- colorRampPalette(c("white", "blue"))(n = 599)
+    pairs.breaks = seq(from=0, to=1, length.out=600)
+    #tryBreaks = c(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
     r <- input$round
     p <- as.numeric(input$piece) + 6 * as.numeric(input$player)
 
     board <- getBoard(p,r)
-    heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = cm.colors(256), scale="none", margins=c(5,10), balanceColor=T,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)})
+    print(board)
+    heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = pairs.breaks)
   })
   
   output$captures <- renderPlot({
@@ -119,11 +125,16 @@ server <- function(input, output) {
     #hist(rnorm(input$num), col="green")
     print(input$results)
     par(new = FALSE)
-    symbol = 176
-    size = 0.7
+    symbol = 19
+    size = 0.75
     
-    whiteColor = "orange"
-    drawColor = "gray"
+    
+    #whiteColor = "orange"
+    #drawColor = "gray"
+    #blackColor = "black"
+  
+    whiteColor = brewer.pal(8, "YlOrBr")[4]
+    drawColor = brewer.pal(8, "Greys")[4]
     blackColor = "black"
     
     e = c()
@@ -141,14 +152,14 @@ server <- function(input, output) {
       plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
     }
     par(new = TRUE)
-    if(is.element("2", input$results))
-    {
-      plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
-    }
-    par(new = TRUE)
     if(is.element("3", input$results))
     {  
       plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=0.7)
+    }
+    par(new = TRUE)
+    if(is.element("2", input$results))
+    {
+      plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
     }
     par(new = TRUE)
     print(input$results)
