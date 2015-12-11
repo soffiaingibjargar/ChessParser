@@ -17,10 +17,13 @@ ui <- navbarPage(title = "Chess Results",
                                          choices = list("White wins" = 1, 
                                                         "Draw" = 2, 
                                                         "Black wins" = 3),
-                                         selected = c(1,2,3))
+                                         selected = c(1,2,3)),
+                      helpText("Should we add text here....")
                       ),
                   mainPanel(
-                    plotOutput("winScatter"))
+                    plotOutput("winScatter"),
+                    helpText("...or here?")
+                    )
                   )
                 ),
                 tabPanel(title = "Moves",
@@ -88,7 +91,7 @@ server <- function(input, output) {
     #heatmap(captures)
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
     par(las=1)
-    heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece")
+    heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece", axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
   })
   output$cap_spaces <- renderPlot({
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
@@ -106,7 +109,7 @@ server <- function(input, output) {
     symbol = 176
     size = 0.7
     e = c()
-    plot(e, e,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size)
+    plot(e, e,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size, bty="n")
     mtext(side = 2, "black ELO", line = 3, las=1, adj=0, padj=-16)
     mtext(side = 1, "white ELO", line = 2, adj=1)
     par(new = TRUE)
@@ -122,11 +125,16 @@ server <- function(input, output) {
     par(new = TRUE)
     if(is.element("3", input$results))
     {  
-      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="red",las=1,cex=0.7)
+      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="purple",las=1,cex=0.7)
     }
     par(new = TRUE)
     line = seq(from = 1000, to = 3000, by = 25)
     #plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black",las=1)
+    
+    legend("topleft",
+           legend=c("White wins", "Draw", "Black wins"),
+           lty=c(0,0,0), pch=c(16, 16, 16), col=c("green", "orange", "purple"))
+
   })
 }
 
