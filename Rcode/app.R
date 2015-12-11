@@ -33,6 +33,7 @@ ui <- navbarPage(title = "Chess Results",
                 tabPanel(title = "Moves",
                   sidebarLayout(
                     sidebarPanel(
+                      width=4,
                       radioButtons("player", label = h3("Player"),
                                    choices = list("White" = 1, "Black" = 0),selected = 1),
                        
@@ -46,7 +47,10 @@ ui <- navbarPage(title = "Chess Results",
                                    min = 1, max = 65, value = 1, step = 1,animate=TRUE)
                     ),
                     mainPanel(
-                      plotOutput("heatmap")
+                      plotOutput("heatmap",
+                                 width = "1000px", 
+                                 height = "700px"
+                                 )
                     )
                   )
                 ),
@@ -88,7 +92,11 @@ server <- function(input, output) {
     p <- as.numeric(input$piece) + 6 * as.numeric(input$player)
 
     board <- getBoard(p,r)
-    heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = cm.colors(256), scale="none", margins=c(5,10), balanceColor=T,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)})
+    heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = cm.colors(256),scale="none",
+             margins=c(5,10), balanceColor=T,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'),
+             add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);
+               abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);
+               abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)})
   })
   
   output$captures <- renderPlot({
@@ -126,7 +134,8 @@ server <- function(input, output) {
     blackColor = "black"
     
     e = c()
-    plot(e, e,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size, bty="n", cex.main = 2)
+    plot(e, e,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,
+         col="green",las=1,cex=size, bty="n", cex.main = 2)
     mtext(side = 2, expression(bold("Black ELO")), line = 3, las=1, adj=0, padj=-23, cex=1.3)
     mtext(side = 1, expression(bold("White ELO")), line = 2, adj=1, padj=1, cex=1.3)
     par(new = TRUE)
