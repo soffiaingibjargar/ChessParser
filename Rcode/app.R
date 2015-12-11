@@ -57,8 +57,23 @@ ui <- navbarPage(title = "Chess Results",
                   )
                 ),
                 tabPanel(title = "Captures",
-                         plotOutput("captures"),
-                         plotOutput("cap_spaces"))
+                         sidebarLayout(
+                           sidebarPanel(
+                             width=4,
+                             radioButtons("norm", label = h3("Representation of frequency of captures by pieces"),
+                                          choices = list("Show all pieces" = 1, "Normalize" = 0),selected = 1),
+                             
+                             checkboxGroupInput("pieces", label = h3("Which pieces to show in frequency of captures by space"),
+                                          choices = list("Pawn" = 5, "Knight" = 1,
+                                                         "Bishop" = 2,"Rook" = 0,
+                                                         "Queen" = 3, "King" = 4),
+                                          selected = c(0,1,2,3,4,5))
+                           ),
+                           mainPanel(
+                             plotOutput("captures"),
+                             plotOutput("cap_spaces"))
+                           )
+                         )
 )
 
 
