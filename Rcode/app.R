@@ -92,8 +92,11 @@ server <- function(input, output) {
   output$heatmap <- renderPlot({
     
     my_palette <- colorRampPalette(c("white", "blue"))(n = 599)
-    pairs.breaks = seq(from=0, to=1, length.out=600)
+    pairs.breaks <- seq(from=0, to=1, length.out=600)
+    myBreaks <- sqrt(sqrt(pairs.breaks))
+    myBreaks <- 1 - myBreaks
     print(pairs.breaks)
+    print(myBreaks)
     #tryBreaks = c(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
     r <- input$round
     p <- as.numeric(input$piece) + 6 * as.numeric(input$player)
@@ -101,7 +104,7 @@ server <- function(input, output) {
     board <- getBoard(p,r)
     
     print(board)
-    heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = pairs.breaks)
+    heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks)
   })
   
   output$captures <- renderPlot({
