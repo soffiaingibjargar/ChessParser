@@ -12,19 +12,20 @@ ui <- navbarPage(title = "Chess Results",
                 tabPanel(title = "Results",
                   sidebarLayout(
                     sidebarPanel(
-                      width=3,
+                      width=4,
                       checkboxGroupInput("results", 
                                          label = h3("Game result"), 
                                          choices = list("White wins" = 1, 
                                                         "Draw" = 2, 
-                                                        "Black wins" = 3),
+                                                        "Black wins" = 3,
+                                                        "Show line" = 4),
                                          selected = c(1,2,3)),
                       helpText("Should we add text here....")
                       ),
                   mainPanel(
                     plotOutput("winScatter",
-                      width = "600px", 
-                      height = "600px"
+                      width = "700px", 
+                      height = "700px"
                                ),
                     helpText("...or here?")
                     )
@@ -95,7 +96,7 @@ server <- function(input, output) {
     #heatmap(captures)
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
     par(las=1)
-    heatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),
+    heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),
              scale="none",col=my_palette,main="Frequency of captures by piece",
              xlab = "Captured Piece", ylab = "Capturing Piece", 
              axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
@@ -126,13 +127,14 @@ server <- function(input, output) {
     blackColor = "black"
     
     e = c()
+
     plot(e,xlab=NA,ylab=NA, yaxt = "n", xaxt = "n", main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size, bty="n", cex.main = 2)
-    mtext(side = 2, expression(bold("Black ELO")), line = 3, las=1, adj=0, padj=-16)
-    mtext(side = 1, expression(bold("White ELO")), line = 2, adj=1)
+    mtext(side = 2, expression(bold("Black ELO")), line = 3, las=1, adj=0, padj=-23, cex=1.3)
+    mtext(side = 1, expression(bold("White ELO")), line = 2, adj=1, padj=1, cex=1.3)
     
     axis(side = 2, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 2)
     axis(side = 1, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 1)
-    
+
     par(new = TRUE)
     if(is.element("1", input$results))
     {
@@ -149,9 +151,18 @@ server <- function(input, output) {
       plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=0.7)
     }
     par(new = TRUE)
-    line = seq(from = 1000, to = 3000, by = 25)
+    print(input$results)
+    if(is.element("4", input$results))
+    {  
+      print("test")
+      #line = seq(from = 1000, to = 3000, by = 25)
+      line <- c(1000:3000)
+      lines(line, line, lwd=2)
+      #abline(0,1)
+    }
+    #line = seq(from = 1000, to = 3000, by = 25)
     #plot(line, line,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="black",las=1)
-    
+    par(new = TRUE)
     legend("topleft",
            legend=c("White wins", "Draw", "Black wins"),
            lty=c(0,0,0), pch=c(16, 16, 16), col=c(whiteColor, drawColor, blackColor),bty="n",cex=1.4)
