@@ -12,7 +12,7 @@ ui <- navbarPage(title = "Chess Results",
                 tabPanel(title = "Results",
                   sidebarLayout(
                     sidebarPanel(
-                      width=3,
+                      width=4,
                       checkboxGroupInput("results", 
                                          label = h3("Game result"), 
                                          choices = list("White wins" = 1, 
@@ -23,8 +23,8 @@ ui <- navbarPage(title = "Chess Results",
                       ),
                   mainPanel(
                     plotOutput("winScatter",
-                      width = "600px", 
-                      height = "600px"
+                      width = "700px", 
+                      height = "700px"
                                ),
                     helpText("...or here?")
                     )
@@ -127,8 +127,8 @@ server <- function(input, output) {
     
     e = c()
     plot(e, e,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size, bty="n", cex.main = 2)
-    mtext(side = 2, expression(bold("Black ELO")), line = 3, las=1, adj=0, padj=-16)
-    mtext(side = 1, expression(bold("White ELO")), line = 2, adj=1)
+    mtext(side = 2, expression(bold("Black ELO")), line = 3, las=1, adj=0, padj=-23, cex=1.3)
+    mtext(side = 1, expression(bold("White ELO")), line = 2, adj=1, padj=1, cex=1.3)
     par(new = TRUE)
     if(is.element("1", input$results))
     {
