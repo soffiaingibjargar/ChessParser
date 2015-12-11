@@ -105,7 +105,7 @@ server <- function(input, output) {
     board <- getBoard(p,r)
     
     print(board)
-    heatmap3(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks)
+    chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks)
   })
   
   output$captures <- renderPlot({
@@ -125,7 +125,7 @@ server <- function(input, output) {
     temp <- apply(cap_spots_m,2,rev)
     print(temp)
     print(class(temp))
-    heatmap3(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
+    chessHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
     #cap_spots$X <- with(cap_spots, reorder(X, X))
     #ggplot(melt(cap_spots), aes(variable, Name))
   })
