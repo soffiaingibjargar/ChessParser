@@ -60,10 +60,10 @@ ui <- navbarPage(title = "Chess Results",
                          sidebarLayout(
                            sidebarPanel(
                              width=4,
-                             radioButtons("norm", label = h3(""),
-                                          choices = list("All pieces" = 1, "Normalized" = 0),selected = 1),
+                             radioButtons("norm", label = h3("Representation of frequency of captures by pieces"),
+                                          choices = list("Show all pieces" = 1, "Normalize" = 0),selected = 1),
                              
-                             checkboxGroupInput("piece", label = h3("Piece"),
+                             checkboxGroupInput("pieces", label = h3("Which pieces to show in frequency of captures by space"),
                                           choices = list("Pawn" = 5, "Knight" = 1,
                                                          "Bishop" = 2,"Rook" = 0,
                                                          "Queen" = 3, "King" = 4),
