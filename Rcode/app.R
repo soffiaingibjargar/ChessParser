@@ -148,7 +148,7 @@ server <- function(input, output) {
   
   output$winScatter <- renderPlot({
     #hist(rnorm(input$num), col="green")
-    print(input$results)
+    #print(input$results)
     par(new = FALSE)
     symbol = 19
     size = 0.75
