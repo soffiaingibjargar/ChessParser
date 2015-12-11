@@ -125,12 +125,24 @@ server <- function(input, output) {
   
   output$captures <- renderPlot({
     #heatmap(captures)
-    my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
-    par(las=1)
-    myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
-             scale="none",col=my_palette,main="Frequency of captures by piece",
-             xlab = "Captured Piece", ylab = "Capturing Piece", 
-             axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
+    if(is.element("1", input$norm))
+    {
+      my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
+      par(las=1)
+      myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
+               scale="none",col=my_palette,main="Frequency of captures by piece",
+               xlab = "Captured Piece", ylab = "Capturing Piece", 
+               axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
+    }
+    else
+    {
+      my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
+      par(las=1)
+      myHeatmap(apply(captures_norm,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
+                scale="none",col=my_palette,main="Frequency of captures by piece",
+                xlab = "Captured Piece", ylab = "Capturing Piece", 
+                axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
+    }
   })
   
   output$cap_spaces <- renderPlot({
