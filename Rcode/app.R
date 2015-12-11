@@ -89,6 +89,7 @@ server <- function(input, output) {
     
     my_palette <- colorRampPalette(c("white", "blue"))(n = 599)
     pairs.breaks = seq(from=0, to=1, length.out=600)
+    print(pairs.breaks)
     #tryBreaks = c(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
     r <- input$round
     p <- as.numeric(input$piece) + 6 * as.numeric(input$player)
