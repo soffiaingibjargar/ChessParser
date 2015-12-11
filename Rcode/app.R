@@ -46,7 +46,7 @@ ui <- navbarPage(title = "Chess Results",
                                     selected = 5),
                        
                       sliderInput("round", "Turn:",
-                                   min = 1, max = 65, value = 1, step = 1,animate=TRUE)
+                                   min = 1, max = 62, value = 1, step = 1,animate=TRUE)
                     ),
                     mainPanel(
                       plotOutput("heatmap",
@@ -68,6 +68,7 @@ server <- function(input, output) {
   
   source("elo.R")
   source("helper.R")
+  source("myHeatmap.R")
   
   my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 599)
   
@@ -111,7 +112,7 @@ server <- function(input, output) {
     #heatmap(captures)
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
     par(las=1)
-    heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),
+    myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
              scale="none",col=my_palette,main="Frequency of captures by piece",
              xlab = "Captured Piece", ylab = "Capturing Piece", 
              axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
