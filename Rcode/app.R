@@ -126,9 +126,13 @@ server <- function(input, output) {
     blackColor = "black"
     
     e = c()
-    plot(e, e,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size, bty="n", cex.main = 2)
+    plot(e,xlab=NA,ylab=NA, yaxt = "n", xaxt = "n", main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size, bty="n", cex.main = 2)
     mtext(side = 2, expression(bold("Black ELO")), line = 3, las=1, adj=0, padj=-16)
     mtext(side = 1, expression(bold("White ELO")), line = 2, adj=1)
+    
+    axis(side = 2, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 2)
+    axis(side = 1, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 1)
+    
     par(new = TRUE)
     if(is.element("1", input$results))
     {
