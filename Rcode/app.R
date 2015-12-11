@@ -12,6 +12,7 @@ ui <- navbarPage(title = "Chess Results",
                 tabPanel(title = "Results",
                   sidebarLayout(
                     sidebarPanel(
+                      width=3,
                       checkboxGroupInput("results", 
                                          label = h3("Game result"), 
                                          choices = list("White wins" = 1, 
@@ -21,7 +22,10 @@ ui <- navbarPage(title = "Chess Results",
                       helpText("Should we add text here....")
                       ),
                   mainPanel(
-                    plotOutput("winScatter"),
+                    plotOutput("winScatter",
+                      width = "600px", 
+                      height = "600px"
+                               ),
                     helpText("...or here?")
                     )
                   )
@@ -93,10 +97,15 @@ server <- function(input, output) {
     par(las=1)
     heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('P','K','Q','B','N','R'),scale="none",col=my_palette,main="Frequency of captures by piece",xlab = "Captured Piece", ylab = "Capturing Piece", axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
   })
+  
   output$cap_spaces <- renderPlot({
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
     #add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}
-    heatmap3(apply(cap_spots_m,2,rev), Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
+    print(cap_spots)
+    temp <- apply(cap_spots_m,2,rev)
+    print(temp)
+    print(class(temp))
+    heatmap3(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
     #cap_spots$X <- with(cap_spots, reorder(X, X))
     #ggplot(melt(cap_spots), aes(variable, Name))
   })
@@ -108,24 +117,29 @@ server <- function(input, output) {
     par(new = FALSE)
     symbol = 176
     size = 0.7
+    
+    whiteColor = "orange"
+    drawColor = "gray"
+    blackColor = "black"
+    
     e = c()
-    plot(e, e,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size, bty="n")
-    mtext(side = 2, "black ELO", line = 3, las=1, adj=0, padj=-16)
-    mtext(side = 1, "white ELO", line = 2, adj=1)
+    plot(e, e,xlab=NA,ylab=NA,main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size, bty="n", cex.main = 2)
+    mtext(side = 2, expression(bold("Black ELO")), line = 3, las=1, adj=0, padj=-16)
+    mtext(side = 1, expression(bold("White ELO")), line = 2, adj=1)
     par(new = TRUE)
     if(is.element("1", input$results))
     {
-      plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size)
+      plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
     }
     par(new = TRUE)
     if(is.element("2", input$results))
     {
-      plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="orange",las=1,cex=size)
+      plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
     }
     par(new = TRUE)
     if(is.element("3", input$results))
     {  
-      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col="purple",las=1,cex=0.7)
+      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=0.7)
     }
     par(new = TRUE)
     line = seq(from = 1000, to = 3000, by = 25)
@@ -133,7 +147,7 @@ server <- function(input, output) {
     
     legend("topleft",
            legend=c("White wins", "Draw", "Black wins"),
-           lty=c(0,0,0), pch=c(16, 16, 16), col=c("green", "orange", "purple"))
+           lty=c(0,0,0), pch=c(16, 16, 16), col=c(whiteColor, drawColor, blackColor))
 
   })
 }

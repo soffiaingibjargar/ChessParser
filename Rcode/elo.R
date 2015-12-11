@@ -1,5 +1,5 @@
 library(ggplot2)
-path <- "..\\elo_results.csv"
+path <- "..\\Elo\\elo_results.csv"
 result <- read.csv(path, sep=",")
 
 e1 = result$elo1

@@ -6,11 +6,11 @@ piece_to_id = {'bR':0, 'bN':1, 'bB':2, 'bQ':3, 'bK':4, 'bP':5, 'wR':6, 'wN':7, '
 all_pieces = ['R', 'N', 'B', 'Q', 'K']
 
 piece_history = []
-piece_id = 5
+piece_id = 8
 chess_length = [[(0,0) for r in range(10)] for s in range(7)]
-elo_difference = [captured(0,0) for r in range(10)]
+elo_difference = [(0,0) for r in range(10)]
 elo_results = []
-elo_file = open("elo_results.csv","w")
+elo_file = open("Elo\\elo_results.csv","w")
 elo_file.write("elo1, elo2, res\n")
 total_games = 0
 games_with_elos = 0
@@ -31,6 +31,7 @@ for y in range(9,16):
     if y < 13:
         thisRange = range(1,10)
     for x in thisRange:
+        elo_round_file = open("Elo\\round" + str(x) + ".csv", "a")
         games = pgnParser.cleanup('rvkopen' + str(y) + 'r' + str(x) + '.pgn')
         b = 0
         for game in games:
@@ -61,6 +62,7 @@ for y in range(9,16):
                     if result is not "*":
                         text = str(str(w_elo) + "," + str(b_elo) + "," + result + "\n")
                         elo_file.write(text)
+                        elo_round_file.write(text)
                         if (w_elo >= b_elo):
                             group = (w_elo - b_elo) // 50
                             old = result_by_difference[group]
@@ -230,6 +232,7 @@ for y in range(9,16):
                 for m in range(8):
                     total_captured[n][m] += captured[n][m]
                     total_visited[n][m] += visited[n][m]
+        elo_round_file.close()
 
 
 print(piece_history)
@@ -292,8 +295,8 @@ file = open("captured_spots.csv","w")
 file.write("a,b,c,d,e,f,g,h\n")
 for r in total_captured:
     print(r)
-    #file.write(str(r).strip('[]'))
-    #file.write("\n")
+    file.write(str(r).strip('[]'))
+    file.write("\n")
 file.close()
 print("Most visited spots")
 for r in total_visited:
