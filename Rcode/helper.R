@@ -39,3 +39,18 @@ path3 = "..\\captured_spots.csv"
 cap_spots <- read.csv(path3, sep=",")
 cap_spots_m <- data.matrix(cap_spots)
 print(cap_spots)
+captures_norm = read.csv("C:/Users/Soffía/PycharmProjects/ChessParser/captures_norm.csv")
+
+
+
+space_R = read.csv("C:/Users/Soffía/PycharmProjects/ChessParser/captured_spots_R.csv")
+
+space_N = read.csv("C:/Users/Soffía/PycharmProjects/ChessParser/captured_spots_N.csv")
+
+space_B = read.csv("C:/Users/Soffía/PycharmProjects/ChessParser/captured_spots_B.csv")
+
+space_Q = read.csv("C:/Users/Soffía/PycharmProjects/ChessParser/captured_spots_Q.csv")
+
+space_K = read.csv("C:/Users/Soffía/PycharmProjects/ChessParser/captured_spots_K.csv")
+
+space_P = read.csv("C:/Users/Soffía/PycharmProjects/ChessParser/captured_spots_P.csv")
