@@ -44,9 +44,9 @@ ui <- navbarPage(title = "Chess Results",
                                                    "Bishop" = 2,"Rook" = 0,
                                                    "Queen" = 3, "King" = 4),
                                     selected = 5),
-                       
+                      
                       sliderInput("round", "Turn:",
-                                   min = 1, max = 62, value = 1, step = 1,animate=TRUE)
+                                   min = 1, max = 62, value = 1, step = 1,animate=TRUE,ticks=F)
                     ),
                     mainPanel(
                       textOutput("heatmapTitle"),
@@ -62,13 +62,14 @@ ui <- navbarPage(title = "Chess Results",
                            sidebarPanel(
                              width=4,
                              radioButtons("norm", label = h3("Representation of frequency of captures by pieces"),
-                                          choices = list("Show all pieces" = 1, "Normalize" = 0),selected = 1),
+                                          choices = list("Show all pieces" = 1, "Normalize" = 0),
+                                          selected = 1),
                              
-                             checkboxGroupInput("pieces", label = h3("Which pieces to show in frequency of captures by space"),
-                                          choices = list("Pawn" = 5, "Knight" = 1,
-                                                         "Bishop" = 2,"Rook" = 0,
-                                                         "Queen" = 3, "King" = 4),
-                                          selected = c(0,1,2,3,4,5))
+                             radioButtons("pieces", label = h3("Which piece to show in frequency of captures by space"),
+                                          choices = list("All" = "A","Pawn" = "P", "Knight" = "N",
+                                                         "Bishop" = "B","Rook" = "R",
+                                                         "Queen" = "Q"),
+                                          selected = "A")
                            ),
                            mainPanel(
                              plotOutput("captures"),
@@ -129,23 +130,61 @@ server <- function(input, output) {
   
   output$captures <- renderPlot({
     #heatmap(captures)
-    my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
-    par(las=1)
-    print(captures)
-    print(class(captures))
-    myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
-             scale="none",col=my_palette,main="Frequency of captures by piece",
-             xlab = "Captured Piece", ylab = "Capturing Piece", 
-             axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
+
+    if(is.element("1", input$norm))
+    {
+      my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
+      par(las=1)
+      myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
+               scale="none",col=my_palette,main="Frequency of captures by piece",
+               xlab = "Captured Piece", ylab = "Capturing Piece", 
+               axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
+    }
+    else
+    {
+      my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
+      par(las=1)
+      myHeatmap(apply(captures_norm,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
+                scale="none",col=my_palette,main="Frequency of captures by piece",
+                xlab = "Captured Piece", ylab = "Capturing Piece", 
+                axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
+    }
   })
   
   output$cap_spaces <- renderPlot({
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
     #add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}
-    print(cap_spots)
-    temp <- apply(cap_spots_m,2,rev)
-    print(temp)
-    print(class(temp))
+    #print(cap_spots)
+    if(is.element("A", input$pieces))
+    {
+      temp <- apply(cap_spots_m,2,rev)
+    }
+    else if(is.element("R", input$pieces))
+    {
+      temp <- apply(space_R,2,rev)
+    }
+    else if(is.element("N", input$pieces))
+    {
+      temp <- apply(space_N,2,rev)
+    }
+    else if(is.element("B", input$pieces))
+    {
+      temp <- apply(space_B,2,rev)
+    }
+    else if(is.element("Q", input$pieces))
+    {
+      temp <- apply(space_Q,2,rev)
+    }
+    #else if(is.element("K", input$pieces))
+    #{
+    #  temp <- apply(space_K,2,rev)
+    #}
+    else if(is.element("P", input$pieces))
+    {
+      temp <- apply(space_P,2,rev)
+    }
+    #print(temp)
+    #print(class(temp))
     chessHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
     #cap_spots$X <- with(cap_spots, reorder(X, X))
     #ggplot(melt(cap_spots), aes(variable, Name))
@@ -178,16 +217,16 @@ server <- function(input, output) {
     #hist(rnorm(input$num), col="green")
     #print(input$results)
     par(new = FALSE)
-    symbol = 19
-    size = 0.75
+    symbol = 20
+    size = 1.1
     
     
     #whiteColor = "orange"
     #drawColor = "gray"
     #blackColor = "black"
   
-    whiteColor = brewer.pal(8, "YlOrBr")[4]
-    drawColor = brewer.pal(8, "Greys")[4]
+    whiteColor = brewer.pal(8, "BrBG")[3]
+    drawColor = brewer.pal(8, "Greys")[5]
     blackColor = "black"
     
     e = c()
@@ -200,14 +239,14 @@ server <- function(input, output) {
     axis(side = 1, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 1)
 
     par(new = TRUE)
+    if(is.element("3", input$results))
+    {  
+      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=size)
+    }
+    par(new = TRUE)
     if(is.element("1", input$results))
     {
       plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
-    }
-    par(new = TRUE)
-    if(is.element("3", input$results))
-    {  
-      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=0.7)
     }
     par(new = TRUE)
     if(is.element("2", input$results))
@@ -221,7 +260,7 @@ server <- function(input, output) {
       print("test")
       #line = seq(from = 1000, to = 3000, by = 25)
       line <- c(1000:3000)
-      lines(line, line, lwd=2)
+      lines(line, line, lwd=1.7)
       #abline(0,1)
     }
     #line = seq(from = 1000, to = 3000, by = 25)

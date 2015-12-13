@@ -44,3 +44,5 @@ path3 = "..\\captured_spots.csv"
 cap_spots <- read.csv(path3, sep=",")
 cap_spots_m <- data.matrix(cap_spots)
 print(cap_spots)
+
+
