@@ -8,8 +8,6 @@ library(scales)
 library(RColorBrewer)
 
 ui <- navbarPage(title = "Chess Results",
-                #tabPanel(title = "Results",
-                #  plotOutput("winScatter")),
                 tabPanel(title = "Results",
                   sidebarLayout(
                     sidebarPanel(
@@ -62,7 +60,7 @@ ui <- navbarPage(title = "Chess Results",
                 tabPanel(title = "Captures",
                          sidebarLayout(
                            sidebarPanel(
-                             width=4,
+                             width=3,
                              radioButtons("norm", label = h3("Representation of frequency of captures by pieces"),
                                           choices = list("Show all pieces" = 1, "Normalize" = 0),
                                           selected = 1),
@@ -74,8 +72,11 @@ ui <- navbarPage(title = "Chess Results",
                                           selected = "A")
                            ),
                            mainPanel(
-                             plotOutput("captures"),
-                             plotOutput("cap_spaces"))
+                             fluidRow(
+                               column(width=6, offset=1, plotOutput("captures")),
+                               column(width=5, offset=0.2 , plotOutput("cap_spaces"))
+                              )
+                             )
                            )
                          )
 )
