@@ -44,9 +44,9 @@ ui <- navbarPage(title = "Chess Results",
                                                    "Bishop" = 2,"Rook" = 0,
                                                    "Queen" = 3, "King" = 4),
                                     selected = 5),
-                       
+                      
                       sliderInput("round", "Turn:",
-                                   min = 1, max = 62, value = 1, step = 1,animate=TRUE)
+                                   min = 1, max = 62, value = 1, step = 1,animate=TRUE,ticks=F)
                     ),
                     mainPanel(
                       plotOutput("heatmap",
@@ -190,16 +190,16 @@ server <- function(input, output) {
     #hist(rnorm(input$num), col="green")
     #print(input$results)
     par(new = FALSE)
-    symbol = 19
-    size = 0.75
+    symbol = 20
+    size = 1.1
     
     
     #whiteColor = "orange"
     #drawColor = "gray"
     #blackColor = "black"
   
-    whiteColor = brewer.pal(8, "YlOrBr")[4]
-    drawColor = brewer.pal(8, "Greys")[4]
+    whiteColor = brewer.pal(8, "BrBG")[3]
+    drawColor = brewer.pal(8, "Greys")[5]
     blackColor = "black"
     
     e = c()
@@ -212,14 +212,14 @@ server <- function(input, output) {
     axis(side = 1, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 1)
 
     par(new = TRUE)
+    if(is.element("3", input$results))
+    {  
+      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=size)
+    }
+    par(new = TRUE)
     if(is.element("1", input$results))
     {
       plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
-    }
-    par(new = TRUE)
-    if(is.element("3", input$results))
-    {  
-      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=0.7)
     }
     par(new = TRUE)
     if(is.element("2", input$results))
@@ -233,7 +233,7 @@ server <- function(input, output) {
       print("test")
       #line = seq(from = 1000, to = 3000, by = 25)
       line <- c(1000:3000)
-      lines(line, line, lwd=2)
+      lines(line, line, lwd=1.7)
       #abline(0,1)
     }
     #line = seq(from = 1000, to = 3000, by = 25)
