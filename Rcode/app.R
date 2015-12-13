@@ -22,7 +22,7 @@ ui <- navbarPage(title = "Chess Results",
                                                         "Show line" = 4),
                                          selected = c(1,2,3)),
                       sliderInput("round", "Round:",
-                                  min = 1, max = 10, value = 1, step = 1,animate=TRUE,ticks=F),
+                                  min = 0, max = 10, value = 1, step = 1,animate=TRUE,ticks=F),
                       helpText("Should we add text here....")
                       ),
                   mainPanel(
@@ -215,6 +215,7 @@ server <- function(input, output) {
     paste("Distribution of", currentPlayer, currentPiece, "at turn", input$gameTurn, "(total:", currentTotal, ")")
   })
   
+  
   output$winScatter <- renderPlot({
     #hist(rnorm(input$num), col="green")
     #print(input$results)
@@ -240,20 +241,42 @@ server <- function(input, output) {
     axis(side = 2, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 2)
     axis(side = 1, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 1)
 
+    if(input$round == 0)
+    {
+      lossPlot1 = losses1
+      lossPlot2 = losses2
+      winPlot1 = wins1
+      winPlot2 = wins2
+      drawPlot1 = draws1
+      drawPlot2 = draws2
+    }
+    else
+    {
+      lossPlot1 = allLosses1[[input$round]]
+      lossPlot2 = allLosses2[[input$round]]
+      winPlot1 = allWins1[[input$round]]
+      winPlot2 = allWins2[[input$round]]
+      drawPlot1 = allDraws1[[input$round]]
+      drawPlot2 = allDraws2[[input$round]]
+    }
+    
     par(new = TRUE)
     if(is.element("3", input$results))
     {  
-      plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=size)
+      #plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=size)
+      plot(lossPlot1, lossPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=size)
     }
     par(new = TRUE)
     if(is.element("1", input$results))
     {
-      plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
+      #plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
+      plot(winPlot1, winPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
     }
     par(new = TRUE)
     if(is.element("2", input$results))
     {
-      plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
+      #plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
+      plot(drawPlot1, drawPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
     }
     par(new = TRUE)
     print(input$results)
