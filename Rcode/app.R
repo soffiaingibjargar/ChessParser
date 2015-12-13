@@ -49,6 +49,7 @@ ui <- navbarPage(title = "Chess Results",
                                    min = 1, max = 62, value = 1, step = 1,animate=TRUE)
                     ),
                     mainPanel(
+                      textOutput("heatmapTitle"),
                       plotOutput("heatmap",
                                  width = "1000px", 
                                  height = "700px"
@@ -91,12 +92,14 @@ server <- function(input, output) {
     board <- vector(mode="numeric",length = 8 * 8)
     start = ind(p,r - 1,1,1)
     #print(paste("start is",start))
+    total = 0
     for(i in 1:64)
     {
       board[i] = all[i + start - 1]
+      total <- total + board[i]
     }
     M = matrix(board, nrow=8, ncol=8, byrow = TRUE)
-    #print(M)
+    print(total)
     return(M)
   }
   
@@ -104,6 +107,7 @@ server <- function(input, output) {
   output$status <- renderText({
     paste("Player", input$player, "Piece", input$piece, "Round", input$round)
   })
+  
   
   output$heatmap <- renderPlot({
     
@@ -127,6 +131,8 @@ server <- function(input, output) {
     #heatmap(captures)
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
     par(las=1)
+    print(captures)
+    print(class(captures))
     myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
              scale="none",col=my_palette,main="Frequency of captures by piece",
              xlab = "Captured Piece", ylab = "Capturing Piece", 
@@ -145,6 +151,28 @@ server <- function(input, output) {
     #ggplot(melt(cap_spots), aes(variable, Name))
   })
   
+  
+  output$heatmapTitle <- renderText({
+    if(input$player == 0)
+      currentPlayer = "black"
+    else
+      currentPlayer = "white"
+    if(input$piece == 0)
+      currentPiece = "rooks"
+    else if(input$piece == 1)
+      currentPiece = "knights"
+    else if(input$piece == 2)
+      currentPiece = "bishops"
+    else if(input$piece == 3)
+      currentPiece = "queens"
+    else if(input$piece == 4)
+      currentPiece = "kings"
+    else if(input$piece == 5)
+      currentPiece = "pawns"
+    currentIndex = as.numeric(input$piece) * 65 + as.numeric(input$round)
+    currentTotal = totals[currentIndex]
+    paste("Distribution of", currentPlayer, currentPiece, "at round", input$round, "(total:", currentTotal, ")")
+  })
   
   output$winScatter <- renderPlot({
     #hist(rnorm(input$num), col="green")

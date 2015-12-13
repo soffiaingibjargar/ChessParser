@@ -6,6 +6,9 @@ ind <- function(p, r, m, n){
 all <- vector(mode="numeric",length = 12 * 65 * 8 * 8)
 #print(all[0])
 
+# totals contains the number of on the board, by piece and round
+# totals[p * 65 + r + 1], zero-indexed
+totals <- c(mode="numeric",length=65*12)
 for(p in 0:11)
 {
 
@@ -17,8 +20,8 @@ for(p in 0:11)
     total = sum(board) - 36
     board <- board[,2:9] / total
     #board_matrix <- data.matrix(board)
-
     #print(board)
+    totals[p * 65 + r + 1] <- total
     for(m in 1:8)
     {
       for(n in 1:8)
@@ -29,6 +32,8 @@ for(p in 0:11)
     }
   }
 }
+print("Totals")
+print(totals)
 
 path2 = "..\\captures.csv"
 captures <- read.csv(path2, sep=",")
