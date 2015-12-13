@@ -61,13 +61,14 @@ ui <- navbarPage(title = "Chess Results",
                            sidebarPanel(
                              width=4,
                              radioButtons("norm", label = h3("Representation of frequency of captures by pieces"),
-                                          choices = list("Show all pieces" = 1, "Normalize" = 0),selected = 1),
+                                          choices = list("Show all pieces" = 1, "Normalize" = 0),
+                                          selected = 1),
                              
-                             checkboxGroupInput("pieces", label = h3("Which pieces to show in frequency of captures by space"),
-                                          choices = list("Pawn" = 5, "Knight" = 1,
-                                                         "Bishop" = 2,"Rook" = 0,
-                                                         "Queen" = 3, "King" = 4),
-                                          selected = c(0,1,2,3,4,5))
+                             radioButtons("pieces", label = h3("Which piece to show in frequency of captures by space"),
+                                          choices = list("All" = "A","Pawn" = "P", "Knight" = "N",
+                                                         "Bishop" = "B","Rook" = "R",
+                                                         "Queen" = "Q"),
+                                          selected = "A")
                            ),
                            mainPanel(
                              plotOutput("captures"),
@@ -148,10 +149,37 @@ server <- function(input, output) {
   output$cap_spaces <- renderPlot({
     my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
     #add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}
-    print(cap_spots)
-    temp <- apply(cap_spots_m,2,rev)
-    print(temp)
-    print(class(temp))
+    #print(cap_spots)
+    if(is.element("A", input$pieces))
+    {
+      temp <- apply(cap_spots_m,2,rev)
+    }
+    else if(is.element("R", input$pieces))
+    {
+      temp <- apply(space_R,2,rev)
+    }
+    else if(is.element("N", input$pieces))
+    {
+      temp <- apply(space_N,2,rev)
+    }
+    else if(is.element("B", input$pieces))
+    {
+      temp <- apply(space_B,2,rev)
+    }
+    else if(is.element("Q", input$pieces))
+    {
+      temp <- apply(space_Q,2,rev)
+    }
+    #else if(is.element("K", input$pieces))
+    #{
+    #  temp <- apply(space_K,2,rev)
+    #}
+    else if(is.element("P", input$pieces))
+    {
+      temp <- apply(space_P,2,rev)
+    }
+    #print(temp)
+    #print(class(temp))
     chessHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
     #cap_spots$X <- with(cap_spots, reorder(X, X))
     #ggplot(melt(cap_spots), aes(variable, Name))

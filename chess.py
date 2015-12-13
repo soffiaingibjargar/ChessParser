@@ -22,6 +22,13 @@ checkmate = (0,0)
 total_captured =[[0 for x in range(8)] for x in range(8)]
 total_visited =[[0 for x in range(8)] for x in range(8)]
 
+total_captured_R =[[0 for x in range(8)] for x in range(8)]
+total_captured_N =[[0 for x in range(8)] for x in range(8)]
+total_captured_B =[[0 for x in range(8)] for x in range(8)]
+total_captured_Q =[[0 for x in range(8)] for x in range(8)]
+total_captured_K =[[0 for x in range(8)] for x in range(8)]
+total_captured_P =[[0 for x in range(8)] for x in range(8)]
+
 piece_capture = [[0 for x in range(6)] for x in range(6)]
 piece_lifetime = [(0,0) for x in range(6)]
 relative_lifetime = [(0,0) for x in range(6)]
@@ -111,6 +118,14 @@ for y in range(9,16):
             captured =[[0 for x in range(8)] for x in range(8)]
             history = [[[] for x in range(length)] for x in range(12)]
 
+
+            captured_R =[[0 for x in range(8)] for x in range(8)]
+            captured_N =[[0 for x in range(8)] for x in range(8)]
+            captured_B =[[0 for x in range(8)] for x in range(8)]
+            captured_Q =[[0 for x in range(8)] for x in range(8)]
+            captured_K =[[0 for x in range(8)] for x in range(8)]
+            captured_P =[[0 for x in range(8)] for x in range(8)]
+
             turn = False
             skip = False
 
@@ -176,6 +191,21 @@ for y in range(9,16):
                     visited[r[1][0]][r[1][1]] = visited[r[1][0]][r[1][1]] + 1
                     if "x" in m:
                         captured[r[1][0]][r[1][1]] = captured[r[1][0]][r[1][1]] + 1
+
+                        if(captured_piece == "R"):
+                            captured_R[r[1][0]][r[1][1]] = captured_R[r[1][0]][r[1][1]] + 1
+                        elif(captured_piece == "N"):
+                            captured_N[r[1][0]][r[1][1]] = captured_N[r[1][0]][r[1][1]] + 1
+                        elif(captured_piece == "B"):
+                            captured_B[r[1][0]][r[1][1]] = captured_B[r[1][0]][r[1][1]] + 1
+                        elif(captured_piece == "Q"):
+                            captured_Q[r[1][0]][r[1][1]] = captured_Q[r[1][0]][r[1][1]] + 1
+                        elif(captured_piece == "K"):
+                            captured_K[r[1][0]][r[1][1]] = captured_K[r[1][0]][r[1][1]] + 1
+                        elif(captured_piece == "P"):
+                            captured_P[r[1][0]][r[1][1]] = captured_P[r[1][0]][r[1][1]] + 1
+
+
                 elif (len(r) == 3 and r[0] == "C"):
                     r_1 = r[1]
                     r_2 = r[2]
@@ -216,6 +246,20 @@ for y in range(9,16):
                     visited[r[1][1][0]][r[1][1][1]] = visited[r[1][1][0]][r[1][1][1]] + 1
                     if "x" in m:
                         captured[r[1][1][0]][r[1][1][1]] = captured[r[1][1][0]][r[1][1][1]] + 1
+
+                        if(captured_piece == "R"):
+                            captured_R[r[1][1][0]][r[1][1][1]] = captured_R[r[1][1][0]][r[1][1][1]] + 1
+                        elif(captured_piece == "N"):
+                            captured_N[r[1][1][0]][r[1][1][1]] = captured_N[r[1][1][0]][r[1][1][1]] + 1
+                        elif(captured_piece == "B"):
+                            captured_B[r[1][1][0]][r[1][1][1]] = captured_B[r[1][1][0]][r[1][1][1]] + 1
+                        elif(captured_piece == "Q"):
+                            captured_Q[r[1][1][0]][r[1][1][1]] = captured_Q[r[1][1][0]][r[1][1][1]] + 1
+                        elif(captured_piece == "K"):
+                            captured_K[r[1][1][0]][r[1][1][1]] = captured_K[r[1][1][0]][r[1][1][1]] + 1
+                        elif(captured_piece == "P"):
+                            captured_P[r[1][1][0]][r[1][1][1]] = captured_P[r[1][1][0]][r[1][1][1]] + 1
+
                 else:
                     print("ERROR:" + m + " returns " + r + " WHICH IS NOT A VALID MOVE !!!" + str(x))
                     exit()
@@ -232,6 +276,14 @@ for y in range(9,16):
                 for m in range(8):
                     total_captured[n][m] += captured[n][m]
                     total_visited[n][m] += visited[n][m]
+
+                    total_captured_R[n][m] += captured_R[n][m]
+                    total_captured_N[n][m] += captured_N[n][m]
+                    total_captured_B[n][m] += captured_B[n][m]
+                    total_captured_Q[n][m] += captured_Q[n][m]
+                    total_captured_K[n][m] += captured_K[n][m]
+                    total_captured_P[n][m] += captured_P[n][m]
+
         elo_round_file.close()
 
 
@@ -298,6 +350,64 @@ for r in total_captured:
     file.write(str(r).strip('[]'))
     file.write("\n")
 file.close()
+
+# For each piece
+print("Pieces most captured spots")
+print("R")
+file = open("captured_spots_R.csv","w")
+file.write("a,b,c,d,e,f,g,h\n")
+for r in total_captured_R:
+    print(r)
+    file.write(str(r).strip('[]'))
+    file.write("\n")
+file.close()
+
+print("N")
+file = open("captured_spots_N.csv","w")
+file.write("a,b,c,d,e,f,g,h\n")
+for r in total_captured_N:
+    print(r)
+    file.write(str(r).strip('[]'))
+    file.write("\n")
+file.close()
+
+print("B")
+file = open("captured_spots_B.csv","w")
+file.write("a,b,c,d,e,f,g,h\n")
+for r in total_captured_B:
+    print(r)
+    file.write(str(r).strip('[]'))
+    file.write("\n")
+file.close()
+
+print("Q")
+file = open("captured_spots_Q.csv","w")
+file.write("a,b,c,d,e,f,g,h\n")
+for r in total_captured_Q:
+    print(r)
+    file.write(str(r).strip('[]'))
+    file.write("\n")
+file.close()
+
+print("K")
+file = open("captured_spots_K.csv","w")
+file.write("a,b,c,d,e,f,g,h\n")
+for r in total_captured_K:
+    print(r)
+    file.write(str(r).strip('[]'))
+    file.write("\n")
+file.close()
+
+print("P")
+file = open("captured_spots_P.csv","w")
+file.write("a,b,c,d,e,f,g,h\n")
+for r in total_captured_P:
+    print(r)
+    file.write(str(r).strip('[]'))
+    file.write("\n")
+file.close()
+# End of "For each piece"
+
 print("Most visited spots")
 for r in total_visited:
     print(r)
