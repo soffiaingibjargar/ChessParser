@@ -5,6 +5,7 @@ result <- read.csv(path, sep=",")
 e1 = result$elo1
 e2 = result$elo2
 res = result$res
+eloRound = result$round
 
 wins1 = c()
 wins2 = c()
@@ -14,25 +15,54 @@ draws1 = c()
 draws2 = c()
 
 size = length(res)
+
+allWins1 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())
+allWins2 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())
+allLosses1 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())
+allLosses2 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())
+allDraws1 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())
+allDraws2 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())
+
 #print("size")
 #print(size)
 for(i in 1:size)
 {
+  #print(paste("i is", i))
+  currentRound = eloRound[i]
+  #print(currentRound)
   #print(res[i])
   if (res[i] == "1-0")
   {
     wins1 <- c(wins1, c(e1[i]))
     wins2 <- c(wins2, c(e2[i]))
+    
+    #print(paste("current round", currentRound))
+    #print("allWins1")
+    #print(allWins1[[currentRound]])
+    temp = allWins1[[currentRound]]
+    allWins1[[currentRound]] = c(temp, c(e1[i]))
+    temp = allWins2[[currentRound]]
+    allWins2[[currentRound]] = c(temp, c(e2[i]))
   }
   else if (res[i] == "0-1")
   {
     losses1 <- c(losses1, c(e1[i]))
     losses2 <- c(losses2, c(e2[i]))
+    
+    temp = allLosses1[[currentRound]]
+    allLosses1[[currentRound]] = c(temp, c(e1[i]))
+    temp = allLosses2[[currentRound]]
+    allLosses2[[currentRound]] = c(temp, c(e2[i]))
   }
   else
   {
     draws1 <- c(draws1, c(e1[i]))
     draws2 <- c(draws2, c(e2[i]))
+    
+    temp = allDraws1[[currentRound]]
+    allDraws1[[currentRound]] = c(temp, c(e1[i]))
+    temp = allDraws2[[currentRound]]
+    allDraws2[[currentRound]] = c(temp, c(e2[i]))
   }
 }
 elo_range <- c(1000,3000)

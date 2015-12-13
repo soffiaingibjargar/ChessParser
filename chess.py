@@ -11,7 +11,7 @@ chess_length = [[(0,0) for r in range(10)] for s in range(7)]
 elo_difference = [(0,0) for r in range(10)]
 elo_results = []
 elo_file = open("Elo\\elo_results.csv","w")
-elo_file.write("elo1, elo2, res\n")
+elo_file.write("elo1, elo2, res, round\n")
 total_games = 0
 games_with_elos = 0
 
@@ -67,7 +67,8 @@ for y in range(9,16):
 
                     result = getattr(game,'result')
                     if result is not "*":
-                        text = str(str(w_elo) + "," + str(b_elo) + "," + result + "\n")
+                        #text = str(str(w_elo) + "," + str(b_elo) + "," + result + "\n")
+                        text = str(str(w_elo) + "," + str(b_elo) + "," + result + "," + str(x) + "\n")
                         elo_file.write(text)
                         elo_round_file.write(text)
                         if (w_elo >= b_elo):

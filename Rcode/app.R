@@ -21,6 +21,8 @@ ui <- navbarPage(title = "Chess Results",
                                                         "Black wins" = 3,
                                                         "Show line" = 4),
                                          selected = c(1,2,3)),
+                      sliderInput("round", "Round:",
+                                  min = 1, max = 10, value = 1, step = 1,animate=TRUE,ticks=F),
                       helpText("Should we add text here....")
                       ),
                   mainPanel(
@@ -45,7 +47,7 @@ ui <- navbarPage(title = "Chess Results",
                                                    "Queen" = 3, "King" = 4),
                                     selected = 5),
                       
-                      sliderInput("round", "Turn:",
+                      sliderInput("gameTurn", "Turn:",
                                    min = 1, max = 62, value = 1, step = 1,animate=TRUE,ticks=F)
                     ),
                     mainPanel(
@@ -119,7 +121,7 @@ server <- function(input, output) {
     print(pairs.breaks)
     print(myBreaks)
     #tryBreaks = c(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
-    r <- input$round
+    r <- input$gameTurn
     p <- as.numeric(input$piece) + 6 * as.numeric(input$player)
 
     board <- getBoard(p,r)
@@ -208,9 +210,9 @@ server <- function(input, output) {
       currentPiece = "kings"
     else if(input$piece == 5)
       currentPiece = "pawns"
-    currentIndex = as.numeric(input$piece) * 65 + as.numeric(input$round)
+    currentIndex = as.numeric(input$piece) * 65 + as.numeric(input$gameTurn)
     currentTotal = totals[currentIndex]
-    paste("Distribution of", currentPlayer, currentPiece, "at round", input$round, "(total:", currentTotal, ")")
+    paste("Distribution of", currentPlayer, currentPiece, "at turn", input$gameTurn, "(total:", currentTotal, ")")
   })
   
   output$winScatter <- renderPlot({
