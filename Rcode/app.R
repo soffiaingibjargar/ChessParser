@@ -156,6 +156,7 @@ server <- function(input, output) {
     print(board)
     hTitle = heatmapTitle()
     chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = hTitle)
+    #testHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = hTitle)
   })
   
   output$captures <- renderPlot({
@@ -215,6 +216,7 @@ server <- function(input, output) {
     }
     #print(temp)
     #print(class(temp))
+    #testHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
     chessHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
     #cap_spots$X <- with(cap_spots, reorder(X, X))
     #ggplot(melt(cap_spots), aes(variable, Name))
@@ -324,7 +326,9 @@ server <- function(input, output) {
   output$elo_results <- renderPlot({
     # names.arg = (1:17) * 50
     tickmark <- seq_len(18)
-    bp <- barplot(all_by_elo, main="Game outcome by ELO difference", las=1, xlab="Difference of ELO rating")
+    bp <- barplot(all_by_elo, main="Game outcome by ELO difference", las=1, xlab="Difference of ELO rating", yaxt="n")
+    returns = runif(10)
+    axis(2, at=pretty(returns), lab=paste(pretty(returns) * 100, "%",sep=""), las=TRUE)
     axis(side=1, at = bp - 0.5, labels = (0:16) * 50)
     #axis(side=1, at = tickmark - 1, labels = F)
     legend("right", legend = c("Higher rated player won", "Draw", "Lower rated player won"), xpd=NA, fill=c("black", "grey", "white"))
