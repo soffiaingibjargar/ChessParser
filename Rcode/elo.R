@@ -15,6 +15,8 @@ draws1 = c()
 draws2 = c()
 
 size = length(res)
+print("number of games")
+print(size)
 
 allWins1 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())
 allWins2 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())

@@ -55,7 +55,6 @@ ui <- navbarPage(title = "Chess Results",
                                    min = 1, max = 62, value = 1, step = 1,animate=TRUE,ticks=F)
                     ),
                     mainPanel(
-                      textOutput("heatmapTitle"),
                       plotOutput("heatmap",
                                  width = "1000px", 
                                  height = "700px"
@@ -123,7 +122,8 @@ server <- function(input, output) {
     
     my_palette <- colorRampPalette(c("white", "blue"))(n = 599)
     pairs.breaks <- seq(from=0, to=1, length.out=600)
-    myBreaks <- sqrt(sqrt(pairs.breaks))
+    #myBreaks <- sqrt(sqrt(pairs.breaks))
+    myBreaks <- pairs.breaks ^ (1/3)
     myBreaks <- 1 - myBreaks
     print(pairs.breaks)
     print(myBreaks)
@@ -134,7 +134,8 @@ server <- function(input, output) {
     board <- getBoard(p,r)
     
     print(board)
-    chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks)
+    hTitle = heatmapTitle()
+    chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = hTitle)
   })
   
   output$captures <- renderPlot({
@@ -200,7 +201,7 @@ server <- function(input, output) {
   })
   
   
-  output$heatmapTitle <- renderText({
+  heatmapTitle <- function(){
     if(input$player == 0)
       currentPlayer = "black"
     else
@@ -220,7 +221,7 @@ server <- function(input, output) {
     currentIndex = as.numeric(input$piece) * 65 + as.numeric(input$gameTurn)
     currentTotal = totals[currentIndex]
     paste("Distribution of", currentPlayer, currentPiece, "at turn", input$gameTurn, "(total:", currentTotal, ")")
-  })
+  }
   
   
   output$winScatter <- renderPlot({
@@ -266,27 +267,29 @@ server <- function(input, output) {
       drawPlot1 = allDraws1[[input$round]]
       drawPlot2 = allDraws2[[input$round]]
     }
-    
+    allGames = 0
     par(new = TRUE)
     if(is.element("3", input$results))
     {  
-      #plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=size)
+      allGames = allGames + length(lossPlot1)
       plot(lossPlot1, lossPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=size)
     }
     par(new = TRUE)
     if(is.element("1", input$results))
     {
-      #plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
+      allGames = allGames + length(winPlot1)
       plot(winPlot1, winPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
     }
     par(new = TRUE)
     if(is.element("2", input$results))
     {
-      #plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
+      allGames = allGames + length(drawPlot1)
       plot(drawPlot1, drawPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
     }
+    print("number of games in round")
+    print(allGames)
     par(new = TRUE)
-    print(input$results)
+    #print(input$results)
     if(is.element("4", input$results))
     {  
       print("test")

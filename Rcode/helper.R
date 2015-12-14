@@ -32,18 +32,18 @@ for(p in 0:11)
     }
   }
 }
-print("Totals")
-print(totals)
+#print("Totals")
+#print(totals)
 
 path2 = "..\\captures.csv"
 captures <- read.csv(path2, sep=",")
 captures <- data.matrix(captures)
-print(captures)
+#print(captures)
 #heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('R','N','B','Q','K','P'))
 path3 = "..\\captured_spots.csv"
 cap_spots <- read.csv(path3, sep=",")
 cap_spots_m <- data.matrix(cap_spots)
-print(cap_spots)
+#print(cap_spots)
 
 captures_norm = read.csv("..\\captures_norm.csv")
 
