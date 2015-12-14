@@ -60,3 +60,86 @@ space_Q = read.csv("..\\captured_spots_Q.csv")
 space_K = read.csv("..\\captured_spots_K.csv")
 
 space_P = read.csv("..\\captured_spots_P.csv")
+
+wins_by_elo = c(28,
+                76,
+                248,
+                531,
+                623,
+                634,
+                404,
+                224,
+                173,
+                198,
+                122,
+                185,
+                89,
+                43,
+                19,
+                11,
+                14)
+draws_by_elo = c(47,
+                 83,
+                 185,
+                 304,
+                 267,
+                 180,
+                 86,
+                 50,
+                 27,
+                 23,
+                 10,
+                 12,
+                 8,
+                 1,
+                 0,
+                 0,
+                 1)
+losses_by_elo = c(20,
+                  37,
+                  95,
+                  140,
+                  144,
+                  119,
+                  71,
+                  29,
+                  23,
+                  14,
+                  5,
+                  5,
+                  2,
+                  1,
+                  1,
+                  0,
+                  0
+)
+all_by_elo = matrix(c(wins_by_elo, draws_by_elo, losses_by_elo), nrow = 3, ncol = 17, byrow = T)
+print(all_by_elo)
+for(i in 1:17)
+{
+  temp = all_by_elo[1,i] + all_by_elo[2,i] + all_by_elo[3,i]
+  for(j in 1:3)
+    all_by_elo[j,i] = all_by_elo[j,i] / temp
+}
+length_by_elo = c(51.105263157894726,
+                  50.75,
+                  50.35037878787882,
+                  46.6502564102564,
+                  44.823017408123775,
+                  42.47266881028933,
+                  42.34402852049911,
+                  40.745874587458744,
+                  38.65022421524661,
+                  38.3744680851064,
+                  37.64963503649635,
+                  35.6188118811881,
+                  38.57575757575759,
+                  38.333333333333336,
+                  38.5,
+                  37.09090909090909,
+                  33.46666666666667)
+elos = 0:16
+elos = elos * 50
+print(elos)
+plot(elos, length_by_elo, type = "p", main="Average length of game", xlab = "Difference of ELO rating", ylab = "Moves", ylim = c(0,55))
+barplot(all_by_elo, main="Outcomes by ELO difference")

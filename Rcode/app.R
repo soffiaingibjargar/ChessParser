@@ -8,7 +8,8 @@ library(scales)
 library(RColorBrewer)
 
 ui <- navbarPage(title = "Chess Results",
-                tabPanel(title = "Results",
+                
+                 tabPanel(title = "Results",
                   sidebarLayout(
                     sidebarPanel(
                       width=4,
@@ -38,10 +39,14 @@ ui <- navbarPage(title = "Chess Results",
                     )
                   )
                 ),
+                tabPanel(title = "Results2",
+                         plotOutput("elo_results"),
+                         plotOutput("elo_length")),
+                
                 tabPanel(title = "Moves",
                   sidebarLayout(
                     sidebarPanel(
-                      width=4,
+                      width=3,
                       radioButtons("player", label = h3("Player"),
                                    choices = list("White" = 1, "Black" = 0),selected = 1),
                        
@@ -55,10 +60,13 @@ ui <- navbarPage(title = "Chess Results",
                                    min = 1, max = 62, value = 1, step = 1,animate=TRUE,ticks=F)
                     ),
                     mainPanel(
-                      plotOutput("heatmap",
+                      fluidRow(
+                      column(width=10, plotOutput("heatmap",
                                  width = "1000px", 
                                  height = "700px"
-                                 )
+                                 )),
+                      column(width=2, offset=4.4, img(src="colorLegendDemo.png"))
+                      )
                     )
                   )
                 ),
@@ -225,17 +233,10 @@ server <- function(input, output) {
   
   
   output$winScatter <- renderPlot({
-    #hist(rnorm(input$num), col="green")
-    #print(input$results)
     par(new = FALSE)
     symbol = 20
     size = 1.1
     
-    
-    #whiteColor = "orange"
-    #drawColor = "gray"
-    #blackColor = "black"
-  
     whiteColor = brewer.pal(8, "BrBG")[3]
     drawColor = brewer.pal(8, "Greys")[5]
     blackColor = "black"
@@ -306,6 +307,18 @@ server <- function(input, output) {
            lty=c(0,0,0), pch=c(16, 16, 16), col=c(whiteColor, drawColor, blackColor),bty="n",cex=1.4)
 
 
+  })
+  
+  output$elo_results <- renderPlot({
+    # names.arg = (1:17) * 50
+    tickmark <- seq_len(18)
+    bp <- barplot(all_by_elo, main="Game outcome by ELO difference", las=1, xlab="Difference of ELO rating")
+    axis(side=1, at = bp - 0.5, labels = (0:16) * 50)
+    #axis(side=1, at = tickmark - 1, labels = F)
+    legend("right", legend = c("Higher rated player won", "Draw", "Lower rated player won"), xpd=NA, fill=c("black", "grey", "white"))
+  })
+  output$elo_length <- renderPlot({
+    plot(elos, length_by_elo, type = "p", main="Average length of game", xlab = "Difference of ELO rating", ylab = "Moves", ylim = c(0,55), las=1)
   })
 }
 
