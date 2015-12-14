@@ -73,8 +73,16 @@ ui <- navbarPage(title = "Chess Results",
                            ),
                            mainPanel(
                              fluidRow(
-                               column(width=6, offset=1, plotOutput("captures")),
-                               column(width=5, offset=0.2 , plotOutput("cap_spaces"))
+                               #column(width=6, offset=1.5, plotOutput("captures")),
+                               #column(width=5, offset=0.2 , plotOutput("cap_spaces"))
+                               column(width=12, plotOutput("captures",
+                                                           width = "1000", 
+                                                           height = "700px")),
+                               column(width=12, plotOutput("cap_spaces",
+                                                           width = "1000px", 
+                                                           height = "700px"))
+                               #plotOutput("captures"),
+                               #plotOutput("cap_spaces")
                               )
                              )
                            )
