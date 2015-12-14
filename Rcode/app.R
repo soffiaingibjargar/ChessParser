@@ -20,22 +20,22 @@ ui <- navbarPage(title = "Chess Results",
                                                         "Black wins" = 3,
                                                         "Show line" = 4),
                                          selected = c(1,2,3)),
+                      br(),
                       radioButtons("radioRound", label = h3("Rounds"),
                                    choices = list("All" = 1, "By round" = 2),
                                    selected = 1),
+                      br(),
                       conditionalPanel(
                         condition = "input.radioRound==2",
                         sliderInput("round", "Round:",
-                                    min = 1, max = 10, value = 1, step = 1,animate=TRUE,ticks=F)),
+                                    min = 1, max = 10, value = 1, step = 1,animate=TRUE,ticks=F))
                       
-                      helpText("Should we add text here....")
-
                       ),
                   mainPanel(
                     plotOutput("winScatter",
                       width = "700px", 
                       height = "700px"
-                               )
+                      )
                     )
                   )
                 ),
@@ -164,7 +164,7 @@ server <- function(input, output) {
 
     if(is.element("1", input$norm))
     {
-      my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
+      my_palette <- colorRampPalette(c("white", brewer.pal(8, "PuOr")[8]))(n = 1000)
       par(las=1)
       myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
                scale="none",col=my_palette,main="Frequency of captures by piece",
@@ -173,7 +173,7 @@ server <- function(input, output) {
     }
     else
     {
-      my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
+      my_palette <- colorRampPalette(c("white", brewer.pal(8, "PuOr")[8]))(n = 1000)
       par(las=1)
       myHeatmap(apply(captures_norm,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
                 scale="none",col=my_palette,main="Frequency of captures by piece",
@@ -183,7 +183,7 @@ server <- function(input, output) {
   })
   
   output$cap_spaces <- renderPlot({
-    my_palette <- colorRampPalette(c("white", "red"))(n = 1000)
+    my_palette <- colorRampPalette(c("white", brewer.pal(8, "PuBu")[8]))(n = 1000)
     #add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}
     #print(cap_spots)
     if(is.element("A", input$pieces))
