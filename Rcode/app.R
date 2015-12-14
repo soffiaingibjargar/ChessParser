@@ -19,8 +19,14 @@ ui <- navbarPage(title = "Chess Results",
                                                         "Black wins" = 3,
                                                         "Show line" = 4),
                                          selected = c(1,2,3)),
-                      sliderInput("round", "Round:",
-                                  min = 0, max = 10, value = 1, step = 1,animate=TRUE,ticks=F),
+                      radioButtons("radioRound", label = h3("Rounds"),
+                                   choices = list("All" = 1, "By round" = 2),
+                                   selected = 1),
+                      conditionalPanel(
+                        condition = "input.radioRound==2",
+                        sliderInput("round", "Round:",
+                                    min = 1, max = 10, value = 1, step = 1,animate=TRUE,ticks=F)),
+                      
                       helpText("Should we add text here....")
                       ),
                   mainPanel(
@@ -242,7 +248,7 @@ server <- function(input, output) {
     axis(side = 2, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 2)
     axis(side = 1, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 1)
 
-    if(input$round == 0)
+    if(input$radioRound == 1)
     {
       lossPlot1 = losses1
       lossPlot2 = losses2
