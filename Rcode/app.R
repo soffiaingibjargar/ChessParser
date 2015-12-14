@@ -27,7 +27,7 @@ ui <- navbarPage(title = "Chess Results",
                     plotOutput("winScatter",
                       width = "700px", 
                       height = "700px"
-                               )
+                      )
                     )
                   )
                 ),
