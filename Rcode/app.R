@@ -12,7 +12,7 @@ ui <- navbarPage(title = "Chess Results",
                  tabPanel(title = "Results",
                   sidebarLayout(
                     sidebarPanel(
-                      width=4,
+                      width=3,
                       checkboxGroupInput("results", 
                                          label = h3("Game result"), 
                                          choices = list("White wins" = 1, 
@@ -29,13 +29,13 @@ ui <- navbarPage(title = "Chess Results",
                                     min = 1, max = 10, value = 1, step = 1,animate=TRUE,ticks=F)),
                       
                       helpText("Should we add text here....")
+
                       ),
                   mainPanel(
                     plotOutput("winScatter",
                       width = "700px", 
                       height = "700px"
-                               ),
-                    helpText("...or here?")
+                               )
                     )
                   )
                 ),
@@ -49,12 +49,14 @@ ui <- navbarPage(title = "Chess Results",
                       width=3,
                       radioButtons("player", label = h3("Player"),
                                    choices = list("White" = 1, "Black" = 0),selected = 1),
+                      br(),
                        
                        radioButtons("piece", label = h3("Piece"),
                                     choices = list("Pawn" = 5, "Knight" = 1,
                                                    "Bishop" = 2,"Rook" = 0,
                                                    "Queen" = 3, "King" = 4),
                                     selected = 5),
+                      br(),
                       
                       sliderInput("gameTurn", "Turn:",
                                    min = 1, max = 62, value = 1, step = 1,animate=TRUE,ticks=F)
@@ -77,6 +79,8 @@ ui <- navbarPage(title = "Chess Results",
                              radioButtons("norm", label = h3("Representation of frequency of captures by pieces"),
                                           choices = list("Show all pieces" = 1, "Normalize" = 0),
                                           selected = 1),
+                             br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),
+                             br(),br(),br(),br(),br(),br(),br(),
                              
                              radioButtons("pieces", label = h3("Which piece to show in frequency of captures by space"),
                                           choices = list("All" = "A","Pawn" = "P", "Knight" = "N",
@@ -86,8 +90,16 @@ ui <- navbarPage(title = "Chess Results",
                            ),
                            mainPanel(
                              fluidRow(
-                               column(width=6, offset=1, plotOutput("captures")),
-                               column(width=5, offset=0.2 , plotOutput("cap_spaces"))
+                               #column(width=6, offset=1.5, plotOutput("captures")),
+                               #column(width=5, offset=0.2 , plotOutput("cap_spaces"))
+                               column(width=12, plotOutput("captures",
+                                                           width = "1000", 
+                                                           height = "700px")),
+                               column(width=12, plotOutput("cap_spaces",
+                                                           width = "1000px", 
+                                                           height = "700px"))
+                               #plotOutput("captures"),
+                               #plotOutput("cap_spaces")
                               )
                              )
                            )

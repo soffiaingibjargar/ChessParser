@@ -135,7 +135,7 @@ myHeatmap = function (x, Rowv = NULL, Colv = if (symm) "Rowv" else NULL,
   axis(3, 1L:nc, labels = labCol, las = 1, line = -0.5, tick = 0, 
        cex.axis = cexCol)
   if (!is.null(xlab)) 
-    mtext(xlab, side = 2, line = margins[1L] - 7.25)
+    mtext(xlab, side = 2, line = margins[1L] - 7.25, padj = 30)
   axis(2, iy, labels = labRow, las = 1, line = -0.5, tick = 0, 
        cex.axis = cexRow)
   if (!is.null(ylab)) 
