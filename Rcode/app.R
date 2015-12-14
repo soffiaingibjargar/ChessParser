@@ -8,7 +8,8 @@ library(scales)
 library(RColorBrewer)
 
 ui <- navbarPage(title = "Chess Results",
-                tabPanel(title = "Results",
+                
+                 tabPanel(title = "Results",
                   sidebarLayout(
                     sidebarPanel(
                       width=3,
@@ -19,9 +20,16 @@ ui <- navbarPage(title = "Chess Results",
                                                         "Black wins" = 3,
                                                         "Show line" = 4),
                                          selected = c(1,2,3)),
-                      br(),
-                      sliderInput("round", "Round:",
-                                  min = 0, max = 10, value = 1, step = 1,animate=TRUE,ticks=F)
+                      radioButtons("radioRound", label = h3("Rounds"),
+                                   choices = list("All" = 1, "By round" = 2),
+                                   selected = 1),
+                      conditionalPanel(
+                        condition = "input.radioRound==2",
+                        sliderInput("round", "Round:",
+                                    min = 1, max = 10, value = 1, step = 1,animate=TRUE,ticks=F)),
+                      
+                      helpText("Should we add text here....")
+
                       ),
                   mainPanel(
                     plotOutput("winScatter",
@@ -31,6 +39,10 @@ ui <- navbarPage(title = "Chess Results",
                     )
                   )
                 ),
+                tabPanel(title = "Results2",
+                         plotOutput("elo_results"),
+                         plotOutput("elo_length")),
+                
                 tabPanel(title = "Moves",
                   sidebarLayout(
                     sidebarPanel(
@@ -50,11 +62,13 @@ ui <- navbarPage(title = "Chess Results",
                                    min = 1, max = 62, value = 1, step = 1,animate=TRUE,ticks=F)
                     ),
                     mainPanel(
-                      textOutput("heatmapTitle"),
-                      plotOutput("heatmap",
+                      fluidRow(
+                      column(width=10, plotOutput("heatmap",
                                  width = "1000px", 
                                  height = "700px"
-                                 )
+                                 )),
+                      column(width=2, offset=4.4, img(src="colorLegendDemo.png"))
+                      )
                     )
                   )
                 ),
@@ -128,7 +142,8 @@ server <- function(input, output) {
     
     my_palette <- colorRampPalette(c("white", "blue"))(n = 599)
     pairs.breaks <- seq(from=0, to=1, length.out=600)
-    myBreaks <- sqrt(sqrt(pairs.breaks))
+    #myBreaks <- sqrt(sqrt(pairs.breaks))
+    myBreaks <- pairs.breaks ^ (1/3)
     myBreaks <- 1 - myBreaks
     print(pairs.breaks)
     print(myBreaks)
@@ -139,7 +154,8 @@ server <- function(input, output) {
     board <- getBoard(p,r)
     
     print(board)
-    chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks)
+    hTitle = heatmapTitle()
+    chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = hTitle)
   })
   
   output$captures <- renderPlot({
@@ -205,7 +221,7 @@ server <- function(input, output) {
   })
   
   
-  output$heatmapTitle <- renderText({
+  heatmapTitle <- function(){
     if(input$player == 0)
       currentPlayer = "black"
     else
@@ -225,21 +241,14 @@ server <- function(input, output) {
     currentIndex = as.numeric(input$piece) * 65 + as.numeric(input$gameTurn)
     currentTotal = totals[currentIndex]
     paste("Distribution of", currentPlayer, currentPiece, "at turn", input$gameTurn, "(total:", currentTotal, ")")
-  })
+  }
   
   
   output$winScatter <- renderPlot({
-    #hist(rnorm(input$num), col="green")
-    #print(input$results)
     par(new = FALSE)
     symbol = 20
     size = 1.1
     
-    
-    #whiteColor = "orange"
-    #drawColor = "gray"
-    #blackColor = "black"
-  
     whiteColor = brewer.pal(8, "BrBG")[3]
     drawColor = brewer.pal(8, "Greys")[5]
     blackColor = "black"
@@ -253,7 +262,7 @@ server <- function(input, output) {
     axis(side = 2, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 2)
     axis(side = 1, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 1)
 
-    if(input$round == 0)
+    if(input$radioRound == 1)
     {
       lossPlot1 = losses1
       lossPlot2 = losses2
@@ -271,27 +280,29 @@ server <- function(input, output) {
       drawPlot1 = allDraws1[[input$round]]
       drawPlot2 = allDraws2[[input$round]]
     }
-    
+    allGames = 0
     par(new = TRUE)
     if(is.element("3", input$results))
     {  
-      #plot(losses1, losses2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=size)
+      allGames = allGames + length(lossPlot1)
       plot(lossPlot1, lossPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=blackColor,las=1,cex=size)
     }
     par(new = TRUE)
     if(is.element("1", input$results))
     {
-      #plot(wins1, wins2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
+      allGames = allGames + length(winPlot1)
       plot(winPlot1, winPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=whiteColor,las=1,cex=size)
     }
     par(new = TRUE)
     if(is.element("2", input$results))
     {
-      #plot(draws1, draws2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
+      allGames = allGames + length(drawPlot1)
       plot(drawPlot1, drawPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
     }
+    print("number of games in round")
+    print(allGames)
     par(new = TRUE)
-    print(input$results)
+    #print(input$results)
     if(is.element("4", input$results))
     {  
       print("test")
@@ -308,6 +319,18 @@ server <- function(input, output) {
            lty=c(0,0,0), pch=c(16, 16, 16), col=c(whiteColor, drawColor, blackColor),bty="n",cex=1.4)
 
 
+  })
+  
+  output$elo_results <- renderPlot({
+    # names.arg = (1:17) * 50
+    tickmark <- seq_len(18)
+    bp <- barplot(all_by_elo, main="Game outcome by ELO difference", las=1, xlab="Difference of ELO rating")
+    axis(side=1, at = bp - 0.5, labels = (0:16) * 50)
+    #axis(side=1, at = tickmark - 1, labels = F)
+    legend("right", legend = c("Higher rated player won", "Draw", "Lower rated player won"), xpd=NA, fill=c("black", "grey", "white"))
+  })
+  output$elo_length <- renderPlot({
+    plot(elos, length_by_elo, type = "p", main="Average length of game", xlab = "Difference of ELO rating", ylab = "Moves", ylim = c(0,55), las=1)
   })
 }
 
