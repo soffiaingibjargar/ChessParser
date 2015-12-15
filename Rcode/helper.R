@@ -16,8 +16,8 @@ for(p in 0:11)
   {
     path = paste("www//Results//distribution_p",p,"_r",r,".csv",sep = "")
     board <- read.csv(path, sep=",")
-    print(path)
-    print(board)
+    #print(path)
+    #print(board)
     total = sum(board) - 36
     
     board <- board[,2:9] / total
@@ -34,11 +34,11 @@ for(p in 0:11)
     }
   }
 }
-for (i in 0:11)
-{
-  print(paste("starting totals", 65 * i + 1))
-  print(totals[65 * i + 1])
-}
+#for (i in 0:11)
+#{
+#  print(paste("starting totals", 65 * i + 1))
+#  print(totals[65 * i + 1])
+#}
 #print(totals)
 path2 = "www//captures.csv"
 
