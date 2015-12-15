@@ -7,9 +7,9 @@ library(reshape2)
 library(scales)
 library(RColorBrewer)
 
-ui <- navbarPage(title = "Chess Results",
+ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                 
-                 tabPanel(title = "Results",
+                 tabPanel(title = "All",
                   sidebarLayout(
                     sidebarPanel(
                       width=3,
@@ -39,8 +39,9 @@ ui <- navbarPage(title = "Chess Results",
                     )
                   )
                 ),
-                tabPanel(title = "Results2",
+                tabPanel(title = "Results",
                          plotOutput("elo_results"),
+                         br(),
                          plotOutput("elo_length")),
                 
                 tabPanel(title = "Moves",
@@ -170,7 +171,7 @@ server <- function(input, output) {
       par(las=1)
       myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
                 scale="none",col=my_palette,main="Frequency of captures by piece",
-                xlab = "Captured Piece", ylab = "Capturing Piece", 
+                xlab = "Captured Piece", ylab = expression(bold("Capturing Piece")), cex.main = 2.2,
                 axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
     }
     else
@@ -179,7 +180,7 @@ server <- function(input, output) {
       par(las=1)
       myHeatmap(apply(captures_norm,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
                 scale="none",col=my_palette,main="Frequency of captures by piece",
-                xlab = "Captured Piece", ylab = "Capturing Piece", 
+                xlab = "Captured Piece", ylab = expression(bold("Capturing Piece")), cex.main = 2.2, cex.lab=2,
                 axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
     }
     
@@ -394,19 +395,24 @@ server <- function(input, output) {
     resColors = c(colScheme[7], colScheme[4], colScheme[2])
     #resColors = c("black", "grey", "white")
     par(mar = c(5, 4.1,8,2))
-    bp <- barplot(all_by_elo, main="Game outcome by ELO difference", las=1, xlab="Difference of ELO rating", yaxt="n", col=resColors, cex.main = 1.8)
+    bp <- barplot(all_by_elo, main="Game outcome by ELO difference", las=1, xlab="Difference of players' ELO rating", yaxt="n", col=resColors, cex.main = 1.8, font.lab = 2, cex.lab = 1.2)
     returns = runif(10)
     axis(2, at=pretty(returns), lab=paste(pretty(returns) * 100, "%",sep=""), las=TRUE)
     tickmarks = bp - 0.5
     tickmarks <- c(tickmarks, 2 * tickmarks[length(tickmarks)] - tickmarks[length(tickmarks) - 1])
+    print(tickmarks)
     axis(side=1, at = tickmarks, labels = (0:17) * 50)
     par(mar = c(5.1, 4.1, 4.1, 2.1))
     l <- legend(x=16, y=1.35, legend = c("Higher rated player won", "Draw", "Lower rated player won"), xpd=NA, fill=resColors, cex = 1.2)
     #print(l)
   })
   output$elo_length <- renderPlot({
-    plot(elos, length_by_elo, main="Average length of game", xlab = "Difference of ELO rating", ylim = c(0,55), las=1, cex.main = 1.8, ylab=NA, type="o", pch=15, cex=2, lwd=2, bty="l")
-    mtext("Moves", side = 2, las = 1, line = 1, at=56)
+    
+    mElos <- elos + 25
+    plot(mElos, length_by_elo, main="Average number of moves in a game by ELO difference", xlab = "Difference of players' ELO rating", ylim = c(0,60), las=1, cex.main = 1.8, ylab=NA, type="o", pch=15, cex=2, lwd=2, bty="n", xaxt = "n", font.lab = 2, cex.lab = 1.2)
+    axis(side=1, at=c(elos, 850), label=c(elos, 850))
+    mtext(expression(bold("Moves")), side = 2, las = 1, line = 0, at=65, cex=1.2)
+    #axis(side=1, at = tickmarks, labels = (0:17) * 50)
   })
 }
 
