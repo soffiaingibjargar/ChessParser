@@ -2,6 +2,6 @@ name: Rcode
 account: chess
 server: shinyapps.io
 appId: 73705
-bundleId: 331810
+bundleId: 331863
 url: https://chess.shinyapps.io/Rcode
-when: 1450189070.26717
+when: 1450192027.54572

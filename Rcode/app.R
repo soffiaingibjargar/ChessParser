@@ -105,15 +105,15 @@ ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                                #column(width=5, offset=0.2 , plotOutput("cap_spaces"))
                                br(),
                                column(width=12, align="center", plotOutput("captures",
-                                                           width = "750", 
-                                                           height = "550"),
+                                                           width = "650", 
+                                                           height = "400"),
                                       plotOutput("captures_legend", 
-                                                 width="50%", height="170px")),
+                                                 width="40%", height="170px")),
                                column(width=12, align="center", plotOutput("cap_spaces",
-                                                           width = "750", 
-                                                           height = "550"),
+                                                           width = "650", 
+                                                           height = "400"),
                                       plotOutput("cap_spaces_legend", 
-                                                 width="50%", height="170px")
+                                                 width="40%", height="170px")
                                       )
                                #plotOutput("captures"),
                                #plotOutput("cap_spaces")
