@@ -6,6 +6,7 @@ library(heatmap3)
 library(reshape2)
 library(scales)
 library(RColorBrewer)
+library(shinyapps)
 
 ui <- navbarPage(title = "Chess Results",
                 
