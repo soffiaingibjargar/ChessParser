@@ -515,6 +515,8 @@ testHeatmap <- function (x, Rowv = NULL, Colv = if (symm) "Rowv" else NULL,
     dummy.x <- seq(min(x, na.rm = TRUE), max(x, na.rm = TRUE), 
                    length = length(col))
     dummy.z <- matrix(dummy.x, ncol = 1)
+    #print("dummy.x is")
+    #print(dummy.x)
     image(x = dummy.x, y = 1, z = dummy.z, yaxt = "n", col = col, 
           cex.axis = cexCol, xlab = "")
   }

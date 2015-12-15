@@ -92,12 +92,17 @@ ui <- navbarPage(title = "Chess Results",
                              fluidRow(
                                #column(width=6, offset=1.5, plotOutput("captures")),
                                #column(width=5, offset=0.2 , plotOutput("cap_spaces"))
-                               column(width=12, plotOutput("captures",
+                               column(width=12, align="center", plotOutput("captures",
                                                            width = "1000", 
-                                                           height = "700px")),
-                               column(width=12, plotOutput("cap_spaces",
+                                                           height = "700px"),
+                                      plotOutput("captures_legend", 
+                                                 width="50%", height="170px")),
+                               column(width=12, align="center", plotOutput("cap_spaces",
                                                            width = "1000px", 
-                                                           height = "700px"))
+                                                           height = "700px"),
+                                      plotOutput("cap_spaces_legend", 
+                                                 width="50%", height="170px")
+                                      )
                                #plotOutput("captures"),
                                #plotOutput("cap_spaces")
                               )
@@ -158,18 +163,15 @@ server <- function(input, output) {
     chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = hTitle)
     #testHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = hTitle)
   })
-  
   output$captures <- renderPlot({
-    #heatmap(captures)
-
     if(is.element("1", input$norm))
     {
       my_palette <- colorRampPalette(c("white", brewer.pal(8, "PuOr")[8]))(n = 1000)
       par(las=1)
       myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
-               scale="none",col=my_palette,main="Frequency of captures by piece",
-               xlab = "Captured Piece", ylab = "Capturing Piece", 
-               axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
+                scale="none",col=my_palette,main="Frequency of captures by piece",
+                xlab = "Captured Piece", ylab = "Capturing Piece", 
+                axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
     }
     else
     {
@@ -180,8 +182,65 @@ server <- function(input, output) {
                 xlab = "Captured Piece", ylab = "Capturing Piece", 
                 axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
     }
+    
   })
-  
+  output$captures_legend <- renderPlot({
+    #heatmap(captures)
+
+    my_palette <- colorRampPalette(c("white", brewer.pal(8, "PuOr")[8]))(n = 1000)
+    par(las=1)
+    if(is.element("1", input$norm))
+    {
+      dummy.x <- seq(min(captures, na.rm = TRUE), max(captures, na.rm = TRUE), 
+                     length = length(my_palette))
+    }
+    else
+    {
+      dummy.x <- seq(min(captures_norm, na.rm = TRUE), max(captures_norm, na.rm = TRUE), 
+                     length = length(my_palette))
+    }
+    dummy.z <- matrix(dummy.x, ncol = 1)
+    image(x = dummy.x, y = 1, z = dummy.z, yaxt = "n", col = my_palette, xlab = "", cex = 0.2, ylab="")
+  })
+  output$cap_spaces_legend <- renderPlot({
+    my_palette <- colorRampPalette(c("white", brewer.pal(8, "PuBu")[8]))(n = 1000)
+    #add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}
+    #print(cap_spots)
+    if(is.element("A", input$pieces))
+    {
+      temp <- apply(cap_spots_m,2,rev)
+    }
+    else if(is.element("R", input$pieces))
+    {
+      temp <- apply(space_R,2,rev)
+    }
+    else if(is.element("N", input$pieces))
+    {
+      temp <- apply(space_N,2,rev)
+    }
+    else if(is.element("B", input$pieces))
+    {
+      temp <- apply(space_B,2,rev)
+    }
+    else if(is.element("Q", input$pieces))
+    {
+      temp <- apply(space_Q,2,rev)
+    }
+    #else if(is.element("K", input$pieces))
+    #{
+    #  temp <- apply(space_K,2,rev)
+    #}
+    else if(is.element("P", input$pieces))
+    {
+      temp <- apply(space_P,2,rev)
+    }
+    
+    dummy.x <- seq(min(temp, na.rm = TRUE), max(temp, na.rm = TRUE), 
+                   length = length(my_palette))
+    dummy.z <- matrix(dummy.x, ncol = 1)
+    image(x = dummy.x, y = 1, z = dummy.z, yaxt = "n", col = my_palette, xlab = "", cex = 0.2, ylab="")
+
+  })
   output$cap_spaces <- renderPlot({
     my_palette <- colorRampPalette(c("white", brewer.pal(8, "PuBu")[8]))(n = 1000)
     #add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}
@@ -218,6 +277,13 @@ server <- function(input, output) {
     #print(class(temp))
     #testHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
     chessHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
+    dummy.x <- seq(min(temp, na.rm = TRUE), max(temp, na.rm = TRUE), 
+                   length = length(my_palette))
+    dummy.z <- matrix(dummy.x, ncol = 1)
+    #print("dummy.x is")
+    #print(dummy.x)
+    #par(new = TRUE)
+    #image(x = dummy.x, y = 1, z = dummy.z, yaxt = "n", col = my_palette, xlab = "", cex = 0.4)
     #cap_spots$X <- with(cap_spots, reorder(X, X))
     #ggplot(melt(cap_spots), aes(variable, Name))
   })
@@ -324,17 +390,23 @@ server <- function(input, output) {
   })
   
   output$elo_results <- renderPlot({
-    # names.arg = (1:17) * 50
-    tickmark <- seq_len(18)
-    bp <- barplot(all_by_elo, main="Game outcome by ELO difference", las=1, xlab="Difference of ELO rating", yaxt="n")
+    colScheme = brewer.pal(8, "Greys")
+    resColors = c(colScheme[7], colScheme[4], colScheme[2])
+    #resColors = c("black", "grey", "white")
+    par(mar = c(5, 4.1,8,2))
+    bp <- barplot(all_by_elo, main="Game outcome by ELO difference", las=1, xlab="Difference of ELO rating", yaxt="n", col=resColors, cex.main = 1.8)
     returns = runif(10)
     axis(2, at=pretty(returns), lab=paste(pretty(returns) * 100, "%",sep=""), las=TRUE)
-    axis(side=1, at = bp - 0.5, labels = (0:16) * 50)
-    #axis(side=1, at = tickmark - 1, labels = F)
-    legend("right", legend = c("Higher rated player won", "Draw", "Lower rated player won"), xpd=NA, fill=c("black", "grey", "white"))
+    tickmarks = bp - 0.5
+    tickmarks <- c(tickmarks, 2 * tickmarks[length(tickmarks)] - tickmarks[length(tickmarks) - 1])
+    axis(side=1, at = tickmarks, labels = (0:17) * 50)
+    par(mar = c(5.1, 4.1, 4.1, 2.1))
+    l <- legend(x=16, y=1.35, legend = c("Higher rated player won", "Draw", "Lower rated player won"), xpd=NA, fill=resColors, cex = 1.2)
+    #print(l)
   })
   output$elo_length <- renderPlot({
-    plot(elos, length_by_elo, type = "p", main="Average length of game", xlab = "Difference of ELO rating", ylab = "Moves", ylim = c(0,55), las=1)
+    plot(elos, length_by_elo, main="Average length of game", xlab = "Difference of ELO rating", ylim = c(0,55), las=1, cex.main = 1.8, ylab=NA, type="o", pch=15, cex=2, lwd=2, bty="l")
+    mtext("Moves", side = 2, las = 1, line = 1, at=56)
   })
 }
 
