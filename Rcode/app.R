@@ -29,7 +29,7 @@ ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                       conditionalPanel(
                         condition = "input.radioRound==2",
                         sliderInput("round", "Round:",
-                                    min = 1, max = 10, value = 1, step = 1,animate=TRUE,ticks=F))
+                                    min = 1, max = 10, value = 1, step = 1,animate=FALSE,ticks=F))
                       
                       ),
                   mainPanel(
@@ -66,10 +66,10 @@ ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                     mainPanel(
                       fluidRow(
                       column(width=10, plotOutput("heatmap",
-                                 width = "1000px", 
-                                 height = "700px"
+                                 width = "900px", 
+                                 height = "600px"
                                  )),
-                      column(width=2, offset=4.4, img(src="colorLegendDemo.png"))
+                      column(width=2, img(src="colorLegendDemo.png",width="200px"))
                       )
                     )
                   )
@@ -96,13 +96,13 @@ ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                                #column(width=5, offset=0.2 , plotOutput("cap_spaces"))
                                br(),
                                column(width=12, align="center", plotOutput("captures",
-                                                           width = "800", 
-                                                           height = "600"),
+                                                           width = "750", 
+                                                           height = "550"),
                                       plotOutput("captures_legend", 
                                                  width="50%", height="170px")),
                                column(width=12, align="center", plotOutput("cap_spaces",
-                                                           width = "800", 
-                                                           height = "600"),
+                                                           width = "750", 
+                                                           height = "550"),
                                       plotOutput("cap_spaces_legend", 
                                                  width="50%", height="170px")
                                       )
