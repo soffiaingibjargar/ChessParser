@@ -6,7 +6,7 @@ library(heatmap3)
 library(reshape2)
 library(scales)
 library(RColorBrewer)
-library(shinyapps)
+#library(shinyapps)
 
 ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                 
@@ -87,13 +87,15 @@ ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                          sidebarLayout(
                            sidebarPanel(
                              width=3,
-                             radioButtons("norm", label = h3("Representation of frequency of captures by pieces"),
-                                          choices = list("Show all pieces" = 1, "Normalize" = 0),
+                             radioButtons("norm", label = h3("Captures by pieces"),
+                                          choices = list("Count all captures" = 1, "Scale captures" = 0),
                                           selected = 1),
+                             br(),
+                             textOutput("scale_explain"),
                              br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),
                              br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),
                              
-                             radioButtons("pieces", label = h3("Which piece to show in frequency of captures by space"),
+                             radioButtons("pieces", label = h3("Piece being captured"),
                                           choices = list("All" = "A","Pawn" = "P", "Knight" = "N",
                                                          "Bishop" = "B","Rook" = "R",
                                                          "Queen" = "Q"),
@@ -181,8 +183,8 @@ server <- function(input, output) {
     {
       my_palette <- colorRampPalette(c("white", brewer.pal(8, "PuOr")[8]))(n = 1000)
       par(las=1)
-      myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
-                scale="none",col=my_palette,main="Frequency of captures by piece",
+      myHeatmap(apply(captures / 6214,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
+                scale="none",col=my_palette,main="Average number of captures in each game by piece",
                 xlab = "Capturing Piece", ylab = expression(bold("Captured Piece")), cex.main = 2.2,
                 axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
     }
@@ -190,8 +192,8 @@ server <- function(input, output) {
     {
       my_palette <- colorRampPalette(c("white", brewer.pal(8, "PuOr")[8]))(n = 1000)
       par(las=1)
-      myHeatmap(apply(captures_norm,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
-                scale="none",col=my_palette,main="Frequency of captures by piece",
+      myHeatmap(apply(captures_norm / 6214 ,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
+                scale="none",col=my_palette,main="Average number of captures in each game by piece",
                 xlab = "Capturing Piece", ylab = expression(bold("Captured Piece")), cex.main = 2.2, cex.lab=2,
                 axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
     }
@@ -204,12 +206,12 @@ server <- function(input, output) {
     par(las=1)
     if(is.element("1", input$norm))
     {
-      dummy.x <- seq(min(captures, na.rm = TRUE), max(captures, na.rm = TRUE), 
+      dummy.x <- seq(min(captures / 6214, na.rm = TRUE), max(captures / 6214, na.rm = TRUE), 
                      length = length(my_palette))
     }
     else
     {
-      dummy.x <- seq(min(captures_norm, na.rm = TRUE), max(captures_norm, na.rm = TRUE), 
+      dummy.x <- seq(min(captures_norm / 6214, na.rm = TRUE), max(captures_norm / 6214, na.rm = TRUE), 
                      length = length(my_palette))
     }
     dummy.z <- matrix(dummy.x, ncol = 1)
@@ -247,7 +249,7 @@ server <- function(input, output) {
     {
       temp <- apply(space_P,2,rev)
     }
-    
+    temp <- temp / 6214
     dummy.x <- seq(min(temp, na.rm = TRUE), max(temp, na.rm = TRUE), 
                    length = length(my_palette))
     dummy.z <- matrix(dummy.x, ncol = 1)
@@ -287,9 +289,10 @@ server <- function(input, output) {
       temp <- apply(space_P,2,rev)
     }
     #print(temp)
-    #print(class(temp))
+    print(class(temp))
+    temp <- temp / 6214
     #testHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
-    chessHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Frequency of captures by space")
+    chessHeatmap(temp, Rowv=NA, Colv=NA, labRow = c('1','2','3','4','5','6','7','8'),scale="none",col=my_palette,main="Average number of captures in each game by space")
     dummy.x <- seq(min(temp, na.rm = TRUE), max(temp, na.rm = TRUE), 
                    length = length(my_palette))
     dummy.z <- matrix(dummy.x, ncol = 1)
@@ -360,7 +363,7 @@ server <- function(input, output) {
     currentTotal = totals[currentIndex]
     print(currentTotal)
     #print(totals)
-    paste("total: ", currentTotal)
+    paste("total:", currentTotal)
   }
   
   
@@ -370,7 +373,11 @@ server <- function(input, output) {
     size = 0.7
     
     whiteColor = brewer.pal(8, "BrBG")[3]
-    drawColor = brewer.pal(8, "Greys")[5]
+    #drawColor = brewer.pal(8, "Greys")[5]
+    #drawColor = brewer.pal(8, "PuBu")[5]
+    drawColor = "#98b8cd"
+    print(brewer.pal(8, "PuBu")[4])
+    print(brewer.pal(8, "PuBu")[5])
     blackColor = "black"
     
     e = c()
@@ -419,8 +426,8 @@ server <- function(input, output) {
       allGames = allGames + length(drawPlot1)
       plot(drawPlot1, drawPlot2,pch=symbol,axes = FALSE,xlab='',ylab='',xlim=elo_range,ylim=elo_range,col=drawColor,las=1,cex=size)
     }
-    print("number of games in round")
-    print(allGames)
+    #print("number of games in round")
+    #print(allGames)
     par(new = TRUE)
     #print(input$results)
     if(is.element("4", input$results))
@@ -441,7 +448,7 @@ server <- function(input, output) {
   })
   
   output$elo_results <- renderPlot({
-    colScheme = brewer.pal(8, "Greys")
+    colScheme = brewer.pal(8, "Blues")
     resColors = c(colScheme[7], colScheme[4], colScheme[2])
     #resColors = c("black", "grey", "white")
     par(mar = c(5, 4.1,8,2))
@@ -471,6 +478,9 @@ server <- function(input, output) {
   })
   output$elo_explain2 <- renderText({
     "Matches where the difference is 850 or higher are not shown because there are too few matches in each group."
+  })
+  output$scale_explain <- renderText({
+    "Scaling divides the number of captures made by a piece by how many such pieces are in the game."
   })
 }
 

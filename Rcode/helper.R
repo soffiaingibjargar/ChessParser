@@ -34,11 +34,11 @@ for(p in 0:11)
     }
   }
 }
-for (i in 0:11)
-{
-  print(paste("starting totals", 65 * i + 1))
-  print(totals[65 * i + 1])
-}
+#for (i in 0:11)
+#{
+#  print(paste("starting totals", 65 * i + 1))
+#  print(totals[65 * i + 1])
+#}
 #print(totals)
 path2 = "www//captures.csv"
 
