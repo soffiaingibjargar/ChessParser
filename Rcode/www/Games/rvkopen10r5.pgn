@@ -1,0 +1,1062 @@
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.1"]
+[White "Baklan, Vladimir"]
+[Black "Bromann, Thorbjorn"]
+[Result "1-0"]
+[ECO "C12"]
+[WhiteElo "2654"]
+[BlackElo "2434"]
+[PlyCount "99"]
+[EventDate "2010.02.24"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Bb4 5. e5 h6 6. Bc1 Ne4 7. Qg4 g6 8. Nge2
+c5 9. a3 Ba5 10. b4 Nxc3 11. Nxc3 cxd4 12. Nb5 Bc7 13. f4 Nc6 14. Bd3 a6 15.
+Nxc7+ Qxc7 16. O-O Bd7 17. Qh4 Qd8 18. Qf2 h5 19. Bd2 Qb6 20. Rfb1 Ne7 21. Bc3
+Bb5 22. Bxd4 Qc7 23. a4 Bxd3 24. cxd3 O-O 25. h3 Kg7 26. Bc5 Rh8 27. Qh4 Ng8
+28. Rc1 Qd8 29. Qxd8 Rxd8 30. b5 axb5 31. axb5 Rd7 32. Ra8 Nh6 33. Rxh8 Kxh8
+34. Bf8 Nf5 35. Rc8 Kh7 36. b6 g5 37. fxg5 Kg6 38. Bc5 d4 39. Kf2 Rd5 40. g4
+hxg4 41. hxg4 Ne3 42. Kf3 Nd1 43. Be7 Rxe5 44. Bf6 Re3+ 45. Kg2 Re2+ 46. Kg3
+Re3+ 47. Kh4 Nf2 48. Rg8+ Kh7 49. Rh8+ Kg6 50. Rh6# 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.2"]
+[White "Stefansson, Hannes"]
+[Black "Danielsen, Henrik"]
+[Result "1/2-1/2"]
+[ECO "B09"]
+[WhiteElo "2574"]
+[BlackElo "2495"]
+[PlyCount "101"]
+[EventDate "2010.02.24"]
+
+1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. f4 Bg7 5. Nf3 O-O 6. Bd3 Nc6 7. e5 dxe5 8. dxe5
+Nd5 9. Bd2 Ncb4 10. Be4 c6 11. Nxd5 Nxd5 12. c4 Nc7 13. Bb4 Qxd1+ 14. Rxd1 Re8
+15. O-O f5 16. Bc2 Ne6 17. g3 a5 18. Bd2 a4 19. Be3 c5 20. Nd2 b6 21. Nb1 Bb7
+22. Nc3 Bc6 23. Rd2 Kf7 24. h3 h5 25. Nd5 Rab8 26. g4 hxg4 27. hxg4 Rg8 28.
+gxf5 gxf5 29. Kf2 Nd4 30. Bxd4 cxd4 31. Rxd4 e6 32. Nb4 Be8 33. Bd1 Bf8 34. Na6
+Bc5 35. Nxc5 bxc5 36. Rd2 Bc6 37. Bf3 Bxf3 38. Kxf3 Rgd8 39. Rfd1 Rxd2 40. Rxd2
+Rb4 41. Rc2 Rb8 42. Rh2 Rb4 43. Rh7+ Ke8 44. Ra7 Rxc4 45. Kg3 Rb4 46. Kh4 Rxf4+
+47. Kg5 Rb4 48. Kf6 f4 49. Kxe6 Rb6+ 50. Kd5 f3 51. Ra8+ 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.3"]
+[White "Nataf, Igor-Alexandre"]
+[Black "Harika, Dronavalli"]
+[Result "1/2-1/2"]
+[ECO "C45"]
+[WhiteElo "2534"]
+[BlackElo "2471"]
+[PlyCount "49"]
+[EventDate "2010.02.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Qe7 7. Qe2 Nd5 8.
+c4 Nb6 9. Nc3 Qe6 10. Qe4 g6 11. f4 d5 12. Qc2 Bb4 13. a3 Bxc3+ 14. Qxc3 dxc4
+15. Be2 O-O 16. O-O f6 17. Be3 Nd5 18. Bxc4 Nxc3 19. Bxe6+ Bxe6 20. bxc3 fxe5
+21. fxe5 Rf5 22. Rxf5 Bxf5 23. Rf1 h5 24. h3 Re8 25. Bxa7 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.4"]
+[White "Nyzhnyk, Illya"]
+[Black "Dreev, Alexey"]
+[Result "1/2-1/2"]
+[ECO "B61"]
+[WhiteElo "2495"]
+[BlackElo "2650"]
+[PlyCount "143"]
+[EventDate "2010.02.24"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 Bd7 7. Qd2 Nxd4 8.
+Qxd4 Qa5 9. Bd2 Rc8 10. O-O-O a6 11. Kb1 Qc5 12. Qxc5 Rxc5 13. f3 g6 14. Be3
+Rc8 15. Bd4 Bg7 16. Nd5 e5 17. Be3 Nxd5 18. Rxd5 Rc6 19. Be2 Be6 20. Rd2 Ke7
+21. Rhd1 h5 22. g3 Bh6 23. f4 Bg4 24. Re1 Bxe2 25. Rdxe2 h4 26. Bd2 hxg3 27.
+hxg3 Bg7 28. Rg2 Rh3 29. a3 Bh6 30. c3 Rc5 31. Rf1 exf4 32. gxf4 Rch5 33. Kc2
+Rh2 34. Rxh2 Rxh2 35. Kd3 Rh3+ 36. Ke2 Ke6 37. Rf3 Rh2+ 38. Rf2 Rh3 39. Rf3
+Rh2+ 40. Rf2 Rh1 41. Rf1 Rxf1 42. Kxf1 Bf8 43. Ke2 d5 44. Kd3 b5 45. Bc1 a5 46.
+b3 a4 47. b4 dxe4+ 48. Kxe4 Bg7 49. Bd2 Kd6 50. Be1 Kc6 51. Bd2 Bh8 52. Be1 Bf6
+53. Bd2 Kd6 54. Be1 Ke6 55. Bd2 Bh8 56. Be1 Bg7 57. Bd2 Bf6 58. Be1 Kd6 59. Bd2
+Kc6 60. Be1 Bd8 61. Bd2 f6 62. Kd4 g5 63. c4 gxf4 64. Bxf4 f5 65. cxb5+ Kxb5
+66. Ke5 Kc4 67. Kxf5 Kb3 68. Be3 Kxa3 69. b5 Kb4 70. b6 Bxb6 71. Bxb6 a3 72.
+Bd4 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.5"]
+[White "Sokolov, Ivan"]
+[Black "Krush, Irina"]
+[Result "1-0"]
+[ECO "D10"]
+[WhiteElo "2649"]
+[BlackElo "2455"]
+[PlyCount "91"]
+[EventDate "2010.02.24"]
+
+1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e4 b5 5. a4 b4 6. Nce2 Nf6 7. Ng3 h5 8. h4 Bg4
+9. Nf3 c3 10. bxc3 bxc3 11. Be2 e6 12. O-O a5 13. Bg5 Qc7 14. Rc1 Bb4 15. Ne5
+Bxe2 16. Qxe2 Nbd7 17. Nxd7 Qxd7 18. Rfd1 Ng4 19. Nxh5 Rxh5 20. Qxg4 Rh7 21. g3
+f6 22. Be3 Kf7 23. d5 cxd5 24. exd5 Re8 25. Bd4 Qc8 26. Bxc3 exd5 27. Qf3 Qd7
+28. Bxb4 axb4 29. Qb3 Rh5 30. Qxb4 Re2 31. Qa5 Kg6 32. Rc7 Qg4 33. Qa7 Kh6 34.
+Qb8 Kh7 35. Qb1+ Qf5 36. Qxf5+ Rxf5 37. f4 Ra2 38. Rb1 d4 39. Rbb7 Rd5 40.
+Rxg7+ Kh8 41. Rgd7 Rxd7 42. Rxd7 Rxa4 43. Kg2 Ra2+ 44. Kh3 Rd2 45. Rf7 d3 46.
+Rxf6 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.6"]
+[White "Ivanov, Mikhail M"]
+[Black "Kuzubov, Yuriy"]
+[Result "0-1"]
+[ECO "A62"]
+[WhiteElo "2465"]
+[BlackElo "2634"]
+[PlyCount "78"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. c4 e6 3. g3 c5 4. d5 d6 5. Nc3 exd5 6. cxd5 g6 7. Bg2 Bg7 8. Nf3
+O-O 9. O-O Re8 10. Re1 a6 11. e4 Bg4 12. Bf4 Nh5 13. Bd2 Nd7 14. h3 Bxf3 15.
+Bxf3 Nhf6 16. a4 c4 17. b4 cxb3 18. Qxb3 Nc5 19. Qb1 Rb8 20. Ra3 Nfd7 21. Kg2
+Qe7 22. Na2 b5 23. axb5 Rxb5 24. Nb4 Qf6 25. Qc1 a5 26. Bc3 Qxc3 27. Rxc3 Bxc3
+28. Qxc3 axb4 29. Qc4 Rb6 30. Rb1 b3 31. Qd4 Reb8 32. Bg4 Rb4 33. Qc3 Ne5 34.
+f4 Rc4 35. Qa5 Rc2+ 36. Kg1 Nxg4 37. Qc7 Rf8 38. Qxd6 b2 39. Rxb2 Rxb2 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.7"]
+[White "Romanishin, Oleg M"]
+[Black "Ehlvest, Jaan"]
+[Result "1/2-1/2"]
+[ECO "E06"]
+[WhiteElo "2512"]
+[BlackElo "2600"]
+[PlyCount "30"]
+[EventDate "2010.02.24"]
+
+1. Nf3 Nf6 2. g3 d5 3. Bg2 e6 4. O-O c5 5. d4 Nc6 6. c4 Be7 7. dxc5 Bxc5 8. a3
+a5 9. cxd5 exd5 10. Bg5 O-O 11. Nc3 d4 12. Bxf6 Qxf6 13. Ne4 Qe7 14. Nxc5 Qxc5
+15. Rc1 Qb6 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.8"]
+[White "Boskovic, Drasko"]
+[Black "Gupta, Abhijeet"]
+[Result "1/2-1/2"]
+[ECO "A45"]
+[WhiteElo "2454"]
+[BlackElo "2577"]
+[PlyCount "169"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. Bg5 Ne4 3. Bf4 d5 4. e3 c5 5. c3 Nc6 6. Nd2 Bf5 7. Nxe4 Bxe4 8. f3
+Bg6 9. Bd3 Qb6 10. Ne2 e6 11. O-O Be7 12. Bxg6 hxg6 13. Qb3 O-O 14. Qxb6 axb6
+15. Kf2 Ra6 16. a3 Na5 17. Nc1 g5 18. Bg3 f5 19. Be5 Nc6 20. Nd3 c4 21. Nb4
+Nxe5 22. dxe5 Raa8 23. Nc2 Bc5 24. Nd4 Kf7 25. g3 Ke7 26. f4 Rh8 27. Rh1 g4 28.
+Kg2 Rh3 29. Rad1 g5 30. Rd2 gxf4 31. exf4 Kd7 32. Re1 Rah8 33. Rh1 Bxd4 34.
+Rxd4 Kc6 35. Rd2 Kb5 36. Rd4 Ka4 37. Rd2 Kb3 38. Re2 b5 39. Rf2 b4 40. axb4 b5
+41. Re2 Ra8 42. Rb1 Ra2 43. Rf2 Rh7 44. Re2 Ra8 45. Rf2 Rha7 46. Re2 Ra1 47.
+Rxa1 Rxa1 48. h3 gxh3+ 49. Kxh3 Rh1+ 50. Kg2 Rb1 51. g4 fxg4 52. f5 exf5 53.
+Kg3 Rg1+ 54. Kf4 Rf1+ 55. Kg3 Rf3+ 56. Kh4 g3 57. Kh3 Rf2 58. Rxf2 gxf2 59. Kg2
+d4 60. cxd4 Kxb2 61. e6 c3 62. e7 c2 63. e8=Q f1=Q+ 64. Kxf1 c1=Q+ 65. Kf2 Qf4+
+66. Ke1 Qg3+ 67. Kf1 Qf3+ 68. Kg1 Qd1+ 69. Kg2 Qd2+ 70. Kf3 Qxb4 71. Qe5 Qc3+
+72. Kf4 b4 73. d5 Ka2 74. d6 Qd2+ 75. Kxf5 b3 76. Qe6 Qf2+ 77. Ke5 Qc5+ 78. Kf6
+Qd4+ 79. Kf7 Qb6 80. d7 Qxe6+ 81. Kxe6 b2 82. d8=Q b1=Q 83. Kd7 Qd3+ 84. Kc8
+Qxd8+ 85. Kxd8 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.9"]
+[White "Cori T, Deysi"]
+[Black "Miezis, Normunds"]
+[Result "0-1"]
+[ECO "A60"]
+[WhiteElo "2412"]
+[BlackElo "2533"]
+[PlyCount "88"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. Nf3 e6 3. c4 c5 4. d5 exd5 5. cxd5 Bd6 6. Nc3 Bc7 7. g4 Ba5 8. g5
+Ne4 9. Qc2 Qe7 10. Bh3 Na6 11. O-O Bxc3 12. bxc3 d6 13. Bxc8 Rxc8 14. Kh1 O-O
+15. Nh4 f6 16. g6 f5 17. gxh7+ Kxh7 18. Ng2 Qe5 19. f3 Qxc3 20. Qb1 Nd2 21.
+Bxd2 Qxd2 22. Qxb7 Nb4 23. Rad1 Qh6 24. Rg1 Rb8 25. Qxa7 Ra8 26. Qd7 Rad8 27.
+Qc7 Rc8 28. Qb7 Rb8 29. Qd7 Rbd8 30. Qb5 Ra8 31. a4 f4 32. Qd7 Rad8 33. Qc7 Rc8
+34. Qb7 Rb8 35. Qd7 Rbd8 36. Qg4 Rde8 37. Nh4 Rxe2 38. Qd7 Qf6 39. Qh3 g5 40.
+Rg4 Qh6 41. Rdg1 Nd3 42. R4g2 Nf2+ 43. Rxf2 Rxf2 44. Qd7+ Kh8 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.10"]
+[White "Karavade, Eesha"]
+[Black "Kogan, Artur"]
+[Result "1-0"]
+[ECO "A56"]
+[WhiteElo "2405"]
+[BlackElo "2524"]
+[PlyCount "103"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. c4 c5 3. d5 e5 4. Nc3 d6 5. e4 Be7 6. h3 Nbd7 7. Be3 h5 8. Nf3 h4
+9. Bd3 Nf8 10. Qd2 a6 11. a3 Ng6 12. b4 b6 13. Rb1 Bd7 14. Ng1 Nh7 15. Nge2 O-O
+16. O-O Ng5 17. f3 Nh7 18. Rb3 Bg5 19. Rfb1 Qf6 20. bxc5 bxc5 21. Kh2 Bf4+ 22.
+Nxf4 exf4 23. Bf2 Ne5 24. Ne2 g5 25. Qc3 g4 26. hxg4 Ng5 27. Qc1 Ba4 28. Rc3
+Ng6 29. Bc2 Bd7 30. Rcb3 Rfe8 31. Be1 Bxg4 32. fxg4 f3 33. gxf3 Nxf3+ 34. Kh1
+Ng5 35. Kg1 Nxe4 36. Re3 Ng5 37. Bc3 Nf3+ 38. Kh1 Nd4 39. Bf5 h3 40. Qd2 Rxe3
+41. Qxe3 Nxf5 42. gxf5 Qxf5 43. Rg1 Rb8 44. Ng3 Qc2 45. Nh5 Kf8 46. Nf6 Qf5 47.
+Re1 Ne5 48. Bxe5 dxe5 49. Qxc5+ Kg7 50. Rg1+ Kh8 51. Qe3 Qe4+ 52. Qxe4 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.11"]
+[White "Gislason, Gudmundur"]
+[Black "Grandelius, Nils"]
+[Result "1/2-1/2"]
+[ECO "D85"]
+[WhiteElo "2382"]
+[BlackElo "2515"]
+[PlyCount "44"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. Nf3 g6 3. c4 Bg7 4. Nc3 d5 5. cxd5 Nxd5 6. e4 Nxc3 7. bxc3 c5 8.
+Rb1 O-O 9. Be2 cxd4 10. cxd4 Qa5+ 11. Bd2 Qxa2 12. O-O Bg4 13. Bc3 Rc8 14. Ra1
+Qe6 15. d5 Qd6 16. Bxg7 Bxf3 17. Bxf3 Kxg7 18. Rxa7 Rxa7 19. Qd4+ e5 20. Qxa7
+b5 21. Qb7 Rc5 22. h4 Qc7 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.12"]
+[White "Hillarp Persson, Tiger"]
+[Black "Thorfinnsson, Bragi"]
+[Result "0-1"]
+[ECO "B90"]
+[WhiteElo "2581"]
+[BlackElo "2398"]
+[PlyCount "110"]
+[EventDate "2010.02.24"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e5 7. Nb3 Be6 8. Qd2
+Be7 9. O-O-O O-O 10. f4 Ng4 11. g3 Nxe3 12. Qxe3 Nd7 13. Kb1 b5 14. h4 b4 15.
+Nd5 Bxd5 16. Rxd5 Qc7 17. Bd3 a5 18. Nd2 Rfb8 19. h5 a4 20. Nc4 a3 21. b3 Nf6
+22. fxe5 dxe5 23. Qf3 Nxd5 24. exd5 Ra6 25. Qe4 Rh6 26. g4 Qc5 27. Qxe5 Rd8 28.
+Re1 Bf8 29. Rd1 Qe7 30. Qd4 Qf6 31. Qe4 Rc8 32. Qf5 Qxf5 33. Bxf5 Rd8 34. c3
+Rf6 35. cxb4 g6 36. Be4 Bxb4 37. Bh1 Rf2 38. d6 Bxd6 39. hxg6 hxg6 40. Nxd6 Rf6
+41. Kc2 Rfxd6 42. Rxd6 Rxd6 43. b4 Kf8 44. Kb3 Rd3+ 45. Kc4 Rg3 46. b5 Ke7 47.
+b6 Kd7 48. Kb4 Rxg4+ 49. Kxa3 Kd6 50. b7 Kc7 51. Kb3 Rg1 52. Bd5 f5 53. Kc3 Rb1
+54. Bf7 g5 55. Bg6 Rf1 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.13"]
+[White "Tania, Sachdev"]
+[Black "Shulman, Yuri"]
+[Result "1/2-1/2"]
+[ECO "D30"]
+[WhiteElo "2398"]
+[BlackElo "2624"]
+[PlyCount "82"]
+[EventDate "2010.02.24"]
+
+1. d4 d5 2. c4 e6 3. Nf3 c6 4. e3 Nd7 5. Bd3 dxc4 6. Bxc4 Ngf6 7. O-O Bd6 8.
+Nbd2 O-O 9. Qc2 e5 10. dxe5 Nxe5 11. Nxe5 Bxe5 12. Nf3 Bc7 13. h3 Qe7 14. b3
+Ne4 15. Bb2 Bf5 16. Bd3 Bg6 17. Ba3 Qxa3 18. Bxe4 Bxe4 19. Qxe4 h6 20. Rfd1
+Rad8 21. Qc2 Rfe8 22. g3 Bb6 23. Nh4 Qc5 24. Qe2 Rd5 25. Rxd5 cxd5 26. Nf5 Kh7
+27. Qd3 g6 28. Nd4 Rc8 29. Ne2 Qd6 30. Rd1 Rd8 31. Qc2 Qe5 32. Nd4 Qe4 33. Qc3
+Rd7 34. Qc8 Rc7 35. Qb8 a6 36. Qf8 Bxd4 37. exd4 Qe2 38. Rf1 Qe7 39. Qxe7 Rxe7
+40. Rc1 Kg7 41. Kf1 Re4 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.14"]
+[White "Maze, Sebastien"]
+[Black "Sareen, Vishal"]
+[Result "1-0"]
+[ECO "D17"]
+[WhiteElo "2554"]
+[BlackElo "2364"]
+[PlyCount "93"]
+[EventDate "2010.02.24"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 c6 4. Nc3 dxc4 5. a4 Bf5 6. Nh4 Bc8 7. e3 e5 8. Bxc4
+exd4 9. exd4 Be7 10. O-O O-O 11. Re1 Na6 12. Bg5 Nc7 13. Qb3 Ncd5 14. Nxd5 cxd5
+15. Bd3 h6 16. Bxf6 Bxf6 17. Nf3 Qd6 18. Ne5 Be6 19. Bc2 g6 20. Qg3 Bg7 21.
+Rad1 Rfe8 22. h4 Rac8 23. Bb1 h5 24. Re3 Bd7 25. Qf4 Be6 26. b3 Qd8 27. Rde1
+Qf6 28. Qg3 Bf5 29. Rf3 Qe6 30. Bxf5 gxf5 31. Rfe3 Qh6 32. Qf3 f4 33. R3e2 Rcd8
+34. Qd3 Qh7 35. Qb5 b6 36. Nf3 Rxe2 37. Rxe2 Qf5 38. Kh2 Bf6 39. Qa6 Rc8 40.
+Qxa7 Rc1 41. Qxb6 Kg7 42. Qb4 Bxh4 43. Qd2 Qb1 44. Re1 Rxe1 45. Qxe1 Qxe1 46.
+Nxe1 Bxf2 47. Nf3 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.15"]
+[White "Thorfinnsson, Bjorn"]
+[Black "Kveinys, Aloyzas"]
+[Result "0-1"]
+[ECO "E55"]
+[WhiteElo "2383"]
+[BlackElo "2536"]
+[PlyCount "48"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. Nf3 O-O 6. Bd3 d5 7. O-O cxd4 8. exd4
+dxc4 9. Bxc4 Nbd7 10. a3 Bxc3 11. bxc3 Qc7 12. Qd3 b6 13. Bb2 Bb7 14. Ba2 Rfd8
+15. Rfe1 Nc5 16. Qe2 Bxf3 17. Qxf3 Na4 18. Bc1 Qxc3 19. Be3 Rac8 20. g4 Qc6 21.
+Qh3 Nc3 22. Rac1 Qb5 23. g5 Nfd5 24. Bb1 Nxb1 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.16"]
+[White "Zaremba, Andrie"]
+[Black "Galego, Luis"]
+[Result "0-1"]
+[ECO "A46"]
+[WhiteElo "2360"]
+[BlackElo "2487"]
+[PlyCount "78"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. Nf3 d6 3. g3 Nbd7 4. Bg2 e5 5. dxe5 dxe5 6. O-O c6 7. a4 Bc5 8. c3
+a5 9. Na3 O-O 10. Nc4 Qe7 11. Be3 Bxe3 12. Nxe3 Nb6 13. Nd2 Be6 14. Qc2 Rfd8
+15. Rfd1 g6 16. Ndf1 Nfd7 17. b4 axb4 18. cxb4 Qxb4 19. Rdb1 Qa5 20. Nd2 Nc5
+21. Ne4 Nxe4 22. Bxe4 Rd2 23. Qc1 Rxe2 24. Bf3 Ra2 25. Rxa2 Bxa2 26. Rb2 Be6
+27. Qb1 Nxa4 28. Rxb7 Nc3 29. Rb8+ Rxb8 30. Qxb8+ Kg7 31. Bxc6 Qa1+ 32. Kg2 Ne2
+33. Nf1 h5 34. Qd6 Bh3+ 35. Kxh3 Qxf1+ 36. Kh4 Qxf2 37. Qxe5+ Kh7 38. h3 Nxg3
+39. Bd5 Ne4+ 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.17"]
+[White "Westerinen, Heikki M J"]
+[Black "Cori, Jorge"]
+[Result "0-1"]
+[ECO "C15"]
+[WhiteElo "2333"]
+[BlackElo "2483"]
+[PlyCount "76"]
+[EventDate "2010.02.24"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Nge2 Nf6 5. e5 Ne4 6. Qd3 Nxc3 7. Nxc3 O-O 8.
+a3 Be7 9. Qh3 f5 10. Be3 c5 11. dxc5 Nd7 12. f4 Nxc5 13. O-O-O a6 14. g4 Ne4
+15. Nxe4 fxe4 16. Bc4 Qc7 17. Bb3 Bd7 18. Qg3 Bb5 19. Kb1 Be2 20. Rd2 Bf3 21.
+Re1 Rad8 22. f5 Kh8 23. fxe6 Qc6 24. g5 Qxe6 25. g6 hxg6 26. Bg5 Bxg5 27. Qxg5
+b5 28. Re3 Rd7 29. Qh4+ Kg8 30. Qe1 Qxe5 31. Rc3 Kh7 32. Qh4+ Bh5 33. Rc5 Qf4
+34. Qe1 Qf1 35. Qxf1 Rxf1+ 36. Ka2 e3 37. Rdxd5 Rxd5 38. Rxd5 e2 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.18"]
+[White "Bjornsson, Sigurbjorn"]
+[Black "Grover, Sahaj"]
+[Result "0-1"]
+[ECO "C78"]
+[WhiteElo "2317"]
+[BlackElo "2448"]
+[PlyCount "80"]
+[EventDate "2010.02.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Bc5 6. d3 b5 7. Bb3 d6 8. c3
+O-O 9. Be3 Bb7 10. a4 Qe7 11. Na3 Bxe3 12. fxe3 b4 13. Nc4 bxc3 14. bxc3 d5 15.
+exd5 Nxd5 16. Qc2 Rad8 17. Rad1 Kh8 18. e4 Nb6 19. Nxb6 cxb6 20. Qf2 b5 21.
+axb5 axb5 22. Qb6 Ba8 23. Bd5 Rb8 24. Qa6 Rfc8 25. Rb1 Qc5+ 26. Kh1 f6 27. Rfc1
+Qe3 28. d4 Nxd4 29. Re1 Qxc3 30. Nxd4 exd4 31. Bxa8 Rxa8 32. Qxb5 d3 33. Rbd1
+d2 34. Rf1 h6 35. Qd7 Rd8 36. Qe7 Qe3 37. h3 Re8 38. Qf7 Rad8 39. Rxf6 Rxe4 40.
+Rg6 Qc3 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.19"]
+[White "Gunnarsson, Jon Viktor"]
+[Black "Thompson, Ian D"]
+[Result "1-0"]
+[ECO "C11"]
+[WhiteElo "2429"]
+[BlackElo "2266"]
+[PlyCount "81"]
+[EventDate "2010.02.24"]
+
+1. e4 e6 2. Nf3 d5 3. Nc3 Nf6 4. e5 Nfd7 5. d4 c5 6. dxc5 Nc6 7. Bf4 Bxc5 8.
+Bd3 a6 9. Qe2 Be7 10. h4 h6 11. Rh3 b5 12. h5 Nc5 13. a3 b4 14. axb4 Nxd3+ 15.
+cxd3 Rb8 16. b5 axb5 17. Rg3 Kf8 18. d4 b4 19. Nb5 Qb6 20. Nd6 Nxd4 21. Nxd4
+Qxd4 22. Qg4 Rh7 23. Rc1 Bxd6 24. exd6 Bd7 25. b3 Ra8 26. Bd2 Qe5+ 27. Re3 Qh2
+28. Rh3 Qe5+ 29. Kf1 d4 30. Kg1 Qxd6 31. Qe4 Ra2 32. Bf4 e5 33. Bxe5 Qe6 34.
+Rg3 Kg8 35. Qxd4 f6 36. Bxf6 Ra6 37. Bxg7 Kf7 38. Rf3+ Ke7 39. Qh4+ Kd6 40.
+Qxb4+ Kd5 41. Rd3# 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.20"]
+[White "Thorhallsson, Throstur"]
+[Black "Ingvason, Johann"]
+[Result "1-0"]
+[ECO "C17"]
+[WhiteElo "2426"]
+[BlackElo "2132"]
+[PlyCount "83"]
+[EventDate "2010.02.24"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. Bd2 Ne7 6. f4 O-O 7. Nf3 Nbc6 8. Nb5
+Bxd2+ 9. Qxd2 a6 10. Nd6 Nxd4 11. Nxd4 cxd4 12. Qxd4 Nc6 13. Qe3 d4 14. Qd2 f6
+15. O-O-O fxe5 16. fxe5 Bd7 17. Bc4 Nxe5 18. Bb3 d3 19. Rhe1 Qf6 20. Ne4 Qe7
+21. Qg5 Qxg5+ 22. Nxg5 Nf7 23. Rxd3 Nxg5 24. Rxd7 Rf4 25. Rxb7 Re8 26. g3 Rf6
+27. Rb6 Kf7 28. h4 Nf3 29. Re4 a5 30. Ra6 h6 31. Rxa5 Kg6 32. h5+ Kh7 33. Rf4
+e5 34. Rxf6 gxf6 35. Ra7+ Kh8 36. Bd5 Nd4 37. g4 Nb5 38. Ra8 Rxa8 39. Bxa8 Kg7
+40. a4 Nc7 41. Bb7 Kf8 42. c4 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.21"]
+[White "Halldorsson, Jon Arni"]
+[Black "Lenderman, Alex"]
+[Result "0-1"]
+[ECO "D13"]
+[WhiteElo "2189"]
+[BlackElo "2560"]
+[PlyCount "68"]
+[EventDate "2010.02.24"]
+
+1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Nf3 a6 6. Bf4 Nc6 7. e3 Bg4 8. Be2
+Rc8 9. Ne5 Bxe2 10. Qxe2 e6 11. O-O Be7 12. Rfc1 O-O 13. Nxc6 Rxc6 14. Na4 Qd7
+15. Qd1 Rfc8 16. Nc3 Qd8 17. Ne2 Qb6 18. Rxc6 Rxc6 19. Rb1 Nd7 20. Qd2 Qb5 21.
+f3 Nb6 22. e4 dxe4 23. fxe4 Qc4 24. Nc3 Bb4 25. a3 Bf8 26. Rc1 h6 27. Nd1 Qb3
+28. Rxc6 bxc6 29. Ne3 Na4 30. Qd1 Qb5 31. b3 Nc3 32. a4 Qb4 33. Qd3 Qxd4 34.
+Qxa6 g5 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.22"]
+[White "Kjartansson, Gudmundur"]
+[Black "Thorgeirsson, Sverrir"]
+[Result "1-0"]
+[ECO "B10"]
+[WhiteElo "2391"]
+[BlackElo "2176"]
+[PlyCount "83"]
+[EventDate "2010.02.24"]
+
+1. c4 c6 2. e4 d5 3. exd5 Nf6 4. Nc3 cxd5 5. cxd5 g6 6. Bb5+ Bd7 7. Bc4 Qb6 8.
+d3 Bg7 9. h3 O-O 10. Nf3 Na6 11. O-O Rad8 12. Re1 Rfe8 13. Re2 Nc7 14. Be3 Qa5
+15. Bd2 Qc5 16. Be3 Qa5 17. b4 Qxb4 18. Rc1 b5 19. Bb3 Qa5 20. Bd4 Bf5 21. Ne5
+Qa6 22. Nc6 Rd7 23. Bxf6 Bxf6 24. g4 b4 25. Bc4 Qb7 26. Qb3 Bxd3 27. Bxd3 Bxc3
+28. Rxc3 Nxd5 29. Rc1 Nf4 30. Bc4 Nxe2+ 31. Bxe2 Rc7 32. Bf3 Rec8 33. Qc4 Kg7
+34. Qd4+ f6 35. Qc4 Qb6 36. Kg2 a5 37. Qe6 a4 38. Nd8 Qxe6 39. Nxe6+ Kf7 40.
+Rxc7 Rxc7 41. Nxc7 b3 42. Bd5+ 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.23"]
+[White "Arngrimsson, Dagur"]
+[Black "Bjarnason, Saevar"]
+[Result "1-0"]
+[ECO "B14"]
+[WhiteElo "2383"]
+[BlackElo "2164"]
+[PlyCount "61"]
+[EventDate "2010.02.24"]
+
+1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 e6 6. cxd5 Nxd5 7. Nf3 Nc6 8.
+Bd3 Bb4 9. Bd2 O-O 10. O-O Nf6 11. Bg5 h6 12. Bh4 Be7 13. Rc1 b6 14. Bb1 Bb7
+15. a3 Rc8 16. Qd3 g6 17. Rfe1 Qd7 18. Bc2 Kg7 19. Rcd1 Rfd8 20. Qe2 Qe8 21.
+Qe3 b5 22. Bxf6+ Bxf6 23. Ne4 Qe7 24. Nc5 Ba8 25. b4 Rd6 26. Qf4 Rcd8 27. d5
+Bg5 28. Qg4 Nb8 29. Nxg5 Qxg5 30. Qd4+ Kh7 31. Ne4 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.24"]
+[White "Ni, Viktorija"]
+[Black "Ansell, Simon T"]
+[Result "0-1"]
+[ECO "A81"]
+[WhiteElo "2162"]
+[BlackElo "2381"]
+[PlyCount "66"]
+[EventDate "2010.02.24"]
+
+1. d4 f5 2. g3 e6 3. Bg2 Nf6 4. c3 Be7 5. Qb3 d5 6. Nh3 O-O 7. Nf4 c5 8. dxc5
+Na6 9. c4 Nxc5 10. Qc2 d4 11. b4 Na6 12. a3 e5 13. Nd5 Nxd5 14. Bxd5+ Kh8 15.
+O-O Nc7 16. Bg2 a5 17. b5 Ne6 18. Rd1 a4 19. Nc3 Nc5 20. Nd5 Bd6 21. f4 Nb3 22.
+Rb1 e4 23. Kh1 Be6 24. g4 Rc8 25. Rxb3 axb3 26. Qxb3 Bxd5 27. cxd5 Rc3 28. Qa4
+Qh4 29. Bd2 Qf2 30. Rf1 Qxe2 31. Bxc3 dxc3 32. gxf5 c2 33. Qxe4 Qxf1+ 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.25"]
+[White "Gretarsson, Hjorvar Steinn"]
+[Black "Hjartarson, Bjarni"]
+[Result "1-0"]
+[ECO "B54"]
+[WhiteElo "2358"]
+[BlackElo "2162"]
+[PlyCount "85"]
+[EventDate "2010.02.24"]
+
+1. c4 Nf6 2. Nc3 e6 3. Nf3 c5 4. e4 d6 5. d4 cxd4 6. Nxd4 a6 7. Be2 Be7 8. Be3
+O-O 9. O-O Bd7 10. Rc1 Nc6 11. f4 Rc8 12. Bf3 Qc7 13. Nxc6 Bxc6 14. Nd5 exd5
+15. cxd5 Qa5 16. dxc6 bxc6 17. a3 Rfd8 18. Qe2 d5 19. e5 Nd7 20. Bg4 Qb5 21.
+Qc2 Rc7 22. Rfd1 Nf8 23. f5 c5 24. Qf2 c4 25. Kh1 Bc5 26. Bf3 Qb6 27. Bxc5 Qxc5
+28. Qh4 Rcc8 29. b4 Qe3 30. e6 fxe6 31. Re1 Qxa3 32. fxe6 Nxe6 33. Bg4 Re8 34.
+Rc2 Nf8 35. Bxc8 Rxc8 36. Qe7 Qd3 37. Rf2 Qg6 38. Rf3 c3 39. Rg3 Qh6 40. Rf1 g6
+41. Qb7 Rd8 42. Qf7+ Kh8 43. Qf6+ 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.26"]
+[White "Ocantos, Manuel"]
+[Black "Olsen, Heini"]
+[Result "1/2-1/2"]
+[ECO "C47"]
+[WhiteElo "2158"]
+[BlackElo "2355"]
+[PlyCount "76"]
+[EventDate "2010.02.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nc3 Bb4 6. Nxc6 bxc6 7. Bd3 O-O
+8. O-O d5 9. exd5 cxd5 10. Bg5 c6 11. Na4 h6 12. Bh4 Bd6 13. c4 Rb8 14. b3 Re8
+15. Bg3 Bxg3 16. hxg3 Ng4 17. Re1 Ne5 18. cxd5 cxd5 19. Rc1 Bg4 20. Qd2 Qf6 21.
+Nc3 d4 22. Nb5 Re7 23. Bf1 Rd8 24. Re4 d3 25. Rce1 h5 26. Nxa7 Rd5 27. f4 Qb6+
+28. Kh2 Qxa7 29. Rxe5 Rexe5 30. Rxe5 Rxe5 31. fxe5 Bf5 32. a4 Qd4 33. a5 h4 34.
+gxh4 Qxh4+ 35. Kg1 Qd4+ 36. Kh1 Qh4+ 37. Kg1 Qd4+ 38. Kh1 Qh4+ 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.27"]
+[White "Lagerman, Robert"]
+[Black "Bjornsson, Tomas"]
+[Result "1-0"]
+[ECO "B62"]
+[WhiteElo "2347"]
+[BlackElo "2155"]
+[PlyCount "53"]
+[EventDate "2010.02.24"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Nb3 Bd7 8.
+Qd2 Rc8 9. O-O-O a6 10. f3 h6 11. Be3 Be7 12. g4 Qc7 13. Kb1 Ne5 14. Qf2 Nexg4
+15. fxg4 Nxg4 16. Qg1 Nxe3 17. Qxe3 b5 18. Bd3 Bf6 19. Ne2 O-O 20. Nf4 Be5 21.
+Rhg1 a5 22. Nh5 Kh8 23. Nd2 a4 24. Nf3 Bxb2 25. e5 g5 26. Rxg5 hxg5 27. Qxg5
+1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.28"]
+[White "Johannesson, Ingvar Thor"]
+[Black "Player, Edmund C"]
+[Result "1/2-1/2"]
+[ECO "A26"]
+[WhiteElo "2330"]
+[BlackElo "2156"]
+[PlyCount "46"]
+[EventDate "2010.02.24"]
+
+1. c4 e5 2. g3 Nc6 3. Bg2 g6 4. Nc3 Bg7 5. d3 d6 6. Nf3 Nf6 7. O-O O-O 8. Rb1
+Nh5 9. b4 Kh8 10. b5 Ne7 11. Nd2 f5 12. Qb3 f4 13. Ba3 Nf5 14. Nde4 Be6 15. Qa4
+Nd4 16. c5 Nxe2+ 17. Nxe2 f3 18. Bh1 fxe2 19. Rfe1 dxc5 20. Nxc5 Bxa2 21. Rb2
+Bd5 22. Bxd5 Qxd5 23. Rbxe2 Rf7 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.29"]
+[White "Carstensen, Jacob"]
+[Black "Omarsson, Dadi"]
+[Result "1-0"]
+[ECO "E97"]
+[WhiteElo "2317"]
+[BlackElo "2131"]
+[PlyCount "91"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5
+Ne7 9. b4 Nh5 10. Re1 f5 11. Ng5 Nf6 12. Bf3 c6 13. Bb2 h6 14. Ne6 Bxe6 15.
+dxe6 fxe4 16. Bxe4 d5 17. Bc2 dxc4 18. Qe2 Qb6 19. a3 Nfd5 20. Na4 Nf4 21. Qe4
+Qc7 22. Nc5 Rad8 23. Nd7 Rxd7 24. exd7 Qxd7 25. h3 Qd2 26. Qxc4+ Ned5 27. Rf1
+b5 28. Qb3 Kh7 29. Rad1 Ne2+ 30. Kh1 Qg5 31. Bc1 Nxc1 32. Rxc1 Rxf2 33. Be4 Nf6
+34. Qd3 Rd2 35. Qf3 Rd4 36. Rce1 Nh5 37. Re3 Nf4 38. Qg4 Qxg4 39. hxg4 Nd5 40.
+Ree1 a5 41. bxa5 Ra4 42. Rf7 Kg8 43. Ra7 Nc3 44. Bxg6 Rxg4 45. Ra8+ Bf8 46. Rf1
+1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.30"]
+[White "Thorsteinsson, Erlingur"]
+[Black "Ptacnikova, Lenka"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2123"]
+[BlackElo "2315"]
+[PlyCount "68"]
+[EventDate "2010.02.24"]
+
+1. c3 Nf6 2. Qc2 d5 3. g3 g6 4. Bg2 Bg7 5. d3 c5 6. e4 Nc6 7. Ne2 O-O 8. O-O d4
+9. c4 e5 10. a3 Ng4 11. h3 Nh6 12. Bd2 f6 13. b4 b6 14. Qc1 Nf7 15. Ra2 Be6 16.
+Rb2 Rc8 17. Kh2 Nd6 18. b5 Ne7 19. Bh6 Bxh6 20. Qxh6 a6 21. bxa6 Ra8 22. f4
+Rxa6 23. Ng1 Nef5 24. exf5 Nxf5 25. Qxf8+ Qxf8 26. fxe5 Qb8 27. Re2 fxe5 28.
+Be4 Ne3 29. Rf6 Bf5 30. g4 Bxe4 31. dxe4 Nxc4 32. Ref2 Nd6 33. Nd2 Ra7 34. Ngf3
+Rf7 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.31"]
+[White "Thorsteinsson, Thorsteinn"]
+[Black "De Andres Gonalons, Fernando"]
+[Result "1-0"]
+[ECO "D34"]
+[WhiteElo "2278"]
+[BlackElo "2124"]
+[PlyCount "61"]
+[EventDate "2010.02.24"]
+
+1. d4 d5 2. c4 e6 3. Nf3 c5 4. cxd5 exd5 5. g3 Nf6 6. Bg2 Be7 7. O-O O-O 8. Nc3
+Nc6 9. dxc5 Bxc5 10. Bg5 d4 11. Ne4 Be7 12. Bxf6 Bxf6 13. b4 Nxb4 14. Nxf6+
+Qxf6 15. Qxd4 Qe7 16. Qb2 Nc6 17. Rfd1 Rb8 18. Rd2 b6 19. Rad1 Be6 20. Nd4 Nxd4
+21. Qxd4 b5 22. Qe3 Qc7 23. Bd5 Bh3 24. Qf3 Rb6 25. Rd4 Rf6 26. Qd3 Be6 27.
+Qxb5 Bxd5 28. Qxd5 h6 29. Kg2 Re8 30. e3 Qc2 31. R1d2 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.32"]
+[White "Bergsson, Stefan"]
+[Black "Steil-Antoni, Fiona"]
+[Result "1/2-1/2"]
+[ECO "C50"]
+[WhiteElo "2079"]
+[BlackElo "2198"]
+[PlyCount "9"]
+[EventDate "2010.02.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 d6 5. c3 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.33"]
+[White "Halldorsson, Gudmundur"]
+[Black "Vaarala, Eric"]
+[Result "0-1"]
+[ECO "D13"]
+[WhiteElo "2197"]
+[BlackElo "2032"]
+[PlyCount "110"]
+[EventDate "2010.02.24"]
+
+1. c4 c6 2. d4 d5 3. cxd5 cxd5 4. Nf3 Nc6 5. Nc3 Nf6 6. Bf4 a6 7. e3 e6 8. Bd3
+Bd6 9. Bg3 b5 10. Rc1 Bb7 11. O-O Rc8 12. Ne5 Bxe5 13. dxe5 Nd7 14. f4 g6 15.
+Bb1 Nb6 16. Bf2 h5 17. b3 b4 18. Ne2 Ne7 19. e4 Nd7 20. Rxc8 Qxc8 21. f5 dxe4
+22. fxe6 fxe6 23. Ng3 e3 24. Bxe3 Nf5 25. Bf2 Nc5 26. Qc2 Nd7 27. Qd2 Qc3 28.
+Qg5 Nxe5 29. Re1 O-O 30. Be4 Nxg3 31. Qxg3 Bxe4 32. Rxe4 Ng4 33. Bd4 Qxg3 34.
+hxg3 e5 35. Bc5 Rc8 36. Bxb4 Rc1+ 37. Be1 Ra1 38. Re2 Kf7 39. Kf1 Ke6 40. Rb2
+Kf5 41. Ke2 Ke4 42. a4 Ne3 43. Bd2 Nf5 44. Kf2 Kd3 45. Ba5 Rd1 46. b4 e4 47.
+Rb3+ Kc4 48. Rb2 e3+ 49. Ke2 Rg1 50. Rc2+ Kb3 51. Rc5 Rxg2+ 52. Kf3 Rxg3+ 53.
+Kf4 Rg4+ 54. Kf3 Kxa4 55. Re5 Rg1 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.34"]
+[White "Fridthjofsdottir, Sigurl  Regin"]
+[Black "Einarsson, Halldor"]
+[Result "1-0"]
+[ECO "B22"]
+[WhiteElo "1809"]
+[BlackElo "2260"]
+[PlyCount "87"]
+[EventDate "2010.02.24"]
+
+1. e4 c5 2. c3 Nf6 3. e5 Nd5 4. d4 cxd4 5. cxd4 Nc6 6. Bc4 Nb6 7. Bb5 g6 8. Nf3
+Bg7 9. O-O O-O 10. Nc3 a6 11. Bxc6 dxc6 12. Be3 Bg4 13. h3 Bxf3 14. Qxf3 Qd7
+15. Rfd1 Rad8 16. Rac1 f6 17. exf6 exf6 18. d5 Nc4 19. dxc6 Qxc6 20. Qxc6 bxc6
+21. Rxd8 Rxd8 22. Rd1 Rxd1+ 23. Nxd1 Nxe3 24. Nxe3 f5 25. b3 Kf7 26. Kf1 Ke6
+27. Ke2 h5 28. Kd3 h4 29. Kc4 Kd7 30. Nc2 Kc7 31. Nb4 Kb6 32. Nd3 g5 33. Nc5 g4
+34. f3 gxf3 35. gxf3 Bh6 36. Ne6 Be3 37. Ng7 f4 38. Ne6 c5 39. Nf8 Bf2 40. Ng6
+Bg3 41. a3 a5 42. a4 Be1 43. Nxf4 Bf2 44. Nd3 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.35"]
+[White "Bick, John D"]
+[Black "Benediktsson, Frimann"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2248"]
+[BlackElo "1930"]
+[PlyCount "0"]
+[EventDate "2010.02.24"]
+
+*
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.36"]
+[White "Olafsson, Thorvardur"]
+[Black "Christensen, Esben"]
+[Result "0-1"]
+[ECO "B81"]
+[WhiteElo "2217"]
+[BlackElo "2008"]
+[PlyCount "104"]
+[EventDate "2010.02.24"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. g4 a6 7. g5 Nfd7 8. Rg1
+b5 9. a4 b4 10. Na2 Bb7 11. Qe2 d5 12. e5 Qc7 13. f4 Nc6 14. Be3 Rc8 15. Rg2
+Bc5 16. Nxc6 Qxc6 17. Bxc5 Qxc5 18. Qd2 a5 19. Nc1 Qb6 20. Bb5 Bc6 21. Nb3 Nc5
+22. Qf2 Bxb5 23. axb5 O-O 24. Nxc5 Rxc5 25. Rxa5 Rfc8 26. Ra4 Qxb5 27. b3 Rc3
+28. Rg3 Qc6 29. Rxc3 Qxc3+ 30. Qd2 Qf3 31. Rxb4 g6 32. Rd4 Qh1+ 33. Ke2 Qxh2+
+34. Kd1 Qg1+ 35. Ke2 Qg2+ 36. Ke1 Rxc2 37. Qxg2 Rxg2 38. Rb4 Kg7 39. Rb7 Rg4
+40. Rb4 h6 41. gxh6+ Kxh6 42. Kf2 g5 43. Kf3 Rg1 44. fxg5+ Kxg5 45. Rb7 Kg6 46.
+b4 Re1 47. b5 Rxe5 48. b6 Re4 49. Rb8 Rb4 50. b7 Kf6 51. Ke3 e5 52. Kd3 Kf5 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.37"]
+[White "Andersson, Christin"]
+[Black "Gardarsson, Hordur"]
+[Result "1/2-1/2"]
+[ECO "B17"]
+[WhiteElo "2135"]
+[BlackElo "1888"]
+[PlyCount "121"]
+[EventDate "2010.02.24"]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Bc4 Ndf6 6. Nxf6+ Nxf6 7. Nf3 Bf5
+8. c3 e6 9. O-O Be7 10. Re1 O-O 11. Bf4 Nh5 12. Be5 Nf6 13. h3 b5 14. Bb3 a5
+15. Nh4 Bg6 16. Nxg6 hxg6 17. Qf3 Nd5 18. Rad1 Bf6 19. Bc2 Bxe5 20. Rxe5 Qf6
+21. Qe4 Qf4 22. Qxf4 Nxf4 23. Rc5 Rac8 24. Be4 Nd5 25. Bxd5 exd5 26. Re1 Rfe8
+27. Rxe8+ Rxe8 28. Rxc6 Re1+ 29. Kh2 Re2 30. Rb6 Rxb2 31. a4 b4 32. cxb4 axb4
+33. a5 b3 34. a6 Ra2 35. Rxb3 Rxa6 36. Rb8+ Kh7 37. Rb5 Rd6 38. Kg3 f6 39. Rb8
+g5 40. Kf3 Kg6 41. g4 Rd7 42. Rb6 Kf7 43. Kg3 Ke7 44. f4 gxf4+ 45. Kxf4 g6 46.
+g5 fxg5+ 47. Kxg5 Ra7 48. Kxg6 Ra4 49. h4 Rxd4 50. h5 Rd1 51. h6 Rg1+ 52. Kf5
+Kf7 53. Rb8 Rf1+ 54. Kg5 Rg1+ 55. Kf4 Rh1 56. Rb6 Kg8 57. Kg5 Rg1+ 58. Kf5 Rf1+
+59. Ke5 Kh7 60. Kxd5 Rh1 61. Ke5 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.38"]
+[White "Yurenok, Maria S"]
+[Black "Tozer, Philip"]
+[Result "0-1"]
+[ECO "A04"]
+[WhiteElo "1974"]
+[BlackElo "2119"]
+[PlyCount "56"]
+[EventDate "2010.02.24"]
+
+1. Nf3 e6 2. g3 f5 3. Bg2 Nf6 4. d3 d5 5. O-O Be7 6. Nbd2 O-O 7. c3 Nc6 8. Qc2
+e5 9. e4 Kh8 10. exd5 Nxd5 11. b4 Bf6 12. Bb2 Be6 13. b5 Nce7 14. a3 Ng6 15. c4
+Nb6 16. Rfe1 Nd7 17. Nd4 exd4 18. Rxe6 Nc5 19. Re2 Ne5 20. Nb3 Nexd3 21. Nxc5
+Nxc5 22. Rd2 d3 23. Qd1 Bxb2 24. Rxb2 Qd4 25. Rab1 Ne4 26. Bf1 d2 27. Qf3 Rad8
+28. Be2 Nc3 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.39"]
+[White "Johannsson, Orn Leo"]
+[Black "Flaata, Alexander R"]
+[Result "1/2-1/2"]
+[ECO "D02"]
+[WhiteElo "1710"]
+[BlackElo "2069"]
+[PlyCount "142"]
+[EventDate "2010.02.24"]
+
+1. d4 d5 2. Bf4 Nf6 3. e3 Bf5 4. Nf3 c6 5. c3 e6 6. Nbd2 Nbd7 7. Be2 Be7 8. Ne5
+Nxe5 9. Bxe5 Bg6 10. O-O O-O 11. Qb3 Qb6 12. h3 Nd7 13. Bh2 c5 14. Qxb6 Nxb6
+15. b3 cxd4 16. cxd4 Rac8 17. Nf3 Ba3 18. Ne5 Bc2 19. Bd3 f6 20. Bxc2 Rxc2 21.
+Nd3 Rfc8 22. Bg3 Kf7 23. Rfd1 g5 24. Kf1 Nd7 25. Ke1 a5 26. Rd2 Nf8 27. Rxc2
+Rxc2 28. Kd1 Rc6 29. f3 Ng6 30. Be1 b6 31. Bg3 h5 32. Kd2 h4 33. Bh2 Ne7 34. e4
+Ke8 35. Rd1 Kd7 36. Ke2 Kc8 37. Rd2 Kb7 38. Kd1 Ka6 39. Rc2 Kb5 40. Rxc6 Nxc6
+41. Bg1 Bd6 42. a4+ Ka6 43. Be3 Be7 44. exd5 exd5 45. f4 Kb7 46. Ke2 Kc7 47.
+Kf3 Kd7 48. Kg4 Ke6 49. fxg5 fxg5 50. Nc1 Kf7 51. Bxg5 Bxg5 52. Kxg5 Nxd4 53.
+Kxh4 Ne6 54. g4 d4 55. Kg3 Nc5 56. Kf4 Kg6 57. h4 d3 58. Ke3 Kf6 59. Nxd3 Nxb3
+60. Kf4 Nd4 61. g5+ Kg7 62. h5 b5 63. axb5 Nxb5 64. h6+ Kh7 65. Ke5 Nc7 66. Kf6
+a4 67. g6+ Kxh6 68. Kf7 Ne6 69. Nc5 Ng5+ 70. Kf6 Nh7+ 71. gxh7 Kxh7 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.40"]
+[White "Guttulsrud, Odd Martin"]
+[Black "Brynjarsson, Eirikur Orn"]
+[Result "1-0"]
+[ECO "C70"]
+[WhiteElo "2061"]
+[BlackElo "1653"]
+[PlyCount "57"]
+[EventDate "2010.02.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Bc5 5. O-O d6 6. c3 b5 7. Bb3 Bg4 8. h3
+Bh5 9. d3 Nf6 10. Re1 h6 11. Nbd2 g5 12. g4 Nxg4 13. hxg4 Bxg4 14. Bd5 Qd7 15.
+Bxc6 Qxc6 16. Nb3 h5 17. d4 Bb6 18. Qd3 Qd7 19. Nh2 Bh3 20. Kh1 g4 21. Bg5 h4
+22. Rg1 Rh5 23. Be3 Ke7 24. dxe5 Rxe5 25. Bxb6 cxb6 26. Nd4 Qb7 27. Nxg4 Rxe4
+28. Qf3 Re8 29. Nf6 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.41"]
+[White "Palsson, Svanberg Mar"]
+[Black "Ragnarsson, Johann"]
+[Result "0-1"]
+[ECO "D35"]
+[WhiteElo "1769"]
+[BlackElo "2140"]
+[PlyCount "28"]
+[EventDate "2010.02.24"]
+
+1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 c6 5. Nf3 Bd6 6. Bg5 Nf6 7. e3 Bg4 8. Qb3
+b5 9. Ne5 Be6 10. Bxb5 cxb5 11. Qxb5+ Nbd7 12. Nxd5 Bxd5 13. Bxf6 gxf6 14. Nxd7
+Qxd7 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.42"]
+[White "Scholzen, Wolfgang"]
+[Black "Sverrisson, Nokkvi"]
+[Result "1-0"]
+[ECO "B92"]
+[WhiteElo "2040"]
+[BlackElo "1784"]
+[PlyCount "91"]
+[EventDate "2010.02.24"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O
+Be6 9. f4 Qc7 10. f5 Bc4 11. Be3 Nbd7 12. Rf2 b5 13. a3 Rc8 14. g4 Qb7 15. Bf3
+h6 16. Rg2 d5 17. exd5 e4 18. Nxe4 Bxd5 19. Nxf6+ Nxf6 20. Bxd5 Qxd5 21. Qxd5
+Nxd5 22. Bd4 O-O 23. Re1 Bg5 24. c3 Nf4 25. Rc2 Rfe8 26. Rxe8+ Rxe8 27. Kf1 Nd3
+28. Bf2 Re4 29. h3 Kf8 30. Nc5 Nxc5 31. Bxc5+ Ke8 32. Re2 Rxe2 33. Kxe2 Kd7 34.
+b3 Kc6 35. Bd4 g6 36. fxg6 fxg6 37. Kd3 a5 38. a4 Be7 39. Ke4 Bd6 40. Bf6 Bc7
+41. axb5+ Kxb5 42. Kd5 h5 43. g5 Bg3 44. Be7 Kb6 45. c4 Kc7 46. Ke6 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.43"]
+[White "Johnsen, Sylvia"]
+[Black "Finnbogadottir, Tinna Kristin"]
+[Result "1-0"]
+[ECO "A36"]
+[WhiteElo "2032"]
+[BlackElo "1750"]
+[PlyCount "81"]
+[EventDate "2010.02.24"]
+
+1. c4 c5 2. Nc3 g6 3. g3 Bg7 4. Bg2 e6 5. e4 Ne7 6. Nge2 Nbc6 7. d3 d6 8. O-O
+O-O 9. a3 Rb8 10. Rb1 a5 11. f4 e5 12. Be3 b6 13. Nd5 Bd7 14. Nec3 Nd4 15.
+Nxe7+ Qxe7 16. f5 f6 17. Nd5 Qe8 18. Bxd4 cxd4 19. b4 Bc6 20. Nc7 Qc8 21. Ne6
+Re8 22. Qd2 Ra8 23. g4 Bd7 24. Nxg7 Kxg7 25. g5 Rf8 26. bxa5 bxa5 27. Rb6 Qc5
+28. Rb7 Ra7 29. Rfb1 Rxb7 30. Rxb7 Rf7 31. gxf6+ Kxf6 32. Qh6 Qxa3 33. fxg6
+hxg6 34. Qh8+ Kg5 35. Qd8+ Kh6 36. Qh8+ Kg5 37. h4+ Kg4 38. Qh6 Rf1+ 39. Bxf1
+Kf3 40. Rxd7 Qb2 41. Rf7+ 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.44"]
+[White "Fivelstad, Jon Olav"]
+[Black "Sigurdsson, Sverrir"]
+[Result "1-0"]
+[ECO "D37"]
+[BlackElo "2016"]
+[PlyCount "69"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. e3 O-O 6. b3 Ne4 7. Bb2 f5 8. Bd3 c6
+9. Qc2 Nd7 10. O-O-O Ndf6 11. Ne5 Bd6 12. f3 Nxc3 13. Qxc3 a5 14. a4 Qe7 15.
+Kb1 Nd7 16. f4 Nxe5 17. fxe5 Bb4 18. Qc2 Bd7 19. g4 g6 20. h4 f4 21. Bc1 fxe3
+22. Bxe3 Rf3 23. Bg5 Qf7 24. Rhf1 Bf8 25. Bf6 Rxf1 26. Rxf1 Be7 27. g5 Rf8 28.
+h5 Be8 29. Ka2 Bxf6 30. hxg6 hxg6 31. exf6 Qh7 32. Qg2 Kf7 33. Rh1 Qg8 34. Qg3
+Bd7 35. Qd6 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.45"]
+[White "Kleinert, Juergen"]
+[Black "Antonsson, Atli"]
+[Result "1-0"]
+[ECO "C11"]
+[WhiteElo "2004"]
+[BlackElo "1716"]
+[PlyCount "69"]
+[EventDate "2010.02.24"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. Nce2 c5 6. c3 Nc6 7. Be3 a6 8. f4 b5
+9. Nf3 Qb6 10. g4 h5 11. g5 g6 12. Nh4 cxd4 13. cxd4 b4 14. Bg2 a5 15. O-O Ba6
+16. Rf2 Be7 17. Ng3 Bb5 18. Qd2 O-O-O 19. Rc1 Kb8 20. b3 Rc8 21. Ne4 Na7 22.
+Nf6 Bxf6 23. exf6 Ba6 24. f5 Rxc1+ 25. Qxc1 Rc8 26. Qd1 Nb5 27. fxg6 Nc3 28.
+Qxh5 fxg6 29. Nxg6 e5 30. Ne7 Rf8 31. Bh3 Bb5 32. Bxd7 Bxd7 33. Ng6 Be8 34.
+Nxf8 Bb5 35. f7 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.46"]
+[White "Karlsson, Mikael Johann"]
+[Black "Brynjarsson, Helgi"]
+[Result "0-1"]
+[ECO "A25"]
+[WhiteElo "1714"]
+[BlackElo "1964"]
+[PlyCount "86"]
+[EventDate "2010.02.24"]
+
+1. c4 e5 2. g3 Nc6 3. Bg2 f5 4. Nc3 Nf6 5. e3 g6 6. Nge2 Bg7 7. O-O O-O 8. d4
+d6 9. Rb1 Ne7 10. b4 c6 11. Bb2 e4 12. d5 Ng4 13. Qb3 g5 14. dxc6 bxc6 15. c5+
+d5 16. b5 Qc7 17. b6 Qd7 18. Na4 Ba6 19. Bxg7 Kxg7 20. Qb2+ Kg8 21. h3 Nf6 22.
+Rfe1 Ng6 23. bxa7 Rxa7 24. Nb6 Qe8 25. Nd4 f4 26. exf4 gxf4 27. Nf5 Ne5 28. Qd2
+Nd3 29. g4 Nxe1 30. Rxe1 f3 31. Bxf3 Qg6 32. Bg2 Ne8 33. Nxd5 cxd5 34. Qxd5+
+Kh8 35. Bxe4 Qf6 36. Qd2 Rc7 37. g5 Rg8 38. h4 Rxc5 39. Kh1 Qc3 40. Qxc3+ Rxc3
+41. Nh6 Rf8 42. f3 Nd6 43. Bd5 Bc4 0-1
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.47"]
+[White "Unnarsson, Sverrir"]
+[Black "Johannsdottir, Johanna Bjorg"]
+[Result "1-0"]
+[ECO "B42"]
+[WhiteElo "1958"]
+[BlackElo "1705"]
+[PlyCount "79"]
+[EventDate "2010.02.24"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3 Nf6 6. O-O d6 7. Qe2 Nbd7 8. c4
+g6 9. Nc3 Bg7 10. Bg5 O-O 11. Kh1 b6 12. Rad1 Bb7 13. f4 Qc7 14. Nf3 Nh5 15. g4
+Nhf6 16. h3 Rac8 17. Kh2 Nc5 18. Nd2 Nfd7 19. Bb1 Nb8 20. Bh4 Nc6 21. Nf3 f6
+22. f5 Rce8 23. Bg3 Ne5 24. Nd4 exf5 25. gxf5 Kf7 26. b4 Ncd7 27. Ne6 Rxe6 28.
+fxe6+ Kxe6 29. Bd3 Rc8 30. Nd5 Qc6 31. Rc1 Nxd3 32. Qxd3 Ne5 33. Bxe5 dxe5 34.
+Qf3 Rf8 35. c5 bxc5 36. Qb3 Kd7 37. Rcd1 Ke8 38. Nb6 Rf7 39. Rd8+ Kxd8 40. Qxf7
+1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.48"]
+[White "Thorsteinsdottir, Hallgerdur"]
+[Black "Sigurdsson, Birkir Karl"]
+[Result "1-0"]
+[ECO "B40"]
+[WhiteElo "1946"]
+[BlackElo "1446"]
+[PlyCount "75"]
+[EventDate "2010.02.24"]
+
+1. e4 c5 2. Nf3 e6 3. g3 Nc6 4. Bg2 d5 5. exd5 exd5 6. d4 c4 7. O-O Nf6 8. Re1+
+Be7 9. Ne5 Be6 10. c3 O-O 11. Nd2 Bd6 12. Nf1 Ne7 13. Ne3 Ng6 14. f4 Qc8 15.
+Qf3 Ne7 16. Bd2 Ne4 17. Re2 Nf5 18. Rae1 Nxe3 19. Qxe3 Nxd2 20. Qxd2 b5 21. Rf2
+f5 22. Qe2 Re8 23. Qh5 Bxe5 24. Rxe5 g6 25. Qe2 Bf7 26. Qe1 Rxe5 27. dxe5 Qe6
+28. Rd2 Rd8 29. Qe3 a6 30. Kf2 Qc6 31. Qd4 Be6 32. Qa7 Ra8 33. Qe7 Qb6+ 34. Rd4
+Rd8 35. Kf1 Kh8 36. Qf6+ Kg8 37. Bxd5 Rxd5 38. Rxd5 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.49"]
+[White "Kjartansson, Dagur"]
+[Black "Jonsson, Olafur Gisli"]
+[Result "1/2-1/2"]
+[ECO "A29"]
+[WhiteElo "1485"]
+[BlackElo "1872"]
+[PlyCount "68"]
+[EventDate "2010.02.24"]
+
+1. c4 e5 2. Nc3 Nf6 3. g3 d5 4. cxd5 Nxd5 5. Bg2 Nb6 6. Nf3 Nc6 7. O-O Be7 8.
+b3 O-O 9. Bb2 Be6 10. Rc1 f5 11. Nb5 Bf6 12. Bxe5 Nxe5 13. Nxc7 Bf7 14. Nxa8
+Qxa8 15. Nxe5 Bxe5 16. e3 Qb8 17. d4 Bd6 18. Qe2 Be6 19. Rfd1 Kh8 20. h4 a6 21.
+h5 Rf6 22. Rc2 Nd5 23. Rdc1 Nb4 24. Rc3 Bd7 25. a3 Nc6 26. b4 Qe8 27. Qf1 Qxh5
+28. Bxc6 Bxc6 29. Rxc6 bxc6 30. Rxc6 Qf3 31. Qxa6 Qe4 32. b5 Qb1+ 33. Kg2 Qe4+
+34. Kg1 Qb1+ 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.50"]
+[White "Leifsson, Thorsteinn"]
+[Black "Helgadottir, Sigridur Bjorg"]
+[Result "1-0"]
+[ECO "D93"]
+[WhiteElo "1821"]
+[BlackElo "1725"]
+[PlyCount "56"]
+[EventDate "2010.02.24"]
+
+1. d4 Nf6 2. c4 g6 3. Nf3 Bg7 4. Nc3 d5 5. Qb3 c6 6. Bf4 e6 7. e3 O-O 8. Bd3
+Nbd7 9. O-O b6 10. Qc2 Ba6 11. cxd5 Bxd3 12. Qxd3 Nxd5 13. Nxd5 cxd5 14. Rac1
+Rc8 15. Qa6 Ra8 16. Rc2 Nf6 17. h3 Nh5 18. Bh2 Re8 19. Rfc1 Qe7 20. a3 Red8 21.
+Rc7 Rd7 22. g4 Nf6 23. Qb7 Rf8 24. Qxa7 b5 25. Qb6 Ne4 26. Rxd7 Qxd7 27. Rc7
+Qe8 28. Rc6 Qa8 1-0
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.51"]
+[White "Andrason, Pall"]
+[Black "Sigurdarson, Emil"]
+[Result "1/2-1/2"]
+[ECO "D32"]
+[WhiteElo "1587"]
+[BlackElo "1609"]
+[PlyCount "63"]
+[EventDate "2010.02.24"]
+
+1. d4 d5 2. c4 e6 3. Nc3 c5 4. Nf3 Nc6 5. cxd5 exd5 6. Bf4 Nf6 7. e3 Bd6 8.
+Bxd6 Qxd6 9. Nb5 Qe7 10. dxc5 O-O 11. Rc1 Bg4 12. Be2 a6 13. Nbd4 Ne4 14. Nxc6
+bxc6 15. Nd4 Bxe2 16. Qxe2 Rfc8 17. Nb3 a5 18. f3 Nf6 19. O-O Nd7 20. Rc2 a4
+21. Nd4 Ra5 22. Rfc1 Rxc5 23. Rxc5 Nxc5 24. Nf5 Qf6 25. Rxc5 Qxf5 26. Qc2 Qxc2
+27. Rxc2 Kf8 28. Kf2 Ke7 29. Ke2 Kd6 30. Kd3 c5 31. Rc3 Rb8 32. Kc2 1/2-1/2
+
+[Event "Reykjavik Open 2010"]
+[Site "Reykjavik City Hall"]
+[Date "2010.02.27"]
+[Round "5.52"]
+[White "Botheim, Tor"]
+[Black "Lee, Gudmundur Kristinn"]
+[Result "1-0"]
+[ECO "C65"]
+[WhiteElo "1944"]
+[BlackElo "1534"]
+[PlyCount "57"]
+[EventDate "2010.02.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3 Nf6 5. O-O O-O 6. d4 exd4 7. cxd4 Bb6 8.
+Nc3 h6 9. e5 Nh7 10. d5 Ne7 11. d6 Ng6 12. Bc4 Kh8 13. Qd3 a6 14. b4 Ba7 15.
+Bb2 b5 16. Bb3 Bb7 17. Nd5 Bxd5 18. Qxd5 c6 19. Qd2 Nh4 20. Nxh4 Qxh4 21. Qd3
+Ng5 22. a3 Ne6 23. Rae1 Rae8 24. Kh1 Qg4 25. g3 Ng5 26. f3 Qh3 27. Bc2 g6 28.
+e6+ Kg8 29. exf7+ 1-0
+

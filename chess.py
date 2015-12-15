@@ -6,7 +6,7 @@ piece_to_id = {'bR':0, 'bN':1, 'bB':2, 'bQ':3, 'bK':4, 'bP':5, 'wR':6, 'wN':7, '
 all_pieces = ['R', 'N', 'B', 'Q', 'K']
 
 piece_history = []
-piece_id = 8
+piece_id = 3
 chess_length = [[(0,0) for r in range(10)] for s in range(7)]
 elo_difference = [(0,0) for r in range(10)]
 elo_results = []
@@ -32,6 +32,7 @@ total_captured_P =[[0 for x in range(8)] for x in range(8)]
 piece_capture = [[0 for x in range(6)] for x in range(6)]
 piece_lifetime = [(0,0) for x in range(6)]
 relative_lifetime = [(0,0) for x in range(6)]
+total_real_games = 0
 
 for y in range(9,16):
     thisRange = range(1,11)
@@ -49,6 +50,8 @@ for y in range(9,16):
             length = (1 + len(moves)) // 2
 
             total_games += 1
+            if length > 1:
+                total_real_games += 1
             thing = False
             if hasattr(game, 'whiteelo'):
                 w_elo = int(getattr(game,'whiteelo'))
@@ -434,3 +437,4 @@ print("Length by difference")
 for r in length_by_difference:
     print(r)
 print("Total games:", total_games)
+print("Total real games:", total_real_games)

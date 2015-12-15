@@ -16,8 +16,10 @@ for(p in 0:11)
   {
     path = paste("www//Results//distribution_p",p,"_r",r,".csv",sep = "")
     board <- read.csv(path, sep=",")
-    
+    print(path)
+    print(board)
     total = sum(board) - 36
+    
     board <- board[,2:9] / total
     #board_matrix <- data.matrix(board)
     #print(board)
@@ -32,15 +34,21 @@ for(p in 0:11)
     }
   }
 }
-#print("Totals")
+for (i in 0:11)
+{
+  print(paste("starting totals", 65 * i + 1))
+  print(totals[65 * i + 1])
+}
 #print(totals)
-
 path2 = "www//captures.csv"
+
 captures <- read.csv(path2, sep=",")
 captures <- data.matrix(captures)
 #print(captures)
 #heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('R','N','B','Q','K','P'))
+
 path3 = "www//captured_spots.csv"
+
 cap_spots <- read.csv(path3, sep=",")
 cap_spots_m <- data.matrix(cap_spots)
 #print(cap_spots)
@@ -114,7 +122,7 @@ losses_by_elo = c(20,
                   0
 )
 all_by_elo = matrix(c(wins_by_elo, draws_by_elo, losses_by_elo), nrow = 3, ncol = 17, byrow = T)
-print(all_by_elo)
+#print(all_by_elo)
 for(i in 1:17)
 {
   temp = all_by_elo[1,i] + all_by_elo[2,i] + all_by_elo[3,i]
@@ -140,6 +148,6 @@ length_by_elo = c(51.105263157894726,
                   33.46666666666667)
 elos = 0:16
 elos = elos * 50
-print(elos)
+#print(elos)
 plot(elos, length_by_elo, type = "p", main="Average length of game", xlab = "Difference of ELO rating", ylab = "Moves", ylim = c(0,55))
 barplot(all_by_elo, main="Outcomes by ELO difference")
