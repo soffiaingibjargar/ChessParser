@@ -161,7 +161,7 @@ server <- function(input, output) {
     
     print(board)
     hTitle = heatmapTitle()
-    chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = hTitle)
+    chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = paste(hTitle, ", ", heatmapTotal(),sep=""))
     #testHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = hTitle)
   })
   output$captures <- renderPlot({
@@ -309,7 +309,12 @@ server <- function(input, output) {
       currentPiece = "pawns"
     currentIndex = as.numeric(input$piece) * 65 + as.numeric(input$gameTurn)
     currentTotal = totals[currentIndex]
-    paste("Distribution of", currentPlayer, currentPiece, "at turn", input$gameTurn, "(total:", currentTotal, ")")
+    paste("Distribution of", currentPlayer, currentPiece, "at turn", input$gameTurn)
+  }
+  heatmapTotal <- function(){
+    currentIndex = as.numeric(input$piece) * 65 + as.numeric(input$gameTurn)
+    currentTotal = totals[currentIndex]
+    paste("total: ", currentTotal)
   }
   
   
@@ -403,7 +408,7 @@ server <- function(input, output) {
     print(tickmarks)
     axis(side=1, at = tickmarks, labels = (0:17) * 50)
     par(mar = c(5.1, 4.1, 4.1, 2.1))
-    l <- legend(x=16, y=1.35, legend = c("Higher rated player won", "Draw", "Lower rated player won"), xpd=NA, fill=resColors, cex = 1.2)
+    l <- legend(x=16, y=1.35, legend = c("Lower rated player won", "Draw", "Higher rated player won"), xpd=NA, fill=c(resColors[3], resColors[2], resColors[1]), cex = 1.2)
     #print(l)
   })
   output$elo_length <- renderPlot({
