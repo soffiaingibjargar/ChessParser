@@ -14,7 +14,7 @@ for(p in 0:11)
 
   for(r in 0:64)
   {
-    path = paste("www\\Results\\distribution_p",p,"_r",r,".csv",sep = "")
+    path = paste("www//Results//distribution_p",p,"_r",r,".csv",sep = "")
     board <- read.csv(path, sep=",")
     
     total = sum(board) - 36
@@ -39,32 +39,34 @@ for (i in 0:11)
   print(totals[65 * i + 1])
 }
 #print(totals)
+path2 = "www//captures.csv"
 
-path2 = "www\\captures.csv"
 captures <- read.csv(path2, sep=",")
 captures <- data.matrix(captures)
 #print(captures)
 #heatmap3(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('R','N','B','Q','K','P'))
-path3 = "www\\captured_spots.csv"
+
+path3 = "www//captured_spots.csv"
+
 cap_spots <- read.csv(path3, sep=",")
 cap_spots_m <- data.matrix(cap_spots)
 #print(cap_spots)
 
-captures_norm = read.csv("www\\captures_norm.csv")
+captures_norm = read.csv("www//captures_norm.csv")
 
 
 
-space_R = read.csv("www\\captured_spots_R.csv")
+space_R = read.csv("www//captured_spots_R.csv")
 
-space_N = read.csv("www\\captured_spots_N.csv")
+space_N = read.csv("www//captured_spots_N.csv")
 
-space_B = read.csv("www\\captured_spots_B.csv")
+space_B = read.csv("www//captured_spots_B.csv")
 
-space_Q = read.csv("www\\captured_spots_Q.csv")
+space_Q = read.csv("www//captured_spots_Q.csv")
 
-space_K = read.csv("www\\captured_spots_K.csv")
+space_K = read.csv("www//captured_spots_K.csv")
 
-space_P = read.csv("www\\captured_spots_P.csv")
+space_P = read.csv("www//captured_spots_P.csv")
 
 wins_by_elo = c(28,
                 76,
