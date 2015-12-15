@@ -34,8 +34,8 @@ ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                       ),
                   mainPanel(
                     plotOutput("winScatter",
-                      width = "700px", 
-                      height = "700px"
+                      width = "600px", 
+                      height = "600px"
                       )
                     )
                   )
@@ -82,7 +82,7 @@ ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                                           choices = list("Show all pieces" = 1, "Normalize" = 0),
                                           selected = 1),
                              br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),
-                             br(),br(),br(),br(),br(),br(),br(),
+                             br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),
                              
                              radioButtons("pieces", label = h3("Which piece to show in frequency of captures by space"),
                                           choices = list("All" = "A","Pawn" = "P", "Knight" = "N",
@@ -94,14 +94,15 @@ ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                              fluidRow(
                                #column(width=6, offset=1.5, plotOutput("captures")),
                                #column(width=5, offset=0.2 , plotOutput("cap_spaces"))
+                               br(),
                                column(width=12, align="center", plotOutput("captures",
-                                                           width = "1000", 
-                                                           height = "700px"),
+                                                           width = "800", 
+                                                           height = "600"),
                                       plotOutput("captures_legend", 
                                                  width="50%", height="170px")),
                                column(width=12, align="center", plotOutput("cap_spaces",
-                                                           width = "1000px", 
-                                                           height = "700px"),
+                                                           width = "800", 
+                                                           height = "600"),
                                       plotOutput("cap_spaces_legend", 
                                                  width="50%", height="170px")
                                       )
@@ -322,7 +323,7 @@ server <- function(input, output) {
   output$winScatter <- renderPlot({
     par(new = FALSE)
     symbol = 20
-    size = 1.1
+    size = 0.7
     
     whiteColor = brewer.pal(8, "BrBG")[3]
     drawColor = brewer.pal(8, "Greys")[5]
@@ -331,7 +332,7 @@ server <- function(input, output) {
     e = c()
 
     plot(e,xlab=NA,ylab=NA, yaxt = "n", xaxt = "n", main="Games played by ELO rating",pch=symbol,xlim=elo_range,ylim=elo_range,col="green",las=1,cex=size, bty="n", cex.main = 2)
-    mtext(side = 2, expression(bold("Black ELO")), line = 3, las=1, adj=0, padj=-23, cex=1.3)
+    mtext(side = 2, expression(bold("Black ELO")), line = 3, las=1, adj=0, padj=-19, cex=1.3)
     mtext(side = 1, expression(bold("White ELO")), line = 2, adj=1, padj=1, cex=1.3)
     
     axis(side = 2, at = axTicks(1), labels = formatC(axTicks(1), big.mark = ".", format = "d"), las = 2)
