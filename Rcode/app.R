@@ -40,10 +40,19 @@ ui <- navbarPage(title = "Reykjavik Open 2009 - 2015",
                   )
                 ),
                 tabPanel(title = "Results",
-                         plotOutput("elo_results"),
-                         br(),
-                         plotOutput("elo_length")),
-                
+                  sidebarLayout(
+                    sidebarPanel(
+                      width=3,
+                      textOutput("elo_explain"),
+                      br(),
+                      textOutput("elo_explain2")),
+                  mainPanel(
+                    plotOutput("elo_results"),
+                    br(),
+                    plotOutput("elo_length")
+                    ))
+                         
+                  ),
                 tabPanel(title = "Moves",
                   sidebarLayout(
                     sidebarPanel(
@@ -130,11 +139,12 @@ server <- function(input, output) {
     total = 0
     for(i in 1:64)
     {
+      #print(i + start - 1)
       board[i] = all[i + start - 1]
       total <- total + board[i]
     }
     M = matrix(board, nrow=8, ncol=8, byrow = TRUE)
-    print(total)
+    #print(total)
     return(M)
   }
   
@@ -151,15 +161,15 @@ server <- function(input, output) {
     #myBreaks <- sqrt(sqrt(pairs.breaks))
     myBreaks <- pairs.breaks ^ (1/3)
     myBreaks <- 1 - myBreaks
-    print(pairs.breaks)
-    print(myBreaks)
+    #print(pairs.breaks)
+    #print(myBreaks)
     #tryBreaks = c(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
     r <- input$gameTurn
     p <- as.numeric(input$piece) + 6 * as.numeric(input$player)
 
     board <- getBoard(p,r)
     
-    print(board)
+    #print(board)
     hTitle = heatmapTitle()
     chessHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = paste(hTitle, ", ", heatmapTotal(),sep=""))
     #testHeatmap(apply(board,2,rev), Rowv=NA, Colv=NA, col = my_palette, scale="none", margins=c(5,10), balanceColor=F,labRow=c(1,2,3,4,5,6,7,8),labCol=c('a','b','c','d','e','f','g','h'), add.expr = {abline(h=1.5);abline(h=2.5);abline(h=3.5);abline(h=4.5);abline(h=5.5);abline(h=6.5);abline(h=7.5);abline(h=0.5);abline(h=8.5);abline(v=0.5);abline(v=1.5);abline(v=2.5);abline(v=3.5);abline(v=4.5);abline(v=5.5);abline(v=6.5);abline(v=7.5);abline(v=8.5)}, breaks = myBreaks, main = hTitle)
@@ -171,7 +181,7 @@ server <- function(input, output) {
       par(las=1)
       myHeatmap(apply(captures,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
                 scale="none",col=my_palette,main="Frequency of captures by piece",
-                xlab = "Captured Piece", ylab = expression(bold("Capturing Piece")), cex.main = 2.2,
+                xlab = "Capturing Piece", ylab = expression(bold("Captured Piece")), cex.main = 2.2,
                 axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
     }
     else
@@ -180,7 +190,7 @@ server <- function(input, output) {
       par(las=1)
       myHeatmap(apply(captures_norm,2,rev), Rowv=NA, Colv=NA, labRow = c('Pawn','King','Queen','Bishop','Knight','Rook'),
                 scale="none",col=my_palette,main="Frequency of captures by piece",
-                xlab = "Captured Piece", ylab = expression(bold("Capturing Piece")), cex.main = 2.2, cex.lab=2,
+                xlab = "Capturing Piece", ylab = expression(bold("Captured Piece")), cex.main = 2.2, cex.lab=2,
                 axis(1,1:nc,labels= labCol,las= 2,line= -0.5 + offsetCol,tick= 0,cex.axis= cexCol,hadj=adjCol[1],padj=adjCol[2]))
     }
     
@@ -291,10 +301,14 @@ server <- function(input, output) {
   
   
   heatmapTitle <- function(){
+    add = 0
     if(input$player == 0)
       currentPlayer = "black"
     else
+    {
       currentPlayer = "white"
+      add = add + 6
+    }
     if(input$piece == 0)
       currentPiece = "rooks"
     else if(input$piece == 1)
@@ -307,13 +321,43 @@ server <- function(input, output) {
       currentPiece = "kings"
     else if(input$piece == 5)
       currentPiece = "pawns"
-    currentIndex = as.numeric(input$piece) * 65 + as.numeric(input$gameTurn)
+    
+    currentIndex = (as.numeric(input$piece) + add) * 65 + as.numeric(input$gameTurn)
+    print("currentIndex")
+    print(currentIndex)
     currentTotal = totals[currentIndex]
+    print(currentTotal)
+    #print(totals)
     paste("Distribution of", currentPlayer, currentPiece, "at turn", input$gameTurn)
   }
   heatmapTotal <- function(){
-    currentIndex = as.numeric(input$piece) * 65 + as.numeric(input$gameTurn)
+    add = 0
+    if(input$player == 0)
+      currentPlayer = "black"
+    else
+    {
+      currentPlayer = "white"
+      add = add + 6
+    }
+    if(input$piece == 0)
+      currentPiece = "rooks"
+    else if(input$piece == 1)
+      currentPiece = "knights"
+    else if(input$piece == 2)
+      currentPiece = "bishops"
+    else if(input$piece == 3)
+      currentPiece = "queens"
+    else if(input$piece == 4)
+      currentPiece = "kings"
+    else if(input$piece == 5)
+      currentPiece = "pawns"
+    
+    currentIndex = (as.numeric(input$piece) + add) * 65 + as.numeric(input$gameTurn)
+    print("currentIndex")
+    print(currentIndex)
     currentTotal = totals[currentIndex]
+    print(currentTotal)
+    #print(totals)
     paste("total: ", currentTotal)
   }
   
@@ -379,7 +423,6 @@ server <- function(input, output) {
     #print(input$results)
     if(is.element("4", input$results))
     {  
-      print("test")
       #line = seq(from = 1000, to = 3000, by = 25)
       line <- c(1000:3000)
       lines(line, line, lwd=1.7)
@@ -418,6 +461,14 @@ server <- function(input, output) {
     axis(side=1, at=c(elos, 850), label=c(elos, 850))
     mtext(expression(bold("Moves")), side = 2, las = 1, line = 0, at=65, cex=1.2)
     #axis(side=1, at = tickmarks, labels = (0:17) * 50)
+  })
+  output$elo_explain <- renderText({
+    "The chess matches were split into groups based on the difference 
+ of the players' ELO rating (0-49, 50-99, 100-149, ...). For each group, 
+    the average length and the ratio of wins, draws and losses were computed."
+  })
+  output$elo_explain2 <- renderText({
+    "Matches where the difference is 850 or higher are not shown because there are too few matches in each group."
   })
 }
 
