@@ -1,7 +1,5 @@
 library(ggplot2)
-
 path <- "www//Elo//elo_results.csv"
-
 result <- read.csv(path, sep=",")
 
 e1 = result$elo1
@@ -17,8 +15,8 @@ draws1 = c()
 draws2 = c()
 
 size = length(res)
-#print("number of games")
-#print(size)
+print("number of games")
+print(size)
 
 allWins1 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())
 allWins2 <- list(c(), c(), c(), c(), c(), c(), c(), c(), c(), c())
