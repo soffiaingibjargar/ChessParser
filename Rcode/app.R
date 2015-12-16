@@ -505,7 +505,7 @@ server <- function(input, output) {
            lty=c(0,0,0), pch=c(16, 16, 16), col=c(whiteColor, drawColor, blackColor),bty="n",cex=1.4)
     
     output$no_elo_explain <- renderText({
-      "Part of the players didn't have elo scores, they are excluded from the data for this chart."
+      "Part of the players didn't have ELO scores, they are excluded from the data for this chart."
     })
   })
   
