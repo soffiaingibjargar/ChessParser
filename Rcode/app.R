@@ -522,7 +522,7 @@ server <- function(input, output) {
     print(tickmarks)
     axis(side=1, at = tickmarks, labels = (0:17) * 50)
     par(mar = c(5.1, 4.1, 4.1, 2.1))
-    l <- legend(x=16, y=1.35, legend = c("Lower rated player won", "Draw", "Higher rated player won"), xpd=NA, fill=c(resColors[3], resColors[2], resColors[1]), cex = 1.2)
+    l <- legend(x=16, y=1.35, legend = c("Lower rated player won", "Draw", "Higher rated player won"), xpd=NA, fill=c(resColors[3], resColors[2], resColors[1]), cex = 1.2, border=NA, bty="n")
     #print(l)
   })
   output$elo_length <- renderPlot({
